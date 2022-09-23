@@ -1,7 +1,7 @@
 // @ts-nocheck
 /**
- * @name Sidebar
- * @class L.Control.Sidebar
+ * @name Sidebar111
+ * @class L.Control.Sidebar111
  * @extends L.Control
  * @param {string} id - The id of the sidebar element (without the # character)
  * @param {Object} [options] - Optional options object
@@ -11,7 +11,7 @@
  * @param {boolean} [data.close=true] Whether to add a close button to the pane header
  * @see L.control.sidebar
  */
-L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
+L.Control.Sidebar111 = L.Control.extend(/** @lends L.Control.Sidebar111.prototype */ {
     includes: L.Evented ? L.Evented.prototype : L.Mixin.Events,
 
     options: {
@@ -55,7 +55,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * Add this sidebar to the specified map.
      *
      * @param {L.Map} map
-     * @returns {Sidebar}
+     * @returns {Sidebar111}
      */
     onAdd: function(map) {
         var i, child, tabContainers, newContainer, container;
@@ -143,7 +143,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * Remove this sidebar from the map.
      *
      * @param {L.Map} map
-     * @returns {Sidebar}
+     * @returns {Sidebar111}
      */
     onRemove: function (map) {
         // Remove click listeners for tab & close buttons
@@ -190,7 +190,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * @deprecated - Please use remove() instead of removeFrom(), as of Leaflet 0.8-dev, the removeFrom() has been replaced with remove()
      * Removes this sidebar from the map.
      * @param {L.Map} map
-     * @returns {Sidebar}
+     * @returns {Sidebar111}
      */
     removeFrom: function(map) {
         console.warn('removeFrom() has been deprecated, please use remove() instead as support for this function will be ending soon.');
@@ -204,7 +204,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * Open sidebar (if it's closed) and show the specified tab.
      *
      * @param {string} id - The ID of the tab to show (without the # character)
-     * @returns {L.Control.Sidebar}
+     * @returns {L.Control.Sidebar111}
      */
     open: function(id) {
         var i, child, tab;
@@ -247,7 +247,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
     /**
      * Close the sidebar (if it's open).
      *
-     * @returns {L.Control.Sidebar}
+     * @returns {L.Control.Sidebar111}
      */
     close: function() {
         var i;
@@ -291,7 +291,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * @param {String} {Function} [data.button] URL to an (external) link or a click listener function that will be opened instead of a panel
      * @param {bool} [data.disabled1] If the tab should be disabled by default
      *
-     * @returns {L.Control.Sidebar}
+     * @returns {L.Control.Sidebar111}
      */
     addPanel: function(data) {
         var pane, tab, tabHref, closeButtons, content;
@@ -359,7 +359,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * sidebar.remove('userinfo');
      *
      * @param {String} [id] the ID of the panel that is to be removed
-     * @returns {L.Control.Sidebar}
+     * @returns {L.Control.Sidebar111}
      */
     removePanel: function(id) {
         var i, j, tab, pane, closeButtons;
@@ -400,7 +400,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * enables a disabled1 tab/panel
      *
      * @param {String} [id] ID of the panel to enable
-     * @returns {L.Control.Sidebar}
+     * @returns {L.Control.Sidebar111}
      */
     enablePanel: function(id) {
         var tab = this._getTab(id);
@@ -413,7 +413,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * disables an enabled tab/panel
      *
      * @param {String} [id] ID of the panel to disable
-     * @returns {L.Control.Sidebar}
+     * @returns {L.Control.Sidebar111}
      */
     disablePanel: function(id) {
         var tab = this._getTab(id);
@@ -519,8 +519,8 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
  * @param {string} [options.position=left] - Position of the sidebar: 'left' or 'right'
  * @param {string} [options.container] - ID of a predefined sidebar container that should be used
  * @param {boolean} [data.close=true] Whether to add a close button to the pane header
- * @returns {Sidebar} A new sidebar instance
+ * @returns {Sidebar111} A new sidebar instance
  */
 L.control.sidebar = function(options, deprecated) {
-    return new L.Control.Sidebar(options, deprecated);
+    return new L.Control.Sidebar111(options, deprecated);
 };
