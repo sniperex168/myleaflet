@@ -211,7 +211,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
 
         // If panel is disabled, stop right here
         tab = this._getTab(id);
-        if (L.DomUtil.hasClass(tab, 'disabled'))
+        if (L.DomUtil.hasClass(tab, 'disabled1'))
             return this;
 
         // Hide old active contents and show new content
@@ -289,7 +289,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      * @param {String} [data.link] URL to an (external) link that will be opened instead of a panel
      * @param {String} [data.title] Title for the pane header
      * @param {String} {Function} [data.button] URL to an (external) link or a click listener function that will be opened instead of a panel
-     * @param {bool} [data.disabled] If the tab should be disabled by default
+     * @param {bool} [data.disabled1] If the tab should be disabled by default
      *
      * @returns {L.Control.Sidebar}
      */
@@ -297,14 +297,14 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
         var pane, tab, tabHref, closeButtons, content;
 
         // Create tab node
-        tab = L.DomUtil.create('li', data.disabled ? 'disabled' : '');
+        tab = L.DomUtil.create('li', data.disabled1 ? 'disabled1' : '');
         tabHref = L.DomUtil.create('a', '', tab);
         tabHref.href = '#' + data.id;
         tabHref.setAttribute('role', 'tab');
         tabHref.innerHTML = data.tab;
         tab._sidebar = this;
         tab._id = data.id;
-        tab._button = data.button; // to allow links to be disabled, the href cannot be used
+        tab._button = data.button; // to allow links to be disabled1, the href cannot be used
         if (data.title && data.title[0] !== '<') tab.title = data.title;
 
         // append it to the DOM and store JS references
@@ -397,14 +397,14 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
     },
 
     /**
-     * enables a disabled tab/panel
+     * enables a disabled1 tab/panel
      *
      * @param {String} [id] ID of the panel to enable
      * @returns {L.Control.Sidebar}
      */
     enablePanel: function(id) {
         var tab = this._getTab(id);
-        L.DomUtil.removeClass(tab, 'disabled');
+        L.DomUtil.removeClass(tab, 'disabled1');
 
         return this;
     },
@@ -417,7 +417,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
      */
     disablePanel: function(id) {
         var tab = this._getTab(id);
-        L.DomUtil.addClass(tab, 'disabled');
+        L.DomUtil.addClass(tab, 'disabled1');
 
         return this;
     },
@@ -426,7 +426,7 @@ L.Control.Sidebar = L.Control.extend(/** @lends L.Control.Sidebar.prototype */ {
         // `this` points to the tab DOM element!
         if (L.DomUtil.hasClass(this, 'active')) {
             this._sidebar.close();
-        } else if (!L.DomUtil.hasClass(this, 'disabled')) {
+        } else if (!L.DomUtil.hasClass(this, 'disabled1')) {
             if (typeof this._button === 'string') // an url
                 window.location.href = this._button;
             else if (typeof this._button === 'function') // a clickhandler
