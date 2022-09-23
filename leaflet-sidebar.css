@@ -3,8 +3,9 @@
   top: 0;
   bottom: 0;
   width: 100%;
+  heitht:300px;
   overflow: hidden;
-  z-index: 2000; }
+  z-index: 1; }
   .leaflet-sidebar.collapsed {
     width: 40px; }
   @media (max-width: 768px) {
@@ -75,7 +76,7 @@
           cursor: default; }
       .leaflet-sidebar-tabs > li > a, .leaflet-sidebar-tabs > ul > li > a {
         display: block;
-        width: 100%;
+        width: 90%;
         height: 100%;
         line-height: 40px;
         color: inherit;
