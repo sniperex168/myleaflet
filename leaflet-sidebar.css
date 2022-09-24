@@ -160,7 +160,9 @@
   border-right: 0px solid rgba(0, 0, 0, 0.2);
   height:300px;}
 @media (max-width: 768px) {
-  .leaflet-sidebar-left.leaflet-touch {height:150px;} }
+  .leaflet-sidebar-left.leaflet-touch {height:150px;} 
+  .leaflet-sidebar-left .leaflet-sidebar-content {height:150px;}
+}
 
 
 @media (min-width: 768px) {
