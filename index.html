@@ -1,75 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>無標題文件</title>
+<title>Interactive Map</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<!-- jQuery --> 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body>
-
 <p>如還沒看到地圖，請等候一下</p>
 <p>建議以PC桌機觀看體驗較佳</p>
-<button id="demo" onclick="myFunction()">全部點位重設(注意無法恢復)</button>
-<p>重設後需要重新整理頁面</p>
-<div id="sidebar" class="leaflet-sidebar collapsed"> 
-	<!-- Nav tabs -->
-	<div class="leaflet-sidebar-tabs">
-		<ul role="tablist">
-			<!-- top aligned tabs -->
-			<li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
-			<li class="disabled"><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
-			<li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
-		</ul>
-		<ul role="tablist">
-			<!-- bottom aligned tabs -->
-			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
-		</ul>
-	</div>
-	
-	<!-- Tab panes -->
-	<div class="leaflet-sidebar-content">
-		<div class="leaflet-sidebar-pane" id="home">
-			<h1 class="leaflet-sidebar-header"> sidebar-v2
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-			<p>A responsive sidebar for mapping libraries</p>
-			<div>
-				<label><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門</a></label>
-				<label><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩</a></label>
-				<label><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施</a></label>
-			</div>
-			<p>A responsive sidebar for the mapping library <a href="https://leafletjs.com/">Leaflet</a>.</p>
-			<p>Compatible with version 0.7 and 1.x (tested up to 1.6.0)</p>
-			<p><b>Select the other panes for a showcase of each feature.</b></p>
-			<h2>More examples</h2>
-			<ul>
-				<li><a href="./position-right.html">Right aligned</a></li>
-				<li><a href="./halfheight.html">The sidebar adapts to map container size</a></li>
-				<li><a href="./leaflet-latest.html">Proof that it works with the latest leaflet version (if not, please report it!)</a></li>
-				<li><a href="./leaflet-0.7.html">Proof that it works with leaflet 0.7</a></li>
-			</ul>
-			<p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-			<p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-			<p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-			<p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-		</div>
-		<div class="leaflet-sidebar-pane" id="messages">
-			<h1 class="leaflet-sidebar-header">Messages
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-		</div>
-		<div class="leaflet-sidebar-pane" id="profile">
-			<h1 class="leaflet-sidebar-header">Profile
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-		</div>
-		<div class="leaflet-sidebar-pane" id="settings">
-             <h1 class="leaflet-sidebar-header">Settings
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-        </div>
-	</div>
-</div>
 <div id="map"></div>
 <script>		
 window.addEventListener("DOMContentLoaded", function () {
@@ -476,7 +418,7 @@ window.addEventListener("DOMContentLoaded", function () {
     })
 	
        // create the sidebar instance and add it to the map
-        var sidebar = L.control.sidebar({ container: 'sidebar' })
+        var sidebar = L.control.sidebar({ container: 'sidebar111' })
             .addTo(map);
 
 	
@@ -494,6 +436,61 @@ function myFunction() {
 }
   
 </script> 
+<div id="sidebar111" class="leaflet-sidebar collapsed"> 
+	<!-- Nav tabs -->
+	<div class="leaflet-sidebar-tabs">
+		<ul role="tablist" class="leaflet-tablist">
+			<!-- top aligned tabs -->
+			<li><a href="#tablehome" role="tab"><i class="fa fa-bars"></i></a></li>
+			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+		</ul>
+<!--bottom aligned tabs
+			<ul role="tablist" class="leaflet-tablist">
+			 
+			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+		</ul>
+-->
+	</div>
+	
+	<!-- Tab panes -->
+	<div class="leaflet-sidebar-content">
+		<div class="leaflet-sidebar-pane" id="tablehome">
+			<h1 class="leaflet-sidebar-header">點位查詢
+				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+			</h1>
+			<h2>地標或秘境</h2>
+			<p><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
+			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
+			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
+			</a><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門</a> <br>
+			<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
+			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
+			</a><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
+			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
+			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
+			</a><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
+			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
+		</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施</a></p>
+
+			<h2>休息處</h2>
+			<p><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
+			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
+			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施</a></p>
+		<p>&nbsp;</p>
+		</div>
+		<div class="leaflet-sidebar-pane" id="settings">
+             <h1 class="leaflet-sidebar-header">Settings
+				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+			</h1>
+			<h2>重設點位</h2>
+		<p>如果發現點位錯亂、或沒有出現點位</p>
+		<p>請嘗試重設<strong style="color: #FF0000">(注意無法恢復)</strong></p>
+		<button id="demo" onclick="myFunction()">全部點位重設</button>
+		<p>重設後需要重新整理頁面</p>
+		<p>&nbsp;</p>
+        </div>
+	</div>
+</div>
 <!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
@@ -502,28 +499,28 @@ function myFunction() {
 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
    crossorigin=""></script> 
-	
+<link href='https://sniperex168.github.io/myleaflet/leaflet-sidebar.css' rel='stylesheet' />
+<!-- <link href='E:\桌面\blogger\leaflet-sidebar.css' rel='stylesheet' />-->
+<script src='https://sniperex168.github.io/myleaflet/leaflet-sidebar.js' crossorigin=''></script>	
 <!-- fullscreen --> 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
  
 
-<link href='https://sniperex168.github.io/myleaflet/leaflet-sidebar.css' rel='stylesheet' />
-<script src='https://sniperex168.github.io/myleaflet/leaflet-sidebar.js' crossorigin=''></script>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 <style>
 #map {
-	height:800px;
-	width:800px;
+	height:750px;
+	width:750px;
 	background: #292a2e;
 	font-size: 14px;
 	margin: 0 auto;
+	z-index: 10;
 }
 @media screen and (max-width: 600px) {
-#map {	height:350px;width:100%;}
+#map {	height:360px;width:100%;font-size: 12px;}
 }
 
 </style>
-
 </body>
 </html>
