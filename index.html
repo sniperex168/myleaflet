@@ -5,36 +5,83 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <!-- jQuery --> 
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script> 
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 <p>如還沒看到地圖，請等候一下</p>
-<p>建議以PC桌機觀看體驗較佳</p>
+<p>建議以全螢幕觀看，或用電腦觀看體驗較佳</p>
+<div id="sidebar111" class="leaflet-sidebar collapsed"> 
+	<!-- Nav tabs -->
+	<div class="leaflet-sidebar-tabs">
+		<ul role="tablist" class="leaflet-tablist">
+			<!-- top aligned tabs -->
+			<li><a href="#tablehome" role="tab"><i class="fa fa-bars"></i></a></li>
+			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+		</ul>
+		<!--bottom aligned tabs
+			<ul role="tablist" class="leaflet-tablist">
+			 
+			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+		</ul>
+--> 
+	</div>
+	<!-- Tab panes -->
+	<div class="leaflet-sidebar-content">
+		<div class="leaflet-sidebar-pane" id="tablehome">
+			<h1 class="leaflet-sidebar-header">點位查詢
+				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+			</h1>
+			<h2>地標或秘境</h2>
+			<p><a class="js-panto" href="#" data-to="3438, 343">地標：導鳥石門</a><br>
+				<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩</a><br>
+				<a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
+				<a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門</a> <br>
+				<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩</a><br>
+			</p>
+			<h2>休息處</h2>
+			<p><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門</a><br>
+				<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩</a><br>
+				<a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施</a>
+			</p>
+			<p>&nbsp;</p>
+		</div>
+		<div class="leaflet-sidebar-pane" id="settings">
+			<h1 class="leaflet-sidebar-header">Settings
+				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+			</h1>
+			<h2>重設標記</h2>
+			<p>將全部點位的標記重設<strong style="color: #FF0000">(注意無法恢復)</strong></p>
+			<p>如發現點位沒有出現，或者位置錯誤<br>
+			也可嘗試重設</p>
+			<button id="demo">重設全部標記</button>
+			<p>如有問題請留言告知，謝謝</p>
+		</div>
+	</div>
+</div>
 <div id="map"></div>
-<script>		
-window.addEventListener("DOMContentLoaded", function () {
-	//設定地圖<!---->
+<script>
+window.addEventListener("load", function () {	
+//window.addEventListener("DOMContentLoaded", function () {
+	//設定地圖
 	const map = L.map('map', {
-		maxZoom: 5,
-		minZoom: 1,
+		maxZoom: 0,
+		minZoom: -4,
 		zoomControl: false,
 		crs: L.CRS.Simple
-	}).setView([250, 125], 1);
-	const h = 6000;
-	const w = 6000;
-	const southWest = [0, w / 24];
-	const northEast = [h / 24, 0];
+	}).setView([3200, 2000], -3);
+	const h = 2600;
+	const w = 5500;
+	const southWest = [0, w];
+	const northEast = [h, 0];
 	const imageBounds = new L.LatLngBounds(southWest, northEast);
-	map.setMaxBounds(new L.LatLngBounds([0, 0], [h / 20, w / 20]));
+	map.setMaxBounds(new L.LatLngBounds([-500, -500], [h+500, w+500]));
 
-	const imageUrl0 = L.imageOverlay('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmPNaufWIrZaxQlX9Itq8w4iAyAVrudZIF5_HVKgCSMlZlJihsS4_HNBwwy8qRTeImML4_4az7H2tEvXLBt7i3-8kNKHw9n4qqIvu09eTb_h1oU8K2zvdkxqy3ZaFtQpNAknw53X1w2SMnPkMf-UGCHKBYJNkKINSyOVHHvrMCI1vq-M0y-DyQjsNsKQ/s0/FornisRegion.webp', imageBounds);
+	const imageUrl0 = L.imageOverlay('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJBjaftG4OKxcmw7a_lNEKQFQBZLSBcg8AAqlycnPTXYDZeY5emrYmxtCvsi4NK5wLSJ5aCvbyTBkZetV9lHYNh-t7eLZY_jDNk8jS1ZQn4NPAK6_Tkx9-R0QnxzKYUImu8u9mCLT-yr41VRRnyqdbE3oH9e5A-Nm9bYhxmUX41UGsa0fwg7HfYWW0hg/s0/PentelasRegionFull.webp', imageBounds);
 	const baseMaps = {};
 	
-	const buy01 = L.imageOverlay('https://img.game8.co/3558595/72a5c4522450f4823d7e3effd5e6b25b.png/original',imageBounds);
-     const buy02 = L.imageOverlay('https://img.game8.co/3558592/650c1a5e787fbd302447b388ab8f060d.png/original',imageBounds);
-     const buy03 = L.imageOverlay('https://img.game8.co/3563043/f2f0ab8bf2de4377c4c2083397015bcf.png/original',imageBounds);
+//	const buy01 = L.imageOverlay('https://img.game8.co/3558595/72a5c4522450f4823d7e3effd5e6b25b.png/original',imageBounds);
 
 	// 定義自訂icon	
 	var landmarker = L.icon({
@@ -69,335 +116,168 @@ window.addEventListener("DOMContentLoaded", function () {
 		popupAnchor: [6, -18] // point from which the popup should open relative to the iconAnchor
 	});
 
-	//初始化資料
+	//初始化陣列資料markers
     var markers = [
-		{mark_id:0,type:"landmarker",coords:{x: 300, y: 300},name:"地標0",opa:"0",chk:"0"}, //空的資料不刪除，而是設為透明且座標超出地圖範圍
-		{mark_id:1,type:"landmarker",coords:{x: 188.6, y: 15.6},name: "<p><b>地標：艾克特地下空洞</b></p>解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},
-		{mark_id:2,type:"landmarker",coords:{x: 48.8, y: 166.5},name: "地標2",opa:"1",chk:"0"},
-		{mark_id:3,type:"landmarker",coords:{x: 36.3, y: 117.3},name: "地標3",opa:"1",chk:"0"},
-		{mark_id:4,type:"landmarker",coords:{x: 117.3, y: 36.3},name: "地標4",opa:"1",chk:"0"},
-		{mark_id:5,type:"landmarker",coords:{x: 160.3, y: 80.3},name: "地標5",opa:"1",chk:"0"},
-		{mark_id:6,type:"SecretArea",coords:{x: 160.3, y: 180},name: "地標611",opa:"1",chk:"0"},
-		{mark_id:7,type:"restpoint",coords:{x: 160.3, y: 200},name: "休息處1",opa:"1",chk:"0"},
+		{type:"landmarker",coords:{x: 99999, y: 99999},name:"地標0",opa:"0",chk:"0"}, //上線後錯的資料不刪除，資料才不會亂掉(設為透明且座標超出地圖範圍)
+		{type:"SecretArea",coords:{x: 3150, y: 920},name: "<b>孔提的泉源1</b><p><img class='Popupimg' src='https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg' width='100%'/></p></p>解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},
+		{type:"landmarker",coords:{x: 36.3, y: 117.3},name: "地標3",opa:"1",chk:"0"},
+		{type:"landmarker",coords:{x: 117.3, y: 36.3},name: "地標4",opa:"1",chk:"0"},
+		{type:"landmarker",coords:{x: 160.3, y: 80.3},name: "地標5",opa:"1",chk:"0"},
+		{type:"SecretArea",coords:{x: 160.3, y: 180},name: "地標611",opa:"1",chk:"0"},
+		{type:"restpoint",coords:{x: 160.3, y: 200},name: "休息處1",opa:"1",chk:"0"},
+		{type:"restpoint",coords:{x: 2160.3, y: 2200},name: "休息處2",opa:"1",chk:"0"},
+		{type:"restpoint",coords:{x: 2660.3, y: 2800},name: "休息處3",opa:"1",chk:"0"},
+		{type:"landmarker",coords:{x: 3438, y: 343},name: "<p><b>地標：艾克特地下空洞</b></p>解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},
+
 	];
-	//如果Local Storage為空
-	if (localStorage.userMarkers == undefined) {
-		//將初始化陣列資料字串化
-		var dogString = JSON.stringify(markers);
-		//字串化後即可正確的存入Local Storage
-		localStorage.setItem('userMarkers', dogString);
-	}
+	//設定部分出入口點位
+	L.marker([1837, 807],{opacity:0}).bindTooltip('<b>佛尼斯地區</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
+	L.marker([2270, 3031],{opacity:0}).bindTooltip('<b>佛尼斯地區</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
+	L.marker([1346, 5230],{opacity:0}).bindTooltip('<b>科維斯主堡區域</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
+	L.marker([1564, 4226],{opacity:0}).bindTooltip('<b>莫爾克納大森林下層</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
 
 	//如果Local Storage有資料
-	if (localStorage.userMarkers !== undefined) {
-		var tempString = JSON.stringify(markers);
-		sessionStorage.setItem('tempMarkers', tempString);//用來比較的暫存tempMarkers
-		//比較Local Storage與markers資料，如果markers比較多筆就加入新資料
-		var storageMarkers = JSON.parse(localStorage.userMarkers);
-		var a = storageMarkers.length;
-		if (markers.length >= storageMarkers.length) {
-			markers.splice(0, a); //只留markers的新資料
-			var tempString = storageMarkers.concat(markers);
-			var dogString = JSON.stringify(tempString);
-			localStorage.setItem('userMarkers', dogString);
-		}
-		//比較Local Storage內的新舊資料，name有不同的話，以markers的name,coords.x,coords.y取代，其餘參數不變
-		var storageMarkers = JSON.parse(localStorage.userMarkers);
-		var markers = JSON.parse(sessionStorage.tempMarkers);
-		for (var i = 0; i < storageMarkers.length; i++) {
-			if (storageMarkers[i].name !== markers[i].name) {
-				storageMarkers[i].name = markers[i].name;
-				storageMarkers[i].coords.x = markers[i].coords.x;
-				storageMarkers[i].coords.y = markers[i].coords.y;
+	if (localStorage.XB3map31 !== undefined) {
+		//比較使用者的Local Storage與初始化陣列資料markers，用storageMarkers.opa .chk資料取代markers.opa .chk
+		//先將Local Storage內的JSON 字串化轉為陣列
+		var storageMarkers = JSON.parse(localStorage.XB3map31);
+		//開始比較與取代，markers內除了opa,chk為使用者資料，其餘皆初始資料
+		for (var i = 0; i < storageMarkers.length; i++) { 		
+			if (storageMarkers[i].chk !== markers[i].chk) {
+				markers[i].opa = storageMarkers[i].opa;	
+				markers[i].chk = storageMarkers[i].chk;	
 			}
 		}
-		var dogString = JSON.stringify(storageMarkers);
-		localStorage.setItem('userMarkers', dogString);
-		sessionStorage.removeItem('tempMarkers');		//刪除暫存tempMarkers
 	}
-	//讀取Local Storage資料並放到地圖中
+
+//將初始化陣列資料markers，接著只取opa,chk放到markertemp
+
+	var markertemp =[];
+	for (var i = 0; i < markers.length; i++) {
+		var dogString = {"opa":markers[i].opa, "chk":markers[i].chk};
+		markertemp.push(dogString);
+	}
+	//將markertemp轉為JSON 字串
+	var dogString = JSON.stringify(markertemp);
+	//JSON 字串化後即可正確的存入Local Storage
+	localStorage.setItem('XB3map31', dogString);
+
+//讀取markers資料並放到地圖中
 	initUserLayerGroup();
 	map.on('click');
-	var groupUser;
 	function initUserLayerGroup() {
-		if (localStorage.userMarkers !== undefined) {
-			var storageMarkers = [];
-			var markersUser = [];
+		if (localStorage.XB3map31 !== undefined) {
+			var markertemp = [];
 			var resttemp = [];
-			storageMarkers = JSON.parse(localStorage.userMarkers);
-
-			for (var i = 0; i < storageMarkers.length; i++) {
-				var x = storageMarkers[i].coords.x;
-				var y = storageMarkers[i].coords.y;
-				var name = storageMarkers[i].name;
-				var opa = storageMarkers[i].opa;
-				var chk = storageMarkers[i].chk;
-				var type = storageMarkers[i].type;
-				if (type === "landmarker") {
-					if (chk === "1") {
-						var marker = L.marker([y, x],{
-							icon:landmarker,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else if (chk === "0") {
-						var marker = L.marker([y, x],{
-							icon:landmarker,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
+			for (var i = 0; i < markers.length; i++) {
+				var x = markers[i].coords.x;
+				var y = markers[i].coords.y;
+				var name = markers[i].name;
+				var opa = markers[i].opa;
+				var chk = markers[i].chk;
+				var type = markers[i].type;
+				switch(type){
+    				case "landmarker":
+						type = landmarker;
+						break;
+					case "SecretArea":
+						type = SecretArea;
+						break;
+					case "restpoint":
+						type = restpoint;
+						break;   
+				}
+				if (chk === "1") {
+					var marker = L.marker([y, x],{
+						icon:type,
+						opacity: opa
+					}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
+				} else if (chk === "0") {
+					var marker = L.marker([y, x],{
+						icon:type,
+						opacity: opa
+					}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
 				}
 				marker.on("popupopen", onPopupOpen);
-				markersUser.push(marker);
-				}
-				if (type === "SecretArea") {
-					if (chk === "1") {
-						var marker = L.marker([y, x],{
-							icon:SecretArea,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else if (chk === "0") {
-						var marker = L.marker([y, x],{
-							icon:SecretArea,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-				}
-				marker.on("popupopen", onPopupOpen);
-				markersUser.push(marker);
+				var type = markers[i].type;
+				switch(type){
+    				case "landmarker":
+						markertemp.push(marker);
+						break;
+					case "SecretArea":
+						markertemp.push(marker);
+						break;
+					case "restpoint":
+						resttemp.push(marker);
+						break;   
 				}				
-				if (type === "restpoint") {
-					if (chk === "1") {
-						var marker = L.marker([y, x],{
-							icon:restpoint,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else if (chk === "0") {
-						var marker = L.marker([y, x],{
-							icon:restpoint,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-				}
-				marker.on("popupopen", onPopupOpen);
-				resttemp.push(marker);
-				}					
-				
-				
-			}
-			groupUser = L.layerGroup(markersUser).addTo(map);
-			map.addLayer(groupUser);
+			}				
+		}
+			//將點位放入layer
+			//map.removeLayer(groupMarker);
+			//map.removeLayer(groupRest);
+			groupMarker = L.layerGroup(markertemp).addTo(map);
 			groupRest = L.layerGroup(resttemp).addTo(map);
 			map.addLayer(groupRest);
-		}
+			map.addLayer(groupMarker);
+
 	}
+
 	//設定地圖Layer與layerControl
 	var overlayMaps = {
-		"地標或秘境": groupUser,
+		"地標或秘境": groupMarker,
 		"休息處": groupRest,		
 	};
-	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false,sortLayers:true}).addTo(map);
+	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
 	imageUrl0.addTo(map);
 	L.control.zoom({position: 'topright'}).addTo(map);//{position: 'topright'}
-	map.addControl(new L.Control.Fullscreen({position: 'topright'}));
+	map.addControl(new L.Control.Fullscreen({position: 'topright'}));	
 	
-	//空的function(原本為使用者自行加點位，這裡全部刪除)
+//空的function(原本為使用者自行加點位，這裡全部刪除)
 //	function onMapClick(e) {}
 	
-	//delete與undo
+//設定delete與undo
 	function onPopupOpen() {
 		var _this = this;
 		var clickedMarkerCoords = this.getLatLng();
 		$('.delete').click(function () {
-			storageMarkers = JSON.parse(localStorage.userMarkers);
-			for (i = storageMarkers.length; i > 0; i--) {
-				if (typeof storageMarkers[i] != 'undefined'
-					&& (clickedMarkerCoords.lat == storageMarkers[i].coords.y
-						&& clickedMarkerCoords.lng == storageMarkers[i].coords.x)
-				) {
-					//刪除localStorage資料
-					var clickedMarkername = storageMarkers[i].name;
-					var mark_id = storageMarkers[i].mark_id;
-					var type = storageMarkers[i].type;
-					//加回localStorage資料但opa為1
+			storageMarkers = JSON.parse(localStorage.XB3map31);
+			for (var i = 0; i < markers.length; i++) {
+				if (clickedMarkerCoords.lat == markers[i].coords.y
+					&& clickedMarkerCoords.lng == markers[i].coords.x)
+				 {
+					//將此(this)marker設定為透明度0.4，並修改Popup內容
+					_this.setOpacity(0.4).closePopup();
+					_this.setPopupContent(markers[i].name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
+					//修改為localStorage資料但opa:0.4，chk:1
 					let newmarker = {
-						"mark_id": mark_id,
-						"type": type,	
-						"coords": {
-							"x": clickedMarkerCoords.lng,
-							"y": clickedMarkerCoords.lat
-						},
-						"name": clickedMarkername,
 						"opa": "0.4",
 						"chk": "1",
 					};
 					storageMarkers.splice(i, 1,newmarker);
-					localStorage.userMarkers = JSON.stringify(storageMarkers);
+					localStorage.XB3map31 = JSON.stringify(storageMarkers);
 				}
 			}
-			//localStorage.removeItem('userMarkers');
-			layerControl.removeLayer(groupUser);
-			layerControl.removeLayer(groupRest);
-			map.removeLayer(groupUser);
-			map.removeLayer(groupRest);
-			//讀取localStorage並再加回marker	
-			var storageMarkers = [];
-			var markersUser = [];
-			var resttemp = [];
-			storageMarkers = JSON.parse(localStorage.userMarkers);
-			for (var i = 0; i < storageMarkers.length; i++) {
-				var x = storageMarkers[i].coords.x;
-				var y = storageMarkers[i].coords.y;
-				var name = storageMarkers[i].name;
-				var opa = storageMarkers[i].opa;
-				var chk = storageMarkers[i].chk;
-				var type = storageMarkers[i].type;
-				if (type === "landmarker") {
-					if (chk === "1") {
-						var marker = L.marker([y, x], {
-							icon: landmarker,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else if (chk === "0") {
-						var marker = L.marker([y, x], {
-							icon: landmarker,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-					}
-					marker.on("popupopen", onPopupOpen);
-					markersUser.push(marker);
-				}
-				if (type === "SecretArea") {
-					if (chk === "1") {
-						var marker = L.marker([y, x], {
-							icon: SecretArea,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else if (chk === "0") {
-						var marker = L.marker([y, x], {
-							icon: SecretArea,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-					}
-					marker.on("popupopen", onPopupOpen);
-					markersUser.push(marker);
-				}
-				if (type === "restpoint") {
-					if (chk === "1") {
-						var marker = L.marker([y, x], {
-							icon: restpoint,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else if (chk === "0") {
-						var marker = L.marker([y, x], {
-							icon: restpoint,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-					}
-					marker.on("popupopen", onPopupOpen);
-					resttemp.push(marker);
-				}
-			}
-			groupUser = L.layerGroup(markersUser);
-			map.addLayer(groupUser);
-			groupRest = L.layerGroup(resttemp).addTo(map);
-			map.addLayer(groupRest);
-			layerControl.addOverlay(groupUser, '地標或秘境');
-			layerControl.addOverlay(groupRest, '休息處');
 		});
 		$('.undo').click(function () {
-			storageMarkers = JSON.parse(localStorage.userMarkers);
-			for (i = storageMarkers.length; i > 0; i--) {
-				if (typeof storageMarkers[i] != 'undefined'
-					&& (clickedMarkerCoords.lat == storageMarkers[i].coords.y
-						&& clickedMarkerCoords.lng == storageMarkers[i].coords.x)
-				) {
-					//刪除localStorage資料
-					var clickedMarkername = storageMarkers[i].name;
-					var mark_id = storageMarkers[i].mark_id;
-					var type = storageMarkers[i].type;
-					//加回localStorage資料但opa為1
+			storageMarkers = JSON.parse(localStorage.XB3map31);
+			for (var i = 0; i < markers.length; i++) {
+				if (clickedMarkerCoords.lat == markers[i].coords.y
+					&& clickedMarkerCoords.lng == markers[i].coords.x)
+				 {
+					//將此(this)marker設定為透明度1，並修改Popup內容
+					_this.setOpacity(1).closePopup();
+					_this.setPopupContent(markers[i].name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
+
+					//修改為localStorage資料但opa:1，chk:0
 					let newmarker = {
-						"mark_id": mark_id,
-						"type": type,	
-						"coords": {
-							"x": clickedMarkerCoords.lng,
-							"y": clickedMarkerCoords.lat
-						},
-						"name": clickedMarkername,
 						"opa": "1",
 						"chk": "0",
 					};
 					storageMarkers.splice(i, 1,newmarker);
-					localStorage.userMarkers = JSON.stringify(storageMarkers);
+					localStorage.XB3map31 = JSON.stringify(storageMarkers);
 				}
 			}
-			//localStorage.removeItem('userMarkers');
-			layerControl.removeLayer(groupUser);
-			layerControl.removeLayer(groupRest);
-			map.removeLayer(groupUser);
-			map.removeLayer(groupRest);
-			//map.removeLayer(_this);
-			//讀取localStorage並再加回marker	
-			var storageMarkers = [];
-			var markersUser = [];
-			var resttemp = [];
-			storageMarkers = JSON.parse(localStorage.userMarkers);
-			for (var i = 0; i < storageMarkers.length; i++) {
-				var x = storageMarkers[i].coords.x;
-				var y = storageMarkers[i].coords.y;
-				var name = storageMarkers[i].name;
-				var opa = storageMarkers[i].opa;
-				var chk = storageMarkers[i].chk;
-				var type = storageMarkers[i].type;
-				if (type === "landmarker") {
-					if (chk === "1") {
-						var marker = L.marker([y, x], {
-							icon: landmarker,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else {
-						var marker = L.marker([y, x], {
-							icon: landmarker,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-					}
-					marker.on("popupopen", onPopupOpen);
-					markersUser.push(marker);
-				}
-				if (type === "SecretArea") {
-					if (chk === "1") {
-						var marker = L.marker([y, x], {
-							icon: SecretArea,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else {
-						var marker = L.marker([y, x], {
-							icon: SecretArea,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-					}
-					marker.on("popupopen", onPopupOpen);
-					markersUser.push(marker);
-				}	
-				if (type === "restpoint") {
-					if (chk === "1") {
-						var marker = L.marker([y, x], {
-							icon: restpoint,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
-					} else if (chk === "0") {
-						var marker = L.marker([y, x], {
-							icon: restpoint,
-							opacity: opa
-						}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
-					}
-					marker.on("popupopen", onPopupOpen);
-					resttemp.push(marker);
-				}
-			}
-			groupUser = L.layerGroup(markersUser);
-			map.addLayer(groupUser);
-			groupRest = L.layerGroup(resttemp).addTo(map);
-			map.addLayer(groupRest);
-			layerControl.addOverlay(groupUser, '地標或秘境');
-			layerControl.addOverlay(groupRest, '休息處');
 		});
 	}
 	
@@ -406,9 +286,11 @@ window.addEventListener("DOMContentLoaded", function () {
     Array.prototype.forEach.call(btnPanto, pan => {
       pan.addEventListener('click', e => {
         e.preventDefault();
-        let latLng = e.target.dataset.to.split(',');
-        let name = e.target.textContent;
-		 map.flyTo(latLng,5);
+		  let x = e.target.dataset.to.split(',')[1];
+		  let y = e.target.dataset.to.split(',')[0];
+ //       let latLng = e.target.dataset.to.split(',');
+ //       let name = e.target.textContent;
+		 map.flyTo([x,y],0);
 /*        const popup = L.popup();
         popup
           .setLatLng(latLng)
@@ -418,79 +300,109 @@ window.addEventListener("DOMContentLoaded", function () {
     })
 	
        // create the sidebar instance and add it to the map
-        var sidebar = L.control.sidebar({ container: 'sidebar111' })
-            .addTo(map);
+        var sidebar = L.control.sidebar({ container: 'sidebar111' }).addTo(map);
 
+	// 顯示座標	
+	L.Control.MousePosition = L.Control.extend({
+  		options: {
+			position: 'bottomleft',
+			separator: ' : ',
+			emptyString: '0:0',
+			lngFirst: true,
+			numDigits: 5,
+			lngFormatter: undefined,
+			latFormatter: undefined,
+			prefix: ""
+		},
+
+  		onAdd: function (map) {
+			this._container = L.DomUtil.create('div', 'leaflet-control-mouseposition');
+			L.DomEvent.disableClickPropagation(this._container);
+			map.on('mousemove', this._onMouseMove, this);
+			this._container.innerHTML=this.options.emptyString;
+			return this._container;
+		},
+
+		onRemove: function (map) {
+			map.off('mousemove', this._onMouseMove)
+		},
+
+		_onMouseMove: function (e) {
+			var lng = this.options.lngFormatter ? this.options.lngFormatter(e.latlng.lng) : L.Util.formatNum(e.latlng.lng, this.options.numDigits);
+			var lat = this.options.latFormatter ? this.options.latFormatter(e.latlng.lat) : L.Util.formatNum(e.latlng.lat, this.options.numDigits);
+			var value = this.options.lngFirst ? lng + this.options.separator + lat : lat + this.options.separator + lng;
+			var prefixAndValue = this.options.prefix + ' ' + value;
+			this._container.innerHTML = prefixAndValue;
+		}
+
+	});
+
+	L.Map.mergeOptions({
+		positionControl: false
+	});
+
+	L.Map.addInitHook(function () {
+		if (this.options.positionControl) {
+			this.positionControl = new L.Control.MousePosition();
+			this.addControl(this.positionControl);
+		}
+	});
+
+	L.control.mousePosition = function (options) {
+		return new L.Control.MousePosition(options);
+	};	
+		
+
+// 顯示座標的圖層
+	var options = {
+		position: 'bottomright',
+		numDigits: 3
+	}
+	L.control.mousePosition(options).addTo(map);
 	
+	
+document.getElementById("demo").addEventListener("click", myFunction);
+function myFunction() {
+	let text = "是否要重設全部點位?\n注意無法回復";
+	if (confirm(text) == true) {
+		//移除localStorage資料
+		localStorage.removeItem("XB3map31");
+		//移除map與Control的Layer，有幾個就需要移除幾個
+		map.removeLayer(groupMarker);
+		map.removeLayer(groupRest);
+		layerControl.removeLayer(groupMarker);
+		layerControl.removeLayer(groupRest);
+		//把markers內的所有opa設為1，chk設為0
+		var markertemp =[];
+		for (var i = 0; i < markers.length; i++) {
+			markers[i].opa="1";
+			markers[i].chk="0";
+			var dogString = {"opa":markers[i].opa, "chk":markers[i].chk};
+			markertemp.push(dogString);
+		}
+		//加進localStorage
+		var dogString = JSON.stringify(markertemp);
+		localStorage.setItem('XB3map31', dogString);
+		//呼叫initUserLayerGroup(讀取markers資料並放到地圖中)
+		initUserLayerGroup(); 
+		layerControl.addOverlay(groupMarker, '地標或秘境');
+		layerControl.addOverlay(groupRest, '休息處');
+	}
+}	
 	
 });
 
 </script> 
-
-<script>
+<!-- <script>
 function myFunction() {
 	let text = "是否要重設全部點位??\n注意無法回復\n重設後請自行重新整理頁面";
 	if (confirm(text) == true) {
-	localStorage.removeItem("userMarkers");
+	localStorage.removeItem("XB3map31");
+
   }
 }
-  
-</script> 
-<div id="sidebar111" class="leaflet-sidebar collapsed"> 
-	<!-- Nav tabs -->
-	<div class="leaflet-sidebar-tabs">
-		<ul role="tablist" class="leaflet-tablist">
-			<!-- top aligned tabs -->
-			<li><a href="#tablehome" role="tab"><i class="fa fa-bars"></i></a></li>
-			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
-		</ul>
-<!--bottom aligned tabs
-			<ul role="tablist" class="leaflet-tablist">
-			 
-			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
-		</ul>
--->
-	</div>
-	
-	<!-- Tab panes -->
-	<div class="leaflet-sidebar-content">
-		<div class="leaflet-sidebar-pane" id="tablehome">
-			<h1 class="leaflet-sidebar-header">點位查詢
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-			<h2>地標或秘境</h2>
-			<p><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
-			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
-			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
-			</a><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門</a> <br>
-			<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
-			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
-			</a><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
-			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
-			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
-			</a><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
-			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
-		</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施</a></p>
+</script>  -->
 
-			<h2>休息處</h2>
-			<p><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門<br>
-			</a><a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩<br>
-			</a><a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施</a></p>
-		<p>&nbsp;</p>
-		</div>
-		<div class="leaflet-sidebar-pane" id="settings">
-             <h1 class="leaflet-sidebar-header">Settings
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-			<h2>重設點位</h2>
-		<p>如果發現點位錯亂、或沒有出現點位</p>
-		<p>請嘗試重設<strong style="color: #FF0000">(注意無法恢復)</strong></p>
-		<button id="demo" onclick="myFunction()">全部點位重設</button>
-		<p>重設後需要重新整理頁面</p>
-		<p>&nbsp;</p>
-        </div>
-	</div>
-</div>
 <!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
@@ -498,16 +410,12 @@ function myFunction() {
 <!-- Make sure you put this AFTER Leaflet's CSS --> 
 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-   crossorigin=""></script> 
+   crossorigin=""></script>
 <link href='https://sniperex168.github.io/myleaflet/leaflet-sidebar.css' rel='stylesheet' />
-<!-- <link href='E:\桌面\blogger\leaflet-sidebar.css' rel='stylesheet' />-->
-<script src='https://sniperex168.github.io/myleaflet/leaflet-sidebar.js' crossorigin=''></script>	
+<script src='https://sniperex168.github.io/myleaflet/leaflet-sidebar.js' crossorigin=''></script> 
 <!-- fullscreen --> 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
- 
-
-
 <style>
 #map {
 	height:750px;
@@ -520,7 +428,25 @@ function myFunction() {
 @media screen and (max-width: 600px) {
 #map {	height:360px;width:100%;font-size: 12px;}
 }
-
+.my-label {
+    font-size:16px;
+	font-weight: bold;
+	background: none;
+	color:#FFFFFF;
+	border:none;
+	box-shadow: none;
+}
+.leaflet-popup-content{
+	min-width: 400px;
+}
+.leaflet-container .leaflet-control-mouseposition {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px #bbb;
+  padding: 0 5px;
+  margin:0;
+  color: #FFF;
+  font: 5px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
 </style>
 </body>
 </html>
