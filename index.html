@@ -395,10 +395,8 @@ window.addEventListener("DOMContentLoaded", function () {
 						var Pantox=btnPanto[j].dataset.to.split(',')[0];
 						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
 						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
-					 {btnPanto[j].classList.add('checked');}
-					}
-					
-					 
+					 		{btnPanto[j].classList.add('checked');}
+					}				 
 				 }
 			}
 		});
@@ -426,14 +424,8 @@ window.addEventListener("DOMContentLoaded", function () {
 						var Pantox=btnPanto[j].dataset.to.split(',')[0];
 						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
 						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
-					 {btnPanto[j].classList.remove('checked');}
-					}
-
-					 
-					 
-					 
-					 
-					 
+							{btnPanto[j].classList.remove('checked');}
+					} 
 				}
 			}
 		});
@@ -524,7 +516,11 @@ function myFunction() {
 	if (confirm(text) == true) {
 		//移除localStorage資料
 		localStorage.removeItem("XB3map31");
-		
+		//.js-panto移除class .checked
+		const btnPanto = document.querySelectorAll('.js-panto');
+		for (var j = 0; j < btnPanto.length; j++) {
+			btnPanto[j].classList.remove('checked');
+		}		
 		//移除map與Control的Layer，有幾個就需要移除幾個
 		map.removeLayer(groupMarker);
 		map.removeLayer(groupRest);
