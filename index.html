@@ -449,7 +449,7 @@ window.addEventListener("DOMContentLoaded", function () {
  //       let latLng = e.target.dataset.to.split(',');
           let name = e.target.textContent;
 		  x = Number(x); //轉數字
-		  map.flyTo([x,y],0);
+		  map.flyTo([x+100,y],0);
 
         const tooltip = L.tooltip({
 		className:"my-label",
