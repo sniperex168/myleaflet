@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Interactive Map</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<!-- jQuery --> 
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script> 
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
-<p>如還沒看到地圖，請等候一下</p>
+
+<p>如還沒看到地圖，請等候一下讀取圖片</p>
+<p>使用相同設備並使用相同瀏覽器，可以記錄各點位的標記狀態</p>
 <p>建議以全螢幕觀看，或用電腦觀看體驗較佳</p>
 <div id="sidebar111" class="leaflet-sidebar collapsed"> 
 	<!-- Nav tabs -->
@@ -34,17 +24,70 @@
 				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
 			</h1>
 			<h2>地標或秘境</h2>
-			<p><a class="js-panto" href="#" data-to="3438, 343">地標：導鳥石門</a><br>
-				<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩</a><br>
-				<a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施<br>
-				<a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門</a> <br>
-				<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩</a><br>
+			<p>
+				<a class="js-panto" href="#" data-to="3150,920">秘境：孔提的泉源</a><br>				
+				<a class="js-panto" href="#" data-to="2050,607">秘境：清流隱密河口</a><br>
+				<a class="js-panto" href="#" data-to="2117,831">地標：水脈盡頭瀑布<br>
+				<a class="js-panto" href="#" data-to="1331,912">地標：集礦場</a> <br>
+				<a class="js-panto" href="#" data-to="3746,714">地標：隆亞瞭望點</a><br>
+				<a class="js-panto" href="#" data-to="3974,625">地標：塔烏殖民地 瞭望塔</a><br>
+				<a class="js-panto" href="#" data-to="3984,570">地標：塔烏殖民地 鐵巨神</a><br>
+				<a class="js-panto" href="#" data-to="3980,678">地標：塔烏殖民地 入口</a><br>
+				<a class="js-panto" href="#" data-to="5293,1450">地標：追風崖道</a><br>
+				<a class="js-panto" href="#" data-to="3141,2270">地標：貝爾扎山嶺</a><br>
+				<a class="js-panto" href="#" data-to="805,1790">地標：芙蕾雅爾運輸通道</a><br>
+				<a class="js-panto" href="#" data-to="1840,780">地標：麥姆之門</a><br>
+				<a class="js-panto" href="#" data-to="1150,924">地標：切石場</a><br>
 			</p>
 			<h2>休息處</h2>
-			<p><a class="js-panto" href="#" data-to="15.6, 188.6">地標：導鳥石門</a><br>
-				<a class="js-panto" href="#" data-to="48.8, 166.5">地標：大蛇巨岩</a><br>
-				<a class="js-panto" href="#" data-to="36.3, 117.3">地標：因維迪亞坑道設施</a>
+			<p><a class="js-panto" href="#" data-to="3492,2431">休息處：崖上的鏽毀鐵巨神</a><br>
+				<a class="js-panto" href="#" data-to="2902,1180">休息處：瀑布中的鏽毀鐵巨神</a><br>
+				<a class="js-panto" href="#" data-to="3945,650">休息處：塔烏殖民地 野外食堂</a><br>
+				<a class="js-panto" href="#" data-to="5260,1650">休息處：恩達多山嶺休息地</a><br>
+				<a class="js-panto" href="#" data-to="4468,1731">休息處：四角塔休息地</a><br>
+				<a class="js-panto" href="#" data-to="4310,1040">休息處：閃耀水池休息地</a><br>
+				<a class="js-panto" href="#" data-to="3480,490">休息處：古道休息地</a><br>
+				<a class="js-panto" href="#" data-to="2523,733">休息處：巨神獸岩休息地</a><br>
+				<a class="js-panto" href="#" data-to="476,938">休息處：瑟弗遺跡休息地</a><br>
+				<a class="js-panto" href="#" data-to="914,1336">休息處：發電所指揮室</a><br>
 			</p>
+			<h2>地點</h2>
+			<p><a class="js-panto" href="#" data-to="785,1460">地點：第一電梯</a><br>
+				<a class="js-panto" href="#" data-to="790,1380">地點：第一採礦場</a><br>
+				<a class="js-panto" href="#" data-to="457,979">地點：瑟弗遺跡</a><br>
+				<a class="js-panto" href="#" data-to="700,450">地點：羅亞之泉</a><br>
+				<a class="js-panto" href="#" data-to="1194,630">地點：第二電梯</a><br>
+				<a class="js-panto" href="#" data-to="1057,700">地點：第二採礦場</a><br>
+				<a class="js-panto" href="#" data-to="1000,790">地點：採石岩道</a><br>
+				<a class="js-panto" href="#" data-to="1137,860">地點：第三電梯</a><br>
+				<a class="js-panto" href="#" data-to="1166,860">地點：第三採礦場</a><br>
+				<a class="js-panto" href="#" data-to="1360,890">地點：岩窟水脈</a><br>
+				<a class="js-panto" href="#" data-to="1374,975">地點：岩窟瀑布</a><br>
+				<a class="js-panto" href="#" data-to="1426,747">地點：卡庫利可洞窟</a><br>
+				<a class="js-panto" href="#" data-to="2361,698">地點：拉姆達殖民地 鐵巨神</a><br>
+				<a class="js-panto" href="#" data-to="2455,492">地點：瀑布下的戰場遺址</a><br>
+				<a class="js-panto" href="#" data-to="2560,530">地點：第三瀑布</a><br>
+				<a class="js-panto" href="#" data-to="2203,364">地點：莫蘭大橋</a><br>
+				<a class="js-panto" href="#" data-to="2505,262">地點：琵勒斷崖洞窟</a><br>
+				<a class="js-panto" href="#" data-to="2501,1155">地點：第二瀑布</a><br>
+				<a class="js-panto" href="#" data-to="2625,688">地點：花水母聖地</a><br>
+				<a class="js-panto" href="#" data-to="2724,858">地點：巨神獸岩</a><br>
+				<a class="js-panto" href="#" data-to="2575,770">地點：巨神獸岩尖角</a><br>
+				<a class="js-panto" href="#" data-to="3056,1096">地點：第一瀑布</a><br>
+				<a class="js-panto" href="#" data-to="2554,1443">地點：孔提的機關遺跡</a><br>
+				<a class="js-panto" href="#" data-to="3088,676">地點：孔提的眺望</a><br>
+				<a class="js-panto" href="#" data-to="3650,700">地點：隆亞之泉</a><br>
+				<a class="js-panto" href="#" data-to="3741,882">地點：可可凱之泉</a><br>
+				<a class="js-panto" href="#" data-to="3993,651">地點：塔烏殖民地</a><br>
+				<a class="js-panto" href="#" data-to="4025,680">地點：塔烏殖民地 碩果沃田</a><br>
+				<a class="js-panto" href="#" data-to="4000,513">地點：塔烏殖民地 鐵巨神頭部</a><br>
+				<a class="js-panto" href="#" data-to="3900,625">地點：莫爾克納縱斷升降機</a><br>
+				<a class="js-panto" href="#" data-to="3844,1422">地點：大樹洞</a><br>
+				<a class="js-panto" href="#" data-to="4290,856">地點：黃色森林</a><br>
+				<a class="js-panto" href="#" data-to="4534,980">地點：火雞人要塞</a><br>
+				<a class="js-panto" href="#" data-to="4318,993">地點：猩猩獸之樹</a><br>
+			</p>
+
 			<p>&nbsp;</p>
 		</div>
 		<div class="leaflet-sidebar-pane" id="settings">
@@ -62,21 +105,21 @@
 </div>
 <div id="map"></div>
 <script>
-window.addEventListener("load", function () {	
-//window.addEventListener("DOMContentLoaded", function () {
+//window.addEventListener("load", function () {	
+window.addEventListener("DOMContentLoaded", function () {
 	//設定地圖
 	const map = L.map('map', {
 		maxZoom: 0,
 		minZoom: -4,
 		zoomControl: false,
 		crs: L.CRS.Simple
-	}).setView([3200, 2000], -3);
+	}).setView([1300, 2700], -4);
 	const h = 2600;
 	const w = 5500;
 	const southWest = [0, w];
 	const northEast = [h, 0];
 	const imageBounds = new L.LatLngBounds(southWest, northEast);
-	map.setMaxBounds(new L.LatLngBounds([-500, -500], [h+500, w+500]));
+	map.setMaxBounds(new L.LatLngBounds([-2000, -2000], [h+2000, w+2000]));
 
 	const imageUrl0 = L.imageOverlay('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJBjaftG4OKxcmw7a_lNEKQFQBZLSBcg8AAqlycnPTXYDZeY5emrYmxtCvsi4NK5wLSJ5aCvbyTBkZetV9lHYNh-t7eLZY_jDNk8jS1ZQn4NPAK6_Tkx9-R0QnxzKYUImu8u9mCLT-yr41VRRnyqdbE3oH9e5A-Nm9bYhxmUX41UGsa0fwg7HfYWW0hg/s0/PentelasRegionFull.webp', imageBounds);
 	const baseMaps = {};
@@ -84,7 +127,7 @@ window.addEventListener("load", function () {
 //	const buy01 = L.imageOverlay('https://img.game8.co/3558595/72a5c4522450f4823d7e3effd5e6b25b.png/original',imageBounds);
 
 	// 定義自訂icon	
-	var landmarker = L.icon({
+	var LandMarker = L.icon({
 		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEzQcxQ_KDecqdH7wfpoDUKtvIsC2khgc4DOsiJ_emkbrM9F2XfwVSjqNbBLrg4NrkyfhVd6_RbkxHfIiqA9CjRpnoL24VesV_DY5J4CkY64kdMzejt_9655G-laWW1ZDT5BlxnJxNYAGGPdLh28wqDTUEh_2ZwqjgP56tQcAglTX0tibqbkaiLOMxfA/s1600/1.png',
 		shadowUrl: '',
 		iconSize: [35, 35], // size of the icon
@@ -100,7 +143,7 @@ window.addEventListener("load", function () {
 		popupAnchor: [0, -15] // point from which the popup should open relative to the iconAnchor
 	});
 
-	var restpoint = L.icon({
+	var RestPoint = L.icon({
 		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9mj71ELe54la8TtMQszcs4O4OmsOxM1_invvEPrIvWj18TgIfrO45X0Y9paxf7EKfGjw6H7GvoCtkW2snONM5TgXMu9OORAAXh_kk0CKNTGme7ruJOcY3u6LxVXn7NM7CL1uz0nrhOdw37IMDfkP2QK6z5ZRaG0o4b5UEWXLg3FAM6bhKwlXe7ljkFA/s1600/3.png',
 		shadowUrl: '',
 		iconSize: [35, 35], // size of the icon
@@ -115,26 +158,96 @@ window.addEventListener("load", function () {
 		iconAnchor: [12, 22], // point of the icon which will correspond to marker's location
 		popupAnchor: [6, -18] // point from which the popup should open relative to the iconAnchor
 	});
+	var Area = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSFHelYQm5VPD2b86vc5GlvXZdOpAm2_r8E3Z1oAsKfbO06ELXaFm6tC1LL6q6OJ26YUpWOTKI3R2GWVQt-c2bDjKwTNiBnWjdzrNcHMzZdk3DbYM0aWrQhQs8xVt33BeLDVhYAC-k7dwpL5WKZh1MRLmYwI0kWfdfluTiJfTO3rZiehBaK_malOQ3Sg/s1600/4.png',
+		shadowUrl: '',
+		iconSize: [35, 35], // size of the icon
+		iconAnchor: [12, 22], // point of the icon which will correspond to marker's location
+		popupAnchor: [6, -18] // point from which the popup should open relative to the iconAnchor
+	});
 
 	//初始化陣列資料markers
     var markers = [
-		{type:"landmarker",coords:{x: 99999, y: 99999},name:"地標0",opa:"0",chk:"0"}, //上線後錯的資料不刪除，資料才不會亂掉(設為透明且座標超出地圖範圍)
-		{type:"SecretArea",coords:{x: 3150, y: 920},name: "<b>孔提的泉源1</b><p><img class='Popupimg' src='https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg' width='100%'/></p></p>解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},
-		{type:"landmarker",coords:{x: 36.3, y: 117.3},name: "地標3",opa:"1",chk:"0"},
-		{type:"landmarker",coords:{x: 117.3, y: 36.3},name: "地標4",opa:"1",chk:"0"},
-		{type:"landmarker",coords:{x: 160.3, y: 80.3},name: "地標5",opa:"1",chk:"0"},
-		{type:"SecretArea",coords:{x: 160.3, y: 180},name: "地標611",opa:"1",chk:"0"},
-		{type:"restpoint",coords:{x: 160.3, y: 200},name: "休息處1",opa:"1",chk:"0"},
-		{type:"restpoint",coords:{x: 2160.3, y: 2200},name: "休息處2",opa:"1",chk:"0"},
-		{type:"restpoint",coords:{x: 2660.3, y: 2800},name: "休息處3",opa:"1",chk:"0"},
-		{type:"landmarker",coords:{x: 3438, y: 343},name: "<p><b>地標：艾克特地下空洞</b></p>解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},
-
+		{type:"LandMarker",coords:{x: 99999, y: 99999},name:"地標0",opa:"0",chk:"0"}, //上線後錯的資料不刪除(設定座標無限大且opa0)，保持資料數量與順序，才不會亂掉
+		{type:"SecretArea",coords:{x: 3150, y: 920},name: "<h1>秘境：孔提的泉源</h1>",opa:"1",chk:"0"},
+		{type:"SecretArea",coords:{x: 2050, y: 607},name: "<h1>秘境：清流隱密河口</h1><p>(在低處的水面)</p>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 2117, y: 831},name: "<h1>地標：水脈盡頭瀑布</h1><p>(在低處的水面)</p>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 1331, y: 912},name: "<h1>地標：集礦場</h1>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 3746, y: 714},name: "<h1>地標：隆亞瞭望點</h1>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 3974, y: 625},name: "<h1>地標：塔烏殖民地 瞭望塔</h1><p>由野外食堂東邊的大樹根上去</p>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 3984, y: 570},name: "<h1>地標：塔烏殖民地 鐵巨神</h1>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 3980, y: 678},name: "<h1>地標：塔烏殖民地 入口</h1>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 5293, y: 1450},name: "<h1>地標：追風崖道</h1>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 3141, y: 2270},name: "<h1>地標：貝爾扎山嶺</h1>",opa:"1",chk:"0"},
+		{type:"LandMarker",coords:{x: 805, y: 1790},name: "<h1>地標：芙蕾雅爾運輸通道</h1>",opa:"1",chk:"0"},		
+		{type:"LandMarker",coords:{x: 1840, y: 780},name: "<h1>地標：麥姆之門</h1>",opa:"1",chk:"0"},				
+		{type:"LandMarker",coords:{x: 1150, y: 924},name: "<h1>地標：切石場</h1>",opa:"1",chk:"0"},							
+		{type:"RestPoint",coords:{x: 3492, y: 2431},name: "<h1>休息處：崖上的鏽毀鐵巨神</h1>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 2902, y: 1180},name: "<h1>休息處：瀑布中的鏽毀鐵巨神</h1>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 3945, y: 650},name: "<h1>休息處：塔烏殖民地 野外食堂</h1>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 5260, y: 1625},name: "<h1>休息處：恩達多山嶺休息地</h1>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 4468, y: 1731},name: "<h1>休息處：四角塔休息地</h1>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 4310, y: 1040},name: "<h1>休息處：閃耀水池休息地</h1><p>(在低處)</p>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 3480, y: 490},name: "<h1>休息處：古道休息地</h1>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 2523, y: 733},name: "<h1>休息處：巨神獸岩休息地</h1><p>(在高處)</p>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 476, y: 938},name: "<h1>休息處：瑟弗遺跡休息地</h1>",opa:"1",chk:"0"},
+		{type:"RestPoint",coords:{x: 914, y: 1336},name: "<h1>休息處：發電所指揮室</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 785, y: 1460},name: "<h1>地點：第一電梯</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 790, y: 1380},name: "<h1>地點：第一採礦場</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 457, y: 979},name: "<h1>地點：瑟弗遺跡</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 700, y: 450},name: "<h1>地點：羅亞之泉</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1194, y: 630},name: "<h1>地點：第二電梯</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1057, y: 700},name: "<h1>地點：第二採礦場</h1><p>由「地點：第二電梯」下去，且需要接受「XXX」(待補充)才能前往</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1000, y: 790},name: "<h1>地點：採石岩道</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1137, y: 860},name: "<h1>地點：第三電梯</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1166, y: 860},name: "<h1>地點：第三採礦場</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1360, y: 890},name: "<h1>地點：岩窟水脈</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1374, y: 975},name: "<h1>地點：岩窟瀑布</h1><p>由「地標：麥姆之門」過去，要靠近一點才能發現地點</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 1426, y: 747},name: "<h1>地點：卡庫利可洞窟</h1><p>利用「地點：羅亞之泉」北邊的繩索過去(要學會場景技能)</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2361, y: 698},name: "<h1>地點：拉姆達殖民地 鐵巨神</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2455, y: 492},name: "<h1>地點：瀑布下的戰場遺址</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2560, y: 530},name: "<h1>地點：第三瀑布</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2203, y: 364},name: "<h1>地點：莫蘭大橋</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2505, y: 262},name: "<h1>地點：琵勒斷崖洞窟</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2501, y: 1155},name: "<h1>地點：第二瀑布</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2625, y: 688},name: "<h1>地點：花水母聖地</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2724, y: 858},name: "<h1>地點：巨神獸岩</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2575, y: 770},name: "<h1>地點：巨神獸岩尖角</h1><p>走到尖端才能發現地點</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3056, y: 1096},name: "<h1>地點：第一瀑布</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2554, y: 1443},name: "<h1>地點：孔提的機關遺跡</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3088, y: 676},name: "<h1>地點：孔提的眺望</h1><p>由旁邊的攀爬點上來，走到尖端才能發現地點</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3650, y: 700},name: "<h1>地點：隆亞之泉</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3741, y: 882},name: "<h1>地點：可可凱之泉</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3993, y: 651},name: "<h1>地點：塔烏殖民地</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4025, y: 680},name: "<h1>地點：塔烏殖民地 碩果沃田</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4000, y: 513},name: "<h1>地點：塔烏殖民地 鐵巨神頭部</h1><p>由野外食堂東邊的大樹根上去</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3900, y: 625},name: "<h1>地點：莫爾克納縱斷升降機</h1><p>升降機需從莫爾克納大森林．下層啟動，之後可往返下層與上層</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3844, y: 1422},name: "<h1>地點：大樹洞</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4290, y: 856},name: "<h1>地點：黃色森林</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4534, y: 980},name: "<h1>地點：火雞人要塞</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4318, y: 993},name: "<h1>地點：猩猩獸之樹</h1><p>進入「不動的岡紮雷斯」睡覺處才能發現地點(不要攻擊牠就不會醒)</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4518, y: 1711},name: "<h1>地點：太古四角塔</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4849, y: 1774},name: "<h1>地點：魯諾古代遺跡</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 5070, y: 1783},name: "<h1>地點：恩達多山嶺</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 5053, y: 1907},name: "<h1>地點：巴爾克魯斯大門</h1><p>第五章大門才會開啟</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4744, y: 1902},name: "<h1>地點：山道戰線 科維斯陣營</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 4268, y: 1908},name: "<h1>地點：山道戰線 安格努斯陣營</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3389, y: 1904},name: "<h1>地點：羅斯卡洞窟</h1><p>接受「支線任務：優妮」時才能進入</p>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 3088, y: 1676},name: "<h1>地點：羅斯卡台地</h1>",opa:"1",chk:"0"},		
+		{type:"Area",coords:{x: 2971, y: 1576},name: "<h1>地點：5號殖民地 鐵巨神</h1>",opa:"1",chk:"0"},		
+		
+		
+		
+		
+		
+//		{type:"landmarker",coords:{x: 3438, y: 343},name: "<p><h1>地標：艾克特地下空洞</h1></p>解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},		
+//		{type:"SecretArea",coords:{x: 3150, y: 2920},name: "<h1>孔提的泉源1</h1><p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk66jWBRIC68PCogQtOfEoAFjIqaMgLMdhqa5RS-cbHWaSkbjcwhzc0zAwlEhuafkGnKqfuVDK2GKT60VLPZ2Ibaf23sxuJF0venLRhj1vcQQciJidkeVa29dQSGJ1RVFI1zc3XfChKu-nr4JnBDvSgmUt_6Jq8MKGDDr9n0h9tJ7Xu5HsbYPcMYBV/s0/Screenshot2022-08-09-140711.png' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk66jWBRIC68PCogQtOfEoAFjIqaMgLMdhqa5RS-cbHWaSkbjcwhzc0zAwlEhuafkGnKqfuVDK2GKT60VLPZ2Ibaf23sxuJF0venLRhj1vcQQciJidkeVa29dQSGJ1RVFI1zc3XfChKu-nr4JnBDvSgmUt_6Jq8MKGDDr9n0h9tJ7Xu5HsbYPcMYBV/s640/Screenshot2022-08-09-140711.png' width='100%'/></a></p>解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},		
 	];
 	//設定部分出入口點位
-	L.marker([1837, 807],{opacity:0}).bindTooltip('<b>佛尼斯地區</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
-	L.marker([2270, 3031],{opacity:0}).bindTooltip('<b>佛尼斯地區</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
-	L.marker([1346, 5230],{opacity:0}).bindTooltip('<b>科維斯主堡區域</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
-	L.marker([1564, 4226],{opacity:0}).bindTooltip('<b>莫爾克納大森林下層</b>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
+//	L.marker([1837, 807],{opacity:0}).bindTooltip('<h1>佛尼斯地區</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
+//	L.marker([2270, 3031],{opacity:0}).bindTooltip('<h1>佛尼斯地區</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
+//	L.marker([1346, 5230],{opacity:0}).bindTooltip('<h1>科維斯主堡區域</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
+//	L.marker([1564, 4226],{opacity:0}).bindTooltip('<h1>莫爾克納大森林下層</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
 
 	//如果Local Storage有資料
 	if (localStorage.XB3map31 !== undefined) {
@@ -169,7 +282,9 @@ window.addEventListener("load", function () {
 		if (localStorage.XB3map31 !== undefined) {
 			var markertemp = [];
 			var resttemp = [];
+			var areatemp = [];
 			for (var i = 0; i < markers.length; i++) {
+				var id = markers[i].mark_id;
 				var x = markers[i].coords.x;
 				var y = markers[i].coords.y;
 				var name = markers[i].name;
@@ -177,39 +292,53 @@ window.addEventListener("load", function () {
 				var chk = markers[i].chk;
 				var type = markers[i].type;
 				switch(type){
-    				case "landmarker":
-						type = landmarker;
+    				case "LandMarker":
+						type = LandMarker;
 						break;
 					case "SecretArea":
 						type = SecretArea;
 						break;
-					case "restpoint":
-						type = restpoint;
-						break;   
+					case "RestPoint":
+						type = RestPoint;
+						break;
+					case "Area":
+						type = Area;
+						break;  
 				}
 				if (chk === "1") {
 					var marker = L.marker([y, x],{
 						icon:type,
 						opacity: opa
-					}).bindPopup(name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
+					}).bindPopup(name + "<p style='text-align:right'><a href='javascript:;' class='undo'>取消標記</a></p>");
+					//.js-panto增加class .checked
+					const btnPanto = document.querySelectorAll('.js-panto');
+					for (var j = 0; j < btnPanto.length; j++) {
+						var Pantox=btnPanto[j].dataset.to.split(',')[0];
+						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
+						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
+					 {btnPanto[j].classList.add('checked');}
+					}
 				} else if (chk === "0") {
 					var marker = L.marker([y, x],{
 						icon:type,
 						opacity: opa
-					}).bindPopup(name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
+					}).bindPopup(name + "<p style='text-align:right'><a href='javascript:;' class='delete'>標記</a></p>");
 				}
 				marker.on("popupopen", onPopupOpen);
 				var type = markers[i].type;
 				switch(type){
-    				case "landmarker":
+    				case "LandMarker":
 						markertemp.push(marker);
 						break;
 					case "SecretArea":
 						markertemp.push(marker);
 						break;
-					case "restpoint":
+					case "RestPoint":
 						resttemp.push(marker);
-						break;   
+						break;
+					case "Area":
+						areatemp.push(marker);
+						break;
 				}				
 			}				
 		}
@@ -218,15 +347,18 @@ window.addEventListener("load", function () {
 			//map.removeLayer(groupRest);
 			groupMarker = L.layerGroup(markertemp).addTo(map);
 			groupRest = L.layerGroup(resttemp).addTo(map);
+			groupArea = L.layerGroup(areatemp).addTo(map);
 			map.addLayer(groupRest);
 			map.addLayer(groupMarker);
+			map.addLayer(groupArea);
 
 	}
 
 	//設定地圖Layer與layerControl
 	var overlayMaps = {
 		"地標或秘境": groupMarker,
-		"休息處": groupRest,		
+		"休息處": groupRest,
+		"地點" : groupArea,
 	};
 	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
 	imageUrl0.addTo(map);
@@ -247,16 +379,27 @@ window.addEventListener("load", function () {
 					&& clickedMarkerCoords.lng == markers[i].coords.x)
 				 {
 					//將此(this)marker設定為透明度0.4，並修改Popup內容
-					_this.setOpacity(0.4).closePopup();
-					_this.setPopupContent(markers[i].name + "<p><a href='javascript:;' class='undo'>取消標記</a></p>");
+					_this.setOpacity(0.3).closePopup();
+					_this.setPopupContent(markers[i].name + "<p style='text-align:right'><a href='javascript:;' class='undo'>取消標記</a></p>");
 					//修改為localStorage資料但opa:0.4，chk:1
 					let newmarker = {
-						"opa": "0.4",
+						"opa": "0.3",
 						"chk": "1",
 					};
 					storageMarkers.splice(i, 1,newmarker);
 					localStorage.XB3map31 = JSON.stringify(storageMarkers);
-				}
+					
+					//.js-panto增加class .checked
+					const btnPanto = document.querySelectorAll('.js-panto');
+					for (var j = 0; j < btnPanto.length; j++) {
+						var Pantox=btnPanto[j].dataset.to.split(',')[0];
+						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
+						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
+					 {btnPanto[j].classList.add('checked');}
+					}
+					
+					 
+				 }
 			}
 		});
 		$('.undo').click(function () {
@@ -267,7 +410,7 @@ window.addEventListener("load", function () {
 				 {
 					//將此(this)marker設定為透明度1，並修改Popup內容
 					_this.setOpacity(1).closePopup();
-					_this.setPopupContent(markers[i].name + "<p><a href='javascript:;' class='delete'>標記</a></p>");
+					_this.setPopupContent(markers[i].name + "<p style='text-align:right'><a href='javascript:;' class='delete'>標記</a></p>");
 
 					//修改為localStorage資料但opa:1，chk:0
 					let newmarker = {
@@ -276,6 +419,21 @@ window.addEventListener("load", function () {
 					};
 					storageMarkers.splice(i, 1,newmarker);
 					localStorage.XB3map31 = JSON.stringify(storageMarkers);
+					 
+					//.js-panto移除class .checked
+					const btnPanto = document.querySelectorAll('.js-panto');
+					for (var j = 0; j < btnPanto.length; j++) {
+						var Pantox=btnPanto[j].dataset.to.split(',')[0];
+						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
+						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
+					 {btnPanto[j].classList.remove('checked');}
+					}
+
+					 
+					 
+					 
+					 
+					 
 				}
 			}
 		});
@@ -289,13 +447,16 @@ window.addEventListener("load", function () {
 		  let x = e.target.dataset.to.split(',')[1];
 		  let y = e.target.dataset.to.split(',')[0];
  //       let latLng = e.target.dataset.to.split(',');
- //       let name = e.target.textContent;
-		 map.flyTo([x,y],0);
-/*        const popup = L.popup();
-        popup
-          .setLatLng(latLng)
-          .setContent(`${name}`)
-          .openOn(map);*/
+          let name = e.target.textContent;
+		  x = Number(x); //轉數字
+		  map.flyTo([x,y],0);
+
+        const tooltip = L.tooltip({
+		className:"my-label",
+		direction:"center",
+		offset:[0,25],
+    	});
+        tooltip.setLatLng([x,y]).setContent(`${name}`).openOn(map);
       })
     })
 	
@@ -305,11 +466,11 @@ window.addEventListener("load", function () {
 	// 顯示座標	
 	L.Control.MousePosition = L.Control.extend({
   		options: {
-			position: 'bottomleft',
+			position: 'bottomright', //bottomleft
 			separator: ' : ',
 			emptyString: '0:0',
 			lngFirst: true,
-			numDigits: 5,
+			numDigits: 0,
 			lngFormatter: undefined,
 			latFormatter: undefined,
 			prefix: ""
@@ -354,24 +515,23 @@ window.addEventListener("load", function () {
 		
 
 // 顯示座標的圖層
-	var options = {
-		position: 'bottomright',
-		numDigits: 3
-	}
-	L.control.mousePosition(options).addTo(map);
+	L.control.mousePosition().addTo(map);
 	
-	
+//重設點位	
 document.getElementById("demo").addEventListener("click", myFunction);
 function myFunction() {
 	let text = "是否要重設全部點位?\n注意無法回復";
 	if (confirm(text) == true) {
 		//移除localStorage資料
 		localStorage.removeItem("XB3map31");
+		
 		//移除map與Control的Layer，有幾個就需要移除幾個
 		map.removeLayer(groupMarker);
 		map.removeLayer(groupRest);
+		map.removeLayer(groupArea);
 		layerControl.removeLayer(groupMarker);
 		layerControl.removeLayer(groupRest);
+		layerControl.removeLayer(groupArea);
 		//把markers內的所有opa設為1，chk設為0
 		var markertemp =[];
 		for (var i = 0; i < markers.length; i++) {
@@ -387,6 +547,7 @@ function myFunction() {
 		initUserLayerGroup(); 
 		layerControl.addOverlay(groupMarker, '地標或秘境');
 		layerControl.addOverlay(groupRest, '休息處');
+		layerControl.addOverlay(groupArea, '地點');
 	}
 }	
 	
@@ -412,6 +573,7 @@ function myFunction() {
    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
    crossorigin=""></script>
 <link href='https://sniperex168.github.io/myleaflet/leaflet-sidebar.css' rel='stylesheet' />
+<!-- <link href='E:\桌面\blogger\leaflet-sidebar.css' rel='stylesheet' />--> 
 <script src='https://sniperex168.github.io/myleaflet/leaflet-sidebar.js' crossorigin=''></script> 
 <!-- fullscreen --> 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
@@ -419,7 +581,7 @@ function myFunction() {
 <style>
 #map {
 	height:750px;
-	width:750px;
+	width:100%;
 	background: #292a2e;
 	font-size: 14px;
 	margin: 0 auto;
@@ -429,15 +591,21 @@ function myFunction() {
 #map {	height:360px;width:100%;font-size: 12px;}
 }
 .my-label {
-    font-size:16px;
-	font-weight: bold;
-	background: none;
+    font-size:14px;
+	background: #B87B7Caa;
 	color:#FFFFFF;
 	border:none;
 	box-shadow: none;
 }
+.checked{
+    text-decoration: line-through;
+	color: gray!important;
+}
 .leaflet-popup-content{
-	min-width: 400px;
+	min-width: 360px;max-width: 400px;
+}
+@media screen and (max-width: 600px) {
+.leaflet-popup-content {		min-width: 280px;max-width: 280px}
 }
 .leaflet-container .leaflet-control-mouseposition {
   background-color: rgba(255, 255, 255, 0.1);
@@ -445,8 +613,7 @@ function myFunction() {
   padding: 0 5px;
   margin:0;
   color: #FFF;
-  font: 5px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 5px;
+
 }
 </style>
-</body>
-</html>
