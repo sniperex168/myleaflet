@@ -1,4 +1,4 @@
-//初始化陣列資料markers
+//初始化陣列資料markers111
 var markers = [ //markid應為獨特，否則會亂掉，建議英文+數字來表示
 	//遺物
 	{type: "RELIC",markid: "RELIC001",coords: {x: 1408,y: 6651},opa: "1",chk: "0",
