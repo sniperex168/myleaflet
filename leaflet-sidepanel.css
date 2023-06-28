@@ -59,7 +59,7 @@
   height: 100%;
   width: 100%;
   color: #191a1d;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 .sidepanel.sidepanel-dark .sidepanel-content-wrapper {
