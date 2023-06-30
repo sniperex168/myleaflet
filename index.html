@@ -39,18 +39,47 @@
 			</nav>
 			<div class="sidepanel-content-wrapper">
 				<div class="sidepanel-content">
-					<p style="text-align: center;font-size: 20px;font-weight: bold;">鬼線：東京(Ghostwire: Tokyo)</p>
-					<p style="text-align: center;font-size: 16px;cursor: pointer;font-weight: bold;"><a id="HideAll">全部隱藏</a>　　<a id="ShowAll">全部顯示</a></p></p>		
-					<p><div id="customcontroller"> </div></p>
-					<p>請先勾選分類才會顯示列表，點擊列表名稱可移動到該位置</p>
-					<input type="text" id="myInput" placeholder="輸入名稱尋找" title="輸入名稱尋找">
+					<div>
+						<p id="toptitle" style="text-align: center;font-size: 20px;font-weight: bold;">鬼線：東京(Ghostwire: Tokyo)</p>
+						<p style="text-align: center;font-size: 16px;cursor: pointer;font-weight: bold;"><a id="HideAll">全部隱藏</a>　　<a id="ShowAll">全部顯示</a></p></p>		
+						<p><div id="customcontroller"> </div></p>
+						<p>請先勾選分類才會顯示列表，點擊列表名稱可移動到該位置</p>
+						<input type="text" id="myInput" placeholder="輸入名稱尋找" title="輸入名稱尋找">
+					</div>
 					<div class="sidepanel-tab-content" data-tab-content="tab-1">
 					<div class="category" id="groupSHRINE">
 						<h2>神社 <span class="sum">&nbsp;</span></h2>
 						<p>
-							<a class="js-panto" href="#" data-name="RELIC089">姑獲鳥根付</a><br>
-							<a class="js-panto" href="#" data-name="RELIC043">垢嘗根付</a><br>
-							<a class="js-panto" href="#" data-name="RELIC092">鵺根付</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE021">秋澤神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE022">並田神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE028">代山神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE024">谷森神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE025">久櫻神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE023">森手神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE015">廣川神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE016">松見神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE017">歌川商店區鳥居</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE008">八卷神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE004">霧之丘神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE007">比谷神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE002">波原神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE003">初池神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE006">豐井神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE005">千島神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE009">野戶神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE010">平宿大樓屋頂上的鳥居</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE011">白月神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE012">才濱大樓屋頂上的鳥居</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE013">桃金大樓屋頂上的鳥居</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE014">龍居神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE019">河童之池的鳥居</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE018">隱天神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE020">三久保神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE026">坂野神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE027">下草神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE030">上尾神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE029">亞木津神社</a><br>
+							<a class="js-panto" href="#" data-name="SHRINE001">河戶大樓屋頂上的鳥居</a><br>
 						</p>
 					</div>
 					<div class="category" id="groupKKSNOTE">
@@ -317,8 +346,9 @@
 						<p><strong style="color: #FF0000">將本地圖的所有點位的收集狀況全部重設(注意無法恢復)</strong></p>
 						<p>如發現位置錯誤請留言告知</p>
 						<button id="clearall">重設全部標記</button>
-						<p>如有問題請留言告知，謝謝</p>
 					</div>
+				<p>如發現問題請留言回報，感謝</p>
+				<p><a href="#toptitle">回頂端</a></p>
 				</div>
 			</div>
 		</div>
@@ -571,7 +601,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		groupYOKAI = L.layerGroup(YOKAItemp);
 		groupGHOSTPHOTOS = L.layerGroup(GHOSTPHOTOStemp);
 		groupHYAKKIYAKO = L.layerGroup(HYAKKIYAKOtemp);
-		groupPRAYERBEADS = L.layerGroup(PRAYERBEADStemp).addTo(map);
+		groupPRAYERBEADS = L.layerGroup(PRAYERBEADStemp);
 		
 		//設定地圖Layer與layerControl
 		Surface.addTo(map);
