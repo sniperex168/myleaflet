@@ -461,7 +461,7 @@ var markers = [ //markid應為獨特，否則會亂掉，建議英文+數字來�
 	{type: "SHRINE",markid: "SHRINE030",coords: {x: 5014,y: 1958},opa: "1",chk: "0",
 	name: "<h1>神社：上尾神社</h1>",
 	},
-	{type: "SHRINE",markid: "SHRINE030",coords: {x: 4428,y: 2271},opa: "1",chk: "0",
+	{type: "SHRINE",markid: "SHRINE031",coords: {x: 4428,y: 2271},opa: "1",chk: "0",
 	name: "<h1>神社：御嶽不動產大樓屋頂的鳥居(未確定)</h1>第四章?黑塔時於主線解鎖<p>此鳥居解鎖後沒有在遊戲中地圖上顯示</p>",
 	},
 	//JIZO地藏像
@@ -1383,7 +1383,9 @@ var markers = [ //markid應為獨特，否則會亂掉，建議英文+數字來�
 	{type: "PRAYERBEADS",markid: "PRAYERBEADS29",coords: {x: 4505,y: 1518},opa: "1",chk: "0",
 	 name: "<h1>護體念珠</h1>幫助「根付收藏家貓又」完成所有任務後的額外獎勵",
 	},
-	
+	{type: "PRAYERBEADS",markid: "PRAYERBEADS30",coords: {x: 3482,y: 2441},opa: "1",chk: "0",
+	 name: "<h1>風念珠</h1>主線獲得",
+	},
 	
 	
 	
