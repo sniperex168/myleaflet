@@ -1,301 +1,487 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Interactive Map</title>
+<title>鬼線：東京(Ghostwire: Tokyo)互動式地圖</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <!-- jQuery --> 
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script> 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
-<p>如還沒看到地圖，請等候一下讀取圖片</p>
-<p>使用相同設備並使用相同瀏覽器，可以記錄各點位的標記狀態</p>
-<p>建議以全螢幕觀看，或用電腦觀看體驗較佳</p>
-<div id="sidebar111" class="leaflet-sidebar collapsed"> 
-	<!-- Nav tabs -->
-	<div class="leaflet-sidebar-tabs">
-		<ul role="tablist" class="leaflet-tablist">
-			<!-- top aligned tabs -->
-			<li><a href="#tablehome" role="tab"><i class="fa fa-bars"></i></a></li>
-			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+<p style="font-size: x-large; font-weight: bold;">鬼線：東京(Ghostwire: Tokyo)<br>
+互動式地圖</p>
+<div id="listout">
+	<div id="list" class="list">
+		<ul>
+			<li><a href="#01">互動式地圖</a></li>
+			<li><a href="#02">說明</a>(首次使用建議觀看)</li>
 		</ul>
-		<!--bottom aligned tabs
-			<ul role="tablist" class="leaflet-tablist">
-			 
-			<li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
-		</ul>
---> 
 	</div>
-	<!-- Tab panes -->
-	<div class="leaflet-sidebar-content">
-		<div class="leaflet-sidebar-pane" id="tablehome">
-			<h1 class="leaflet-sidebar-header">點位查詢
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-			<h2>地標或秘境</h2>
-			<p>
-				<a class="js-panto" href="#" data-to="3150,920">秘境：孔提的泉源</a><br>				
-				<a class="js-panto" href="#" data-to="2050,607">秘境：清流隱密河口</a><br>
-				<a class="js-panto" href="#" data-to="2117,831">地標：水脈盡頭瀑布<br>
-				<a class="js-panto" href="#" data-to="1331,912">地標：集礦場</a> <br>
-				<a class="js-panto" href="#" data-to="3746,714">地標：隆亞瞭望點</a><br>
-				<a class="js-panto" href="#" data-to="3974,625">地標：塔烏殖民地 瞭望塔</a><br>
-				<a class="js-panto" href="#" data-to="3984,570">地標：塔烏殖民地 鐵巨神</a><br>
-				<a class="js-panto" href="#" data-to="3980,678">地標：塔烏殖民地 入口</a><br>
-				<a class="js-panto" href="#" data-to="5293,1450">地標：追風崖道</a><br>
-				<a class="js-panto" href="#" data-to="3141,2270">地標：貝爾扎山嶺</a><br>
-				<a class="js-panto" href="#" data-to="805,1790">地標：芙蕾雅爾運輸通道</a><br>
-				<a class="js-panto" href="#" data-to="1840,780">地標：麥姆之門</a><br>
-				<a class="js-panto" href="#" data-to="1150,924">地標：切石場</a><br>
-			</p>
-			<h2>休息處</h2>
-			<p><a class="js-panto" href="#" data-to="3492,2431">休息處：崖上的鏽毀鐵巨神</a><br>
-				<a class="js-panto" href="#" data-to="2902,1180">休息處：瀑布中的鏽毀鐵巨神</a><br>
-				<a class="js-panto" href="#" data-to="3945,650">休息處：塔烏殖民地 野外食堂</a><br>
-				<a class="js-panto" href="#" data-to="5260,1625">休息處：恩達多山嶺休息地</a><br>
-				<a class="js-panto" href="#" data-to="4468,1731">休息處：四角塔休息地</a><br>
-				<a class="js-panto" href="#" data-to="4310,1040">休息處：閃耀水池休息地</a><br>
-				<a class="js-panto" href="#" data-to="3480,490">休息處：古道休息地</a><br>
-				<a class="js-panto" href="#" data-to="2523,733">休息處：巨神獸岩休息地</a><br>
-				<a class="js-panto" href="#" data-to="476,938">休息處：瑟弗遺跡休息地</a><br>
-				<a class="js-panto" href="#" data-to="914,1336">休息處：發電所指揮室</a><br>
-			</p>
-			<h2>地點</h2>
-			<p><a class="js-panto" href="#" data-to="785,1460">地點：第一電梯</a><br>
-				<a class="js-panto" href="#" data-to="790,1380">地點：第一採礦場</a><br>
-				<a class="js-panto" href="#" data-to="457,979">地點：瑟弗遺跡</a><br>
-				<a class="js-panto" href="#" data-to="700,450">地點：羅亞之泉</a><br>
-				<a class="js-panto" href="#" data-to="1194,630">地點：第二電梯</a><br>
-				<a class="js-panto" href="#" data-to="1057,700">地點：第二採礦場</a><br>
-				<a class="js-panto" href="#" data-to="1000,790">地點：採石岩道</a><br>
-				<a class="js-panto" href="#" data-to="1137,860">地點：第三電梯</a><br>
-				<a class="js-panto" href="#" data-to="1166,860">地點：第三採礦場</a><br>
-				<a class="js-panto" href="#" data-to="1360,890">地點：岩窟水脈</a><br>
-				<a class="js-panto" href="#" data-to="1374,975">地點：岩窟瀑布</a><br>
-				<a class="js-panto" href="#" data-to="1426,747">地點：卡庫利可洞窟</a><br>
-				<a class="js-panto" href="#" data-to="2361,698">地點：拉姆達殖民地 鐵巨神</a><br>
-				<a class="js-panto" href="#" data-to="2455,492">地點：瀑布下的戰場遺址</a><br>
-				<a class="js-panto" href="#" data-to="2560,530">地點：第三瀑布</a><br>
-				<a class="js-panto" href="#" data-to="2203,364">地點：莫蘭大橋</a><br>
-				<a class="js-panto" href="#" data-to="2505,262">地點：琵勒斷崖洞窟</a><br>
-				<a class="js-panto" href="#" data-to="2501,1155">地點：第二瀑布</a><br>
-				<a class="js-panto" href="#" data-to="2625,688">地點：花水母聖地</a><br>
-				<a class="js-panto" href="#" data-to="2724,858">地點：巨神獸岩</a><br>
-				<a class="js-panto" href="#" data-to="2575,770">地點：巨神獸岩尖角</a><br>
-				<a class="js-panto" href="#" data-to="3056,1096">地點：第一瀑布</a><br>
-				<a class="js-panto" href="#" data-to="2554,1443">地點：孔提的機關遺跡</a><br>
-				<a class="js-panto" href="#" data-to="3088,676">地點：孔提的眺望</a><br>
-				<a class="js-panto" href="#" data-to="3650,700">地點：隆亞之泉</a><br>
-				<a class="js-panto" href="#" data-to="3741,882">地點：可可凱之泉</a><br>
-				<a class="js-panto" href="#" data-to="3993,651">地點：塔烏殖民地</a><br>
-				<a class="js-panto" href="#" data-to="4025,680">地點：塔烏殖民地 碩果沃田</a><br>
-				<a class="js-panto" href="#" data-to="4000,513">地點：塔烏殖民地 鐵巨神頭部</a><br>
-				<a class="js-panto" href="#" data-to="3900,625">地點：莫爾克納縱斷升降機</a><br>
-				<a class="js-panto" href="#" data-to="3844,1422">地點：大樹洞</a><br>
-				<a class="js-panto" href="#" data-to="4290,856">地點：黃色森林</a><br>
-				<a class="js-panto" href="#" data-to="4534,980">地點：火雞人要塞</a><br>
-				<a class="js-panto" href="#" data-to="4318,993">地點：猩猩獸之樹</a><br>
-			</p>
-
-			<p>&nbsp;</p>
+</div>
+<!--more-->
+<p style="text-align: center;display:none"> <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7EdvWoEQkuFEI88M5ZJhqn7m3YGBj9w_rKa8ZaLpp8StEsJC8BRBMIPoeArXbrBptwPyNm5RBURAQHU5Nfne4Vz-KpLjCpZVu0SdvMsOVGdlGDIlR52a3qC86E11YDcnoE64w4j4Bb6n2F4e-FKb_Y5NXdQX1rVYYbh1zEozT3S7oQ0uOeHGpLTSOmVcJ/s640/Ghostwire%20Tokyo.jpg" target="_blank"> <img height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7EdvWoEQkuFEI88M5ZJhqn7m3YGBj9w_rKa8ZaLpp8StEsJC8BRBMIPoeArXbrBptwPyNm5RBURAQHU5Nfne4Vz-KpLjCpZVu0SdvMsOVGdlGDIlR52a3qC86E11YDcnoE64w4j4Bb6n2F4e-FKb_Y5NXdQX1rVYYbh1zEozT3S7oQ0uOeHGpLTSOmVcJ/s640/Ghostwire%20Tokyo.jpg" width="640" /></a></p>
+<p id="01" style="padding: 10px; border-bottom: 3px solid #9800a1; background-color: #2c2c2c; font-size: large; color: #FFF; font-weight: bold;">互動式地圖</p>
+<p>如還沒看到地圖，請等候一下讀取地圖</p>
+<p>使用相同設備並使用相同瀏覽器，可以記錄各點位的收集狀態(不支援跨設備)</p>
+<p>建議用電腦全螢幕(或手機全螢幕)觀看體驗較佳</p>
+<p>&nbsp;</p>
+<div id="map">
+	<div id="panelID" class="sidepanel" aria-label="side panel" aria-hidden="false">
+		<div class="sidepanel-inner-wrapper">
+			<nav class="sidepanel-tabs-wrapper" aria-label="sidepanel tab navigation">
+				<ul class="sidepanel-tabs">
+					<li class="sidepanel-tab"> <a href="#" class="sidebar-tab-link" role="tab" data-tab-link="tab-1"><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwF0wWPoJHsea4RhFY8dEqM2yLJstT11r448MdWZbLwtLTpWQ4FlfUAywx7uzXY6smTi2GVGKEMkflmzgEqFFGqMPCRrEWkIhOdCuf6P11kknioUJkucJjf-cYK-zSAqLVHRE82fIcde_pu7OUxEP7Jgt1ZkSbX9ikZ-zcSbacGBACwFmescbznrY397pY/s1600/SHRINE1.webp' class='myimg'></a> </li>
+					<li class="sidepanel-tab"> <a href="#" class="sidebar-tab-link" role="tab" data-tab-link="tab-X"><i class="fa fa-gear"></i></a> </li>
+				</ul>
+			</nav>
+			<div class="sidepanel-content-wrapper">
+				<div class="sidepanel-content">
+					<p style="text-align: center;font-size: 20px;font-weight: bold;">鬼線：東京(Ghostwire: Tokyo)</p>
+					<p style="text-align: center;font-size: 16px;cursor: pointer;font-weight: bold;"><a id="HideAll">全部隱藏</a>　　<a id="ShowAll">全部顯示</a></p></p>		
+					<p><div id="customcontroller"> </div></p>
+					<p>請先勾選分類才會顯示列表，點擊列表名稱可移動到該位置</p>
+					<input type="text" id="myInput" placeholder="輸入名稱尋找" title="輸入名稱尋找">
+					<div class="sidepanel-tab-content" data-tab-content="tab-1">
+					<div class="category" id="groupSHRINE">
+						<h2>神社 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="RELIC089">姑獲鳥根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC043">垢嘗根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC092">鵺根付</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupKKSNOTE">
+						<h2>KK的調查筆記 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="KKSNOTE015">下水道的孩子</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE017">跳舞的無頭學生</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE009">霧之丘失蹤事件</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE012">丸之內失蹤事件</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE006">覺醒的人工智慧</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE008">拉麵店大排長龍</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE014">巨大的晴天娃娃</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE018">乙太小偷</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE019">百鬼夜行</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE016">高利貸之王</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE021">渦輪學生</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE011">發掘樹海蕎麥麵店</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE007">黃牛票</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE013">天狗的地盤爭奪戰</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE003">熬夜的人</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE010">紅燈女子</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE020">紅布</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE002">深夜泳池</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE004">夜間噪音</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE005">恨的循環</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE001">神秘體操</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE022">怪物和蠢蛋</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE028">隱形貓神秘事件</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE025">飛布教</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE024">運動大道上的掮客</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE027">城市天狗奇案</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE023">貓又與便利商店</a><br>
+							<a class="js-panto" href="#" data-name="KKSNOTE026">河童與小黃瓜</a><br>
+						</p>
+					</div>	
+					<div class="category" id="groupRELIC">
+						<h2>遺物 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="RELIC055">達摩</a><br>
+							<a class="js-panto" href="#" data-name="RELIC057">獅子頭</a><br>
+							<a class="js-panto" href="#" data-name="RELIC062">喧嘩煙管</a><br>
+							<a class="js-panto" href="#" data-name="RELIC072">鬼瓦</a><br>
+							<a class="js-panto" href="#" data-name="RELIC048">木芥子</a><br>
+							<a class="js-panto" href="#" data-name="RELIC073">將棋吊飾</a><br>
+							<a class="js-panto" href="#" data-name="RELIC118">扇子</a><br>
+							<a class="js-panto" href="#" data-name="RELIC113">十露盤</a><br>
+							<a class="js-panto" href="#" data-name="RELIC042">鐵瓶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC044">玳瑁梳子</a><br>
+							<a class="js-panto" href="#" data-name="RELIC003">萬寶槌</a><br>
+							<a class="js-panto" href="#" data-name="RELIC074">寫樂的浮世繪</a><br>
+							<a class="js-panto" href="#" data-name="RELIC054">歌麿的浮世繪</a><br>
+							<a class="js-panto" href="#" data-name="RELIC103">北齋的浮世繪</a><br>
+							<a class="js-panto" href="#" data-name="RELIC105">幽靈畫</a><br>
+							<a class="js-panto" href="#" data-name="RELIC045">「令和」裱字畫</a><br>
+							<a class="js-panto" href="#" data-name="RELIC065">黃金茶碗</a><br>
+							<a class="js-panto" href="#" data-name="RELIC064">鯱鉾像</a><br>
+							<a class="js-panto" href="#" data-name="RELIC123">瓢簞</a><br>
+							<a class="js-panto" href="#" data-name="RELIC034">大判</a><br>
+							<a class="js-panto" href="#" data-name="RELIC021">髮簪</a><br>
+							<a class="js-panto" href="#" data-name="RELIC051">泡沫時代的摺扇</a><br>
+							<a class="js-panto" href="#" data-name="RELIC060">超跑模型</a><br>
+							<a class="js-panto" href="#" data-name="RELIC075">褶傘蜥模型</a><br>
+							<a class="js-panto" href="#" data-name="RELIC008">墨西哥鈍口螈模型</a><br>
+							<a class="js-panto" href="#" data-name="RELIC063">泡泡襪</a><br>
+							<a class="js-panto" href="#" data-name="RELIC039">加拉機</a><br>
+							<a class="js-panto" href="#" data-name="RELIC102">便攜式錄音帶播放器</a><br>
+							<a class="js-panto" href="#" data-name="RELIC052">神樂鈴</a><br>
+							<a class="js-panto" href="#" data-name="RELIC030">三味線</a><br>
+							<a class="js-panto" href="#" data-name="RELIC033">風鈴</a><br>
+							<a class="js-panto" href="#" data-name="RELIC031">法螺貝</a><br>
+							<a class="js-panto" href="#" data-name="RELIC099">琵琶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC026">木魚</a><br>
+							<a class="js-panto" href="#" data-name="RELIC068">雙背帶書包</a><br>
+							<a class="js-panto" href="#" data-name="RELIC028">東京鐵塔模型</a><br>
+							<a class="js-panto" href="#" data-name="RELIC050">黑框眼鏡</a><br>
+							<a class="js-panto" href="#" data-name="RELIC019">免費附贈手提包的雜誌</a><br>
+							<a class="js-panto" href="#" data-name="RELIC079">毬藻</a><br>
+							<a class="js-panto" href="#" data-name="RELIC095">蚊香豬</a><br>
+							<a class="js-panto" href="#" data-name="RELIC097">餐廳料理模型</a><br>
+							<a class="js-panto" href="#" data-name="RELIC067">劍玉</a><br>
+							<a class="js-panto" href="#" data-name="RELIC056">風箏1</a><br>
+							<a class="js-panto" href="#" data-name="RELIC059">風箏2</a><br>
+							<a class="js-panto" href="#" data-name="RELIC069">風箏3</a><br>
+							<a class="js-panto" href="#" data-name="RELIC077">風箏4</a><br>
+							<a class="js-panto" href="#" data-name="RELIC086">羽子板</a><br>
+							<a class="js-panto" href="#" data-name="RELIC016">錫製金魚</a><br>
+							<a class="js-panto" href="#" data-name="RELIC101">日本獨角仙</a><br>
+							<a class="js-panto" href="#" data-name="RELIC047">紙鶴</a><br>
+							<a class="js-panto" href="#" data-name="RELIC007">休旅車模型1</a><br>
+							<a class="js-panto" href="#" data-name="RELIC022">休旅車模型2</a><br>
+							<a class="js-panto" href="#" data-name="RELIC111">休旅車模型3</a><br>
+							<a class="js-panto" href="#" data-name="RELIC093">花札</a><br>
+							<a class="js-panto" href="#" data-name="RELIC004">彈珠</a><br>
+							<a class="js-panto" href="#" data-name="RELIC110">手鞠</a><br>
+							<a class="js-panto" href="#" data-name="RELIC108">超級真嗣貼紙</a><br>
+							<a class="js-panto" href="#" data-name="RELIC119">招財貓</a><br>
+							<a class="js-panto" href="#" data-name="RELIC027">人形蘿蔔1</a><br>
+							<a class="js-panto" href="#" data-name="RELIC029">人形蘿蔔2</a><br>
+							<a class="js-panto" href="#" data-name="RELIC049">人形蘿蔔3</a><br>
+							<a class="js-panto" href="#" data-name="RELIC037">三猿像</a><br>
+							<a class="js-panto" href="#" data-name="RELIC018">熊木雕</a><br>
+							<a class="js-panto" href="#" data-name="RELIC032">小木偶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC046">獅爺像</a><br>
+							<a class="js-panto" href="#" data-name="RELIC076">日本人偶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC098">狸像</a><br>
+							<a class="js-panto" href="#" data-name="RELIC082">紅牛</a><br>
+							<a class="js-panto" href="#" data-name="RELIC104">天叢雲劍（複製品）</a><br>
+							<a class="js-panto" href="#" data-name="RELIC017">天羽羽斬（複製品）</a><br>
+							<a class="js-panto" href="#" data-name="RELIC088">日本刀</a><br>
+							<a class="js-panto" href="#" data-name="RELIC009">直江兼續的兜</a><br>
+							<a class="js-panto" href="#" data-name="RELIC002">手裏劍1</a><br>
+							<a class="js-panto" href="#" data-name="RELIC005">手裏劍2</a><br>
+							<a class="js-panto" href="#" data-name="RELIC014">手裏劍3</a><br>
+							<a class="js-panto" href="#" data-name="RELIC015">手裏劍4</a><br>
+							<a class="js-panto" href="#" data-name="RELIC036">手裏劍5</a><br>
+							<a class="js-panto" href="#" data-name="RELIC090">十手</a><br>
+							<a class="js-panto" href="#" data-name="RELIC070">遮光器土偶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC013">繩紋陶器</a><br>
+							<a class="js-panto" href="#" data-name="RELIC006">彌生陶器</a><br>
+							<a class="js-panto" href="#" data-name="RELIC084">埴輪</a><br>
+							<a class="js-panto" href="#" data-name="RELIC106">銅鐸</a><br>
+							<a class="js-panto" href="#" data-name="RELIC085">銅鏡</a><br>
+							<a class="js-panto" href="#" data-name="RELIC061">寬永通寶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC066">膠卷相機</a><br>
+							<a class="js-panto" href="#" data-name="RELIC053">被詛咒的錄影帶1</a><br>
+							<a class="js-panto" href="#" data-name="RELIC058">被詛咒的錄影帶2</a><br>
+							<a class="js-panto" href="#" data-name="RELIC115">靈異照片</a><br>
+							<a class="js-panto" href="#" data-name="RELIC071">花子同學的刀1</a><br>
+							<a class="js-panto" href="#" data-name="RELIC107">花子同學的刀2</a><br>
+							<a class="js-panto" href="#" data-name="RELIC121">花子同學的刀3</a><br>
+							<a class="js-panto" href="#" data-name="RELIC122">犬神木乃伊</a><br>
+							<a class="js-panto" href="#" data-name="RELIC010">稻草人偶1</a><br>
+							<a class="js-panto" href="#" data-name="RELIC035">稻草人偶2</a><br>
+							<a class="js-panto" href="#" data-name="RELIC020">烏鴉剝製標本</a><br>
+							<a class="js-panto" href="#" data-name="RELIC081">紅鞋</a><br>
+							<a class="js-panto" href="#" data-name="RELIC094">恐怖的絨毛玩偶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC096">人面犬木乃伊</a><br>
+							<a class="js-panto" href="#" data-name="RELIC080">槌之子</a><br>
+							<a class="js-panto" href="#" data-name="RELIC091">香爐</a><br>
+							<a class="js-panto" href="#" data-name="RELIC117">印籠</a><br>
+							<a class="js-panto" href="#" data-name="RELIC116">懷錶</a><br>
+							<a class="js-panto" href="#" data-name="RELIC087">「對貝殼」中的貝殼</a><br>
+							<a class="js-panto" href="#" data-name="RELIC112">古伊萬里的皿</a><br>
+							<a class="js-panto" href="#" data-name="RELIC024">備前燒陶器</a><br>
+							<a class="js-panto" href="#" data-name="RELIC011">銀版攝影用照相機</a><br>
+							<a class="js-panto" href="#" data-name="RELIC041">力士根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC012">河童根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC078">天狗根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC083">塗壁根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC109">鬼根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC023">座敷童子根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC040">唐傘小僧根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC100">轆轤首根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC025">木靈根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC114">一反木綿根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC001">小豆洗根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC038">鐮鼬根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC120">提燈妖怪根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC089">姑獲鳥根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC043">垢嘗根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC092">鵺根付</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupVOICELOG">
+						<h2>語音日誌 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="VOICELOG10">我只是想說「B計畫」</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG13">你見過異訪者嗎？</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG16">妖怪就在我們身邊</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG14">冥貨的使用方法</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG09">值得為其而死的佳餚？</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG02">適靈者</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG08">靈的流動性</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG05">腐化之都</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG01">名為戴爾的男人</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG11">鮮血與繼承</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG07">難以與人相處</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG06">戰鬥中</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG15">檔案 #088</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG17">檔案 #178</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG04">檔案 #299</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG03">檔案 #329</a><br>
+							<a class="js-panto" href="#" data-name="VOICELOG12">檔案 #999</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupLANDMARK">
+						<h2>地標 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="LANDMARK015">澀谷區行人保護時相十字路口</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK001">霧之丘禁區</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK003">霧之丘水塔</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK002">霧之丘神社</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK006">歌川商店區</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK009">仙石坂</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK023">谷深重劃區</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK022">空中花園</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK020">工地迷宮</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK014">429</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK018">宴三町</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK010">醉漢小巷</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK021">澀谷區加賀里綜合零售商場</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK019">澀谷車站</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK025">月並禁區</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK026">代山神社</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK005">龍居神社</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK007">河童之池</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK024">御嶽商店街</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK030">銀平十字路口</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK008">仙石警察亭</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK013">運動大道</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK012">街燈墳場</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK011">429 街</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK017">宴三霓虹區</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK016">幽玄坂叉路</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK027">月並第一公園</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK004">歌川鐵塔</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK029">澀谷區條紋塔</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK031">銀平禁區</a><br>
+							<a class="js-panto" href="#" data-name="LANDMARK028">澀荒公園</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupGHOSTPHOTOS">
+						<h2>鬧鬼地點(靈異照片) <span class="sum">&nbsp;</span></h2>
+						<p>依照取得照片的順序分組</p>
+						<p>
+							<a class="js-panto" href="#" data-name="GHOST01">(第一組)澀谷正中心</a><br>
+							<a class="js-panto" href="#" data-name="GHOST02">(第一組)紙燈籠</a><br>
+							<a class="js-panto" href="#" data-name="GHOST03">(第二組)鐵軌上的怨念</a><br>
+							<a class="js-panto" href="#" data-name="GHOST04">(第二組)看煙火</a><br>
+							<a class="js-panto" href="#" data-name="GHOST05">(第三組)墳墓之間</a><br>
+							<a class="js-panto" href="#" data-name="GHOST06">(第三組)醉漢視角</a><br>
+							<a class="js-panto" href="#" data-name="GHOST07">(第三組)囤積闢之家</a><br>
+							<a class="js-panto" href="#" data-name="GHOST08">(第四組)探訪屋頂神社</a><br>
+							<a class="js-panto" href="#" data-name="GHOST09">(第四組)飆速老婆婆</a><br>
+							<a class="js-panto" href="#" data-name="GHOST10">(第四組)遠方的身影</a><br>
+							<a class="js-panto" href="#" data-name="GHOST11">(第四組)公司慶功宴</a><br>
+							<a class="js-panto" href="#" data-name="GHOST12">(第五組)放不下的遺憾</a><br>
+							<a class="js-panto" href="#" data-name="GHOST13">(第五組)月蝕</a><br>
+							<a class="js-panto" href="#" data-name="GHOST14">(第五組)一語成讖的看板</a><br>
+							<a class="js-panto" href="#" data-name="GHOST15">(第六組)瘋狂修圖</a><br>
+							<a class="js-panto" href="#" data-name="GHOST16">(第六組)樹上的獨角仙</a><br>
+							<a class="js-panto" href="#" data-name="GHOST17">(第六組)高架橋俯瞰</a><br>
+							<a class="js-panto" href="#" data-name="GHOST18">(第六組)試膽大會</a><br>
+							<a class="js-panto" href="#" data-name="GHOST19">(第七組)透明輪廓</a><br>
+							<a class="js-panto" href="#" data-name="GHOST20">(第七組)工地</a><br>
+							<a class="js-panto" href="#" data-name="GHOST21">(第七組)腳踏車雙載</a><br>
+							<a class="js-panto" href="#" data-name="GHOST22">(第七組)盪鞦韆</a><br>
+							<a class="js-panto" href="#" data-name="GHOST24">(第八組)管制原因</a><br>
+							<a class="js-panto" href="#" data-name="GHOST25">(第八組)森林聚會</a><br>
+							<a class="js-panto" href="#" data-name="GHOST23">(第八組)藏身處的回憶</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupHYAKKIYAKO">
+						<h2>百鬼夜行 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="RELIC089">姑獲鳥根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC043">垢嘗根付</a><br>
+							<a class="js-panto" href="#" data-name="RELIC092">鵺根付</a><br>
+						</p>
+					</div>
+					</div>
+					<div class="sidepanel-tab-content" data-tab-content="tab-X">
+						<h2>重設標記</h2>
+						<p><strong style="color: #FF0000">將本地圖的所有點位的收集狀況全部重設(注意無法恢復)</strong></p>
+						<p>如發現位置錯誤請留言告知</p>
+						<button id="clearall">重設全部標記</button>
+						<p>如有問題請留言告知，謝謝</p>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="leaflet-sidebar-pane" id="settings">
-			<h1 class="leaflet-sidebar-header">Settings
-				<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-			</h1>
-			<h2>重設標記</h2>
-			<p>將全部點位的標記重設<strong style="color: #FF0000">(注意無法恢復)</strong></p>
-			<p>如發現點位沒有出現，或者位置錯誤<br>
-			也可嘗試重設</p>
-			<button id="demo">重設全部標記</button>
-			<p>如有問題請留言告知，謝謝</p>
+		<div class="sidepanel-toggle-container">
+			<button class="sidepanel-toggle-button" type="button" aria-label="toggle side panel"></button>
 		</div>
 	</div>
 </div>
-<div id="map"></div>
+<p>如發現問題請留言回報，感謝</p>
+<p>&nbsp;</p>
+
 <script>
 //window.addEventListener("load", function () {	
 window.addEventListener("DOMContentLoaded", function () {
+	//自定義座標
+	var factor = 1/32;
+	myCRS = L.extend({}, L.CRS.Simple, {
+		transformation: new L.Transformation(factor, 0, -factor, 256)
+	});
 	//設定地圖
 	const map = L.map('map', {
-		maxZoom: 0,
-		minZoom: -4,
 		zoomControl: false,
-		crs: L.CRS.Simple
-	}).setView([1300, 2700], -4);
-	const h = 2600;
-	const w = 5500;
-	const southWest = [0, w];
-	const northEast = [h, 0];
-	const imageBounds = new L.LatLngBounds(southWest, northEast);
-	map.setMaxBounds(new L.LatLngBounds([-2000, -2000], [h+2000, w+2000]));
+		crs: myCRS,
+	}).setView([4000, 4000], 1);
+	
+	var bounds = [[0,0], [8192,8192]];
+	var Surface = L.tileLayer('https://sniperex168.github.io/myleaflet/GhostWireTOKYOMap/{z}/{y}/{x}.jpg', {  
+		minZoom: 1,
+    	maxNativeZoom: 5,
+    	maxZoom: 5,
+    	bounds,
+	}); 		 	
 
-	const imageUrl0 = L.imageOverlay('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJBjaftG4OKxcmw7a_lNEKQFQBZLSBcg8AAqlycnPTXYDZeY5emrYmxtCvsi4NK5wLSJ5aCvbyTBkZetV9lHYNh-t7eLZY_jDNk8jS1ZQn4NPAK6_Tkx9-R0QnxzKYUImu8u9mCLT-yr41VRRnyqdbE3oH9e5A-Nm9bYhxmUX41UGsa0fwg7HfYWW0hg/s0/PentelasRegionFull.webp', imageBounds);
-	const baseMaps = {};
+	//20230412側邊欄位
+	const panelRight = L.control.sidepanel('panelID', {
+		panelPosition: 'left',
+		hasTabs: 'true',
+		tabsPosition: 'left',
+		pushControls: true,
+		darkMode: false,
+		startTab: 'tab-1'
+	}).addTo(map);
 	
 //	const buy01 = L.imageOverlay('https://img.game8.co/3558595/72a5c4522450f4823d7e3effd5e6b25b.png/original',imageBounds);
 
-	// 定義自訂icon	
-	var LandMarker = L.icon({
-		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEzQcxQ_KDecqdH7wfpoDUKtvIsC2khgc4DOsiJ_emkbrM9F2XfwVSjqNbBLrg4NrkyfhVd6_RbkxHfIiqA9CjRpnoL24VesV_DY5J4CkY64kdMzejt_9655G-laWW1ZDT5BlxnJxNYAGGPdLh28wqDTUEh_2ZwqjgP56tQcAglTX0tibqbkaiLOMxfA/s1600/1.png',
+	// 定義自訂icon
+	var Crosshair = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9WT6cXhaaCnCDpAb00p5xn7aEarrRsErZUrxB8Biv6-vS3usQRi3CwUc65QMgQlqgVkD-UX5Kzfl_UHY7LbFnKavgphgqcsGcFWuDq3T-cAIdjD9wSQNAQFV5Aya29-Tab6EgjlMWzQJbXN8XGa9S-t99ZEekmCFO3XrYjHh95UF3P1JFgOtEZIrp/s320/Crosshair.png',
+		shadowUrl: '',iconSize: [40, 40],iconAnchor: [19, 17],popupAnchor: [0, 0]});
+	var RELIC = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBYL4l42suZMFzPM4V0_mO8FUKSmaLRkQG_Q374qYnp1BLQ41etbwCetC-kFy56BGH8lSvt_2dNkauz46wbp6rqVCqE0hrKsTJWZjuPBt0HBWMMg4qKIWTRGCWXd9WoLVueGBUlsEadtKw0ZfGGqW0_Foks4tY7TaO8toZLI4T8gSJWl2kuM8mjLBkpQ/s64/RELIC.webp',
 		shadowUrl: '',
-		iconSize: [35, 35], // size of the icon
-		iconAnchor: [18, 24], // point of the icon which will correspond to marker's location
+		iconSize: [45, 45], // size of the icon
+		iconAnchor: [22, 18], // point of the icon which will correspond to marker's location
 		popupAnchor: [0, -15] // point from which the popup should open relative to the iconAnchor
 	});
-
-	var SecretArea = L.icon({
-		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAFeu1uz71nuRueMfnShJjsxoPmrmmXpoTtYz7Xr9oiEuXjOCfcg0vJyiuSelsv9ckrwms540bo_0V7St4WMpUhrE4UJ5c9AQaszyQYn9JNZQ95HKGoyvATTgwUN6PBFqicQSbMdTw5oKLtE5INqwZtUXIqCh8Tpm1AkCgfJekwQQ9nsdEnN4ZOcZToA/s1600/2.png',
-		shadowUrl: '',
-		iconSize: [35, 35], // size of the icon
-		iconAnchor: [12, 22], // point of the icon which will correspond to marker's location
-		popupAnchor: [0, -15] // point from which the popup should open relative to the iconAnchor
-	});
-
-	var RestPoint = L.icon({
-		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9mj71ELe54la8TtMQszcs4O4OmsOxM1_invvEPrIvWj18TgIfrO45X0Y9paxf7EKfGjw6H7GvoCtkW2snONM5TgXMu9OORAAXh_kk0CKNTGme7ruJOcY3u6LxVXn7NM7CL1uz0nrhOdw37IMDfkP2QK6z5ZRaG0o4b5UEWXLg3FAM6bhKwlXe7ljkFA/s1600/3.png',
-		shadowUrl: '',
-		iconSize: [35, 35], // size of the icon
-		iconAnchor: [12, 22], // point of the icon which will correspond to marker's location
-		popupAnchor: [0, -15] // point from which the popup should open relative to the iconAnchor
-	});
-
-	var NamedGrave = L.icon({
-		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlxQWNXMr0TLchqDzAVsbmxKwxG_ilF-HRz2bmyNsbDHwA9OvoWElXZOzpJbJZvYDF2ep_ISyUNzGODOcSy_0TZwGKx4dgPJqqqsqTSIRgzOczMuAAb8WaflMs5kShYMrLs0Ab9UtyCkG680G_XE1UBVPjHYdI3aVUbdEFn_2-u06hjyPrji0YQMm1SA/s1600/NamedGrave.png',
-		shadowUrl: '',
-		iconSize: [35, 35], // size of the icon
-		iconAnchor: [12, 22], // point of the icon which will correspond to marker's location
-		popupAnchor: [6, -18] // point from which the popup should open relative to the iconAnchor
-	});
-	var Area = L.icon({
-		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSFHelYQm5VPD2b86vc5GlvXZdOpAm2_r8E3Z1oAsKfbO06ELXaFm6tC1LL6q6OJ26YUpWOTKI3R2GWVQt-c2bDjKwTNiBnWjdzrNcHMzZdk3DbYM0aWrQhQs8xVt33BeLDVhYAC-k7dwpL5WKZh1MRLmYwI0kWfdfluTiJfTO3rZiehBaK_malOQ3Sg/s1600/4.png',
-		shadowUrl: '',
-		iconSize: [35, 35], // size of the icon
-		iconAnchor: [12, 22], // point of the icon which will correspond to marker's location
-		popupAnchor: [6, -18] // point from which the popup should open relative to the iconAnchor
-	});
-
-	//初始化陣列資料markers
-    var markers = [
-		{type:"LandMarker",coords:{x: 99999, y: 99999},name:"地標0",opa:"0",chk:"0"}, //上線後錯的資料不刪除(設定座標無限大且opa0)，保持資料數量與順序，才不會亂掉
-		{type:"SecretArea",coords:{x: 3150, y: 920},name: "<h1>秘境：孔提的泉源</h1>",opa:"1",chk:"0"},
-		{type:"SecretArea",coords:{x: 2050, y: 607},name: "<h1>秘境：清流隱密河口</h1><p>(在低處的水面)</p>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 2117, y: 831},name: "<h1>地標：水脈盡頭瀑布</h1><p>(在低處的水面)</p>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 1331, y: 912},name: "<h1>地標：集礦場</h1>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 3746, y: 714},name: "<h1>地標：隆亞瞭望點</h1>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 3974, y: 625},name: "<h1>地標：塔烏殖民地 瞭望塔</h1><p>由野外食堂東邊的大樹根上去</p>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 3984, y: 570},name: "<h1>地標：塔烏殖民地 鐵巨神</h1>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 3980, y: 678},name: "<h1>地標：塔烏殖民地 入口</h1>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 5293, y: 1450},name: "<h1>地標：追風崖道</h1>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 3141, y: 2270},name: "<h1>地標：貝爾扎山嶺</h1>",opa:"1",chk:"0"},
-		{type:"LandMarker",coords:{x: 805, y: 1790},name: "<h1>地標：芙蕾雅爾運輸通道</h1>",opa:"1",chk:"0"},		
-		{type:"LandMarker",coords:{x: 1840, y: 780},name: "<h1>地標：麥姆之門</h1>",opa:"1",chk:"0"},				
-		{type:"LandMarker",coords:{x: 1150, y: 924},name: "<h1>地標：切石場</h1>",opa:"1",chk:"0"},							
-		{type:"RestPoint",coords:{x: 3492, y: 2431},name: "<h1>休息處：崖上的鏽毀鐵巨神</h1>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 2902, y: 1180},name: "<h1>休息處：瀑布中的鏽毀鐵巨神</h1>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 3945, y: 650},name: "<h1>休息處：塔烏殖民地 野外食堂</h1>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 5260, y: 1625},name: "<h1>休息處：恩達多山嶺休息地</h1>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 4468, y: 1731},name: "<h1>休息處：四角塔休息地</h1>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 4310, y: 1040},name: "<h1>休息處：閃耀水池休息地</h1><p>(在低處)</p>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 3480, y: 490},name: "<h1>休息處：古道休息地</h1>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 2523, y: 733},name: "<h1>休息處：巨神獸岩休息地</h1><p>(在高處)</p>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 476, y: 938},name: "<h1>休息處：瑟弗遺跡休息地</h1>",opa:"1",chk:"0"},
-		{type:"RestPoint",coords:{x: 914, y: 1336},name: "<h1>休息處：發電所指揮室</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 785, y: 1460},name: "<h1>地點：第一電梯</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 790, y: 1380},name: "<h1>地點：第一採礦場</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 457, y: 979},name: "<h1>地點：瑟弗遺跡</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 700, y: 450},name: "<h1>地點：羅亞之泉</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1194, y: 630},name: "<h1>地點：第二電梯</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1057, y: 700},name: "<h1>地點：第二採礦場</h1><p>由「地點：第二電梯」下去，且需要接受「XXX」(待補充)才能前往</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1000, y: 790},name: "<h1>地點：採石岩道</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1137, y: 860},name: "<h1>地點：第三電梯</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1166, y: 860},name: "<h1>地點：第三採礦場</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1360, y: 890},name: "<h1>地點：岩窟水脈</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1374, y: 975},name: "<h1>地點：岩窟瀑布</h1><p>由「地標：麥姆之門」過去，要靠近一點才能發現地點</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 1426, y: 747},name: "<h1>地點：卡庫利可洞窟</h1><p>利用「地點：羅亞之泉」北邊的繩索過去(要學會場景技能)</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2361, y: 698},name: "<h1>地點：拉姆達殖民地 鐵巨神</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2455, y: 492},name: "<h1>地點：瀑布下的戰場遺址</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2560, y: 530},name: "<h1>地點：第三瀑布</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2203, y: 364},name: "<h1>地點：莫蘭大橋</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2505, y: 262},name: "<h1>地點：琵勒斷崖洞窟</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2501, y: 1155},name: "<h1>地點：第二瀑布</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2625, y: 688},name: "<h1>地點：花水母聖地</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2724, y: 858},name: "<h1>地點：巨神獸岩</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2575, y: 770},name: "<h1>地點：巨神獸岩尖角</h1><p>走到尖端才能發現地點</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3056, y: 1096},name: "<h1>地點：第一瀑布</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2554, y: 1443},name: "<h1>地點：孔提的機關遺跡</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3088, y: 676},name: "<h1>地點：孔提的眺望</h1><p>由旁邊的攀爬點上來，走到尖端才能發現地點</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3650, y: 700},name: "<h1>地點：隆亞之泉</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3741, y: 882},name: "<h1>地點：可可凱之泉</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3993, y: 651},name: "<h1>地點：塔烏殖民地</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4025, y: 680},name: "<h1>地點：塔烏殖民地 碩果沃田</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4000, y: 513},name: "<h1>地點：塔烏殖民地 鐵巨神頭部</h1><p>由野外食堂東邊的大樹根上去</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3900, y: 625},name: "<h1>地點：莫爾克納縱斷升降機</h1><p>升降機需從莫爾克納大森林．下層啟動，之後可往返下層與上層</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3844, y: 1422},name: "<h1>地點：大樹洞</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4290, y: 856},name: "<h1>地點：黃色森林</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4534, y: 980},name: "<h1>地點：火雞人要塞</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4318, y: 993},name: "<h1>地點：猩猩獸之樹</h1><p>進入「不動的岡紮雷斯」睡覺處才能發現地點(不要攻擊牠就不會醒)</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4518, y: 1711},name: "<h1>地點：太古四角塔</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4849, y: 1774},name: "<h1>地點：魯諾古代遺跡</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 5070, y: 1783},name: "<h1>地點：恩達多山嶺</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 5053, y: 1907},name: "<h1>地點：巴爾克魯斯大門</h1><p>第五章大門才會開啟</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4744, y: 1902},name: "<h1>地點：山道戰線 科維斯陣營</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 4268, y: 1908},name: "<h1>地點：山道戰線 安格努斯陣營</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3389, y: 1904},name: "<h1>地點：羅斯卡洞窟</h1><p>接受「支線任務：優妮」時才能進入</p>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 3088, y: 1676},name: "<h1>地點：羅斯卡台地</h1>",opa:"1",chk:"0"},		
-		{type:"Area",coords:{x: 2971, y: 1576},name: "<h1>地點：5號殖民地 鐵巨神</h1>",opa:"1",chk:"0"},		
-		
-		
-		
-		
-		
-//		{type:"landmarker",coords:{x: 3438, y: 343},name: "<p><h1>地標：艾克特地下空洞</h1></p>解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},		
-//		{type:"SecretArea",coords:{x: 3150, y: 2920},name: "<h1>孔提的泉源1</h1><p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk66jWBRIC68PCogQtOfEoAFjIqaMgLMdhqa5RS-cbHWaSkbjcwhzc0zAwlEhuafkGnKqfuVDK2GKT60VLPZ2Ibaf23sxuJF0venLRhj1vcQQciJidkeVa29dQSGJ1RVFI1zc3XfChKu-nr4JnBDvSgmUt_6Jq8MKGDDr9n0h9tJ7Xu5HsbYPcMYBV/s0/Screenshot2022-08-09-140711.png' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk66jWBRIC68PCogQtOfEoAFjIqaMgLMdhqa5RS-cbHWaSkbjcwhzc0zAwlEhuafkGnKqfuVDK2GKT60VLPZ2Ibaf23sxuJF0venLRhj1vcQQciJidkeVa29dQSGJ1RVFI1zc3XfChKu-nr4JnBDvSgmUt_6Jq8MKGDDr9n0h9tJ7Xu5HsbYPcMYBV/s640/Screenshot2022-08-09-140711.png' width='100%'/></a></p>解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入解英雄七飯的覺醒任務時才能進入<br/><a href='#' target='_blank'>英雄七飯的覺醒任務</a>",opa:"1",chk:"0"},		
-	];
-	//設定部分出入口點位
-//	L.marker([1837, 807],{opacity:0}).bindTooltip('<h1>佛尼斯地區</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
-//	L.marker([2270, 3031],{opacity:0}).bindTooltip('<h1>佛尼斯地區</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
-//	L.marker([1346, 5230],{opacity:0}).bindTooltip('<h1>科維斯主堡區域</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
-//	L.marker([1564, 4226],{opacity:0}).bindTooltip('<h1>莫爾克納大森林下層</h1>', {permanent: true,direction:"center", className: "my-label",offset: [-15, 20]}).addTo(map)
-
+	var SHRINE = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbKW-ksfNSShYDjfHzm8LtJ9cOZ8UVNJdWXyrPcgtaI245Z-k-xJuwhLSgUZzkfh25UDDFRgL5XKhw9LqHlBRx3dcMPf6vh1ya2f422K_Sp93ywr4sY-w_64zu9h6i30EUP_xnce9XYV7S4ISCm7ck7vGsp-KZIqv4KYFK6BqeEytdl6TBKfMKMfyY54io/s64/SHRINE.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var JIZO = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKJ_H_7fxiUZO0bQppH1hSXKrFXPBu0XGXCv5-nwEeY9twdiU5wkxJrnGkty_OlOtihU0rXjNdo2n64fENWz27incrZxSyFguM21h3L73aNgFmaIsuHzMO-5wZKzbWyd4fzKd-m-FX75OwRm-c5v_nPltl8TzUrVA-_slrX1Dv-uoW77y3Sf9P6PFK1KF2/s1600/JIZO3.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var JIZO2 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB8EkVAY54V0Y-MG8dl5wyxLEE4W32-Sjjkyv1WcFRa7_MTT7VS_xLkR-F7scvT7Be945-qoORocLPoGfP6Empu9OhrKWeJ64SuN8kEatnvHXBkPR0Y-TzSaPMS6GrS7RMALh3bnWCQvSDLjOo2Q07YDIH9TYaF8T-WT566QcO_ao96kY9ru4Z8jewMDxG/s1600/JIZO2.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var JIZO3 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK2W3_yLDCIkk82NmqjW8YoshEgh8P3tOKXyVO4OZKKkOGzxMIxqxCwlZdpy87UVQLkvrKloFEPP8q2jehYwRzncSeTsZvjkGhSfINWEbhxmUzTua1MMMwlzSKJO7GS1JNNsTdMckEg5qxiA5YryTyDI4FVr3N88CI9jYxmj348Z9ffujFr-SvjSFxWTEX/s64/JIZO.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var KKSNOTE = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCg9bCO--rZ80f0BRtr-xyF607I9kto0mHE6YmGAYS6mjptmIhYOASeUd45SHhA8UfdLNM8ffmHMa27S7C0s5dW9N8Siqbl105k1Bfa-rz0VYVEMo4zhOSOifmpBgcBkTkZXWNiz0dp6lplyVlEBd2z1kK2ORiF3de--wYMs3-zdTFt2AUHAAgWY2PVAWx/s64/KKSNOTE.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var LANDMARK = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4s3r9RwBHQXlj9Nky16stuqFW0abLfonty9G7c9wfYcBQOF9i3sT0KvvLFAdMwZ_QWKCiwMcHJowV1e600NL19GKrEJB4U_UlmNGD-uiXg-s2SaJhscO1MqGM8AbnZxntbt8k7uqd4OtX_ILSMug9704kKWrRtVsyyzhMu91_eFy-8zmENWVVmaaOzgIh/s64/LANDMARK.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var GRAFFITI = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3-m_XUhEVEajgRPW-7dzZJ0hy05PfuyadoDpfeJY_CX77cPKl9oZL5d3C0UTXjagWmFyArnrwKaZ7BvLpujOHdbQHv1cAgbStbVHY-lquVWL8wJ9908dO4c_ZeCfHtryHSz-7KZbRC3--uUhC7TbcKC0zETBHL8YAI7_xF3vSvFKhMphhe_egHOOQdvyr/s64/GRAFFITI.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var TANUKI = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyeTj1xP71wD0xYUI8UEBFFx2R2wKDBZs6Z5TPoZDalsWPB34ZtIvC-KQi7TXtkL8prxwks5tat7no9E4R9BEv-lon5eQFXMNWM3s8ux81rUmvbI4kp0fmJy-XP_IVnsPAnuZe89J8d4E_ObXm3oW2Qm2Z0OhcTFJS8Xg1Tj_-j3CdmDdWpeHxKjJr-sGa/s64/TANUKI.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var VOICELOG = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCUSUwd3gq6UZT6QOJyobULT4MbGw8MNgmCaGMNDyvVZZBjozvAdWBWmS1SUkUJPJgiQ6-9WtoeYSFEBlvwctt2TnLoP1envUQQajMgmnBc7C0_zguOI2vrf-QeQdI6MiWqXbsVL1VL0gN7lyTjIlyi3gAfzkT57KMjWbPlgpYps1JtCs-4j6ZaIyQOdvX/s64/VOICELOG.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1AFJ1cFILL03-am5fwMOT-DxAPXmM-aSclCegVfXZxmPQayK-aMwuDRr_nSWWEhLTpxbRlsODunbl0L0xaxNtuUEXkJUQWI6l_KYUv_jPrlXTVGrzxynfEOpt1JFdEM1Ca_VFGb3m1wdXWTHNGSE9MUa-KcATezg8vMozAM1PrNDDI0gCrSFnhqxAygz-/s64/YOKAI.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});	
+	var YOKAI2 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRYoagfQzHHH1ZyPWDfcXSBLKwJXCcohr6C0wcgmTlUHZ2UyMRgj8rw-uIbLGu9_PfqIgS2LoVbdQKXo8qmm2GNJzQVHI3xAuW9MyFzYQHZWhbySqeIwW8AkesIUEu23aXz4pqEzHf2Yv-cdlQk4xmACtyCwG_1qOELzcTci4CRW8I8dwMrgQGJjQBeI2S/s64/YOKAI2.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI3 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT6J3CMyFB7eoaMOMEDou9IlawUibFcuPPuEBxmxQSlm4Xb9B0cYgFhLTukjZ_7jrEfFRPRVrQmvAbPdtvsjPSVvX4ORwmr5E6AkF16HLeCxGDEB0Pnbmc7g5b9tK-nUKclfc_6VPqsU3zlZ5sdh5HGgZKKl3kYx-AGRSD2f3uLSF7PjCwBku1n_aW020O/s64/YOKAI3.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI4 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtHprwECw5ULqB6JbdIeOjtqyV-nT-ybgKOAzpRN5bbOZG_zHZR7JIKYXhx58zuWkabRpSl2Al4XVSLXN6zt7JciZ-b6juU5c61ByvboOROr3njqJinG_-WT6jApoP4H6ydpK8gM6zZcCS_XteSmg4qFjBk8duWAEt55flBiYgJpdYPzwvI9FhV0LxJm7H/s64/YOKAI4.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI5 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3UHE1_FbWJLXNkAtc3j1azj61AfoDIYk7ZvNDT58p9DogHpK2_IS0JZnCTmMhx0Qi6CMuW4tlHX0PeQfNCjJbvCTpPkXu6Od2H5dT41mxlRJ295Nw_BmTmiae4qqSHdKEDWEeWgBGFqENyPWMhbZhrpiXCcqtfCA0YdkBWraLH70-47510W96kRmW_qR9/s64/YOKAI5.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI6 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq3RPUXNBUJTGq3pQ_aEYBHljXlHC7fTMdDU07SF4jgrlEd16gn0W0wr_ZoBd30JA_BUCNI5UM75rOWH5DKqK6gGSD3FJhLq709J2sxp7qrh51hfmmiXNMiN_Jz44YQ5qyyn5k6MBzpI7RyWkGnHrLKEJBG9spSbj285M5yqN_Hhzh3O9WH_MErsFKnM5y/s64/YOKAI6.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI7 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtrw45yr0zAIVq4r5Lc2FHe8jp4YcJeGuG6g-v8NdB2ftsdO6ARibDEBDUKHX-2O4GEiEb4W1f_HcZDKaKH-xzgj8aP1-Hz1Y2Gs0zK0PdM2IO8fFG_Qcbjb4e58MEgKBqIDzrlqT4YMKlwpt_ssPVFQP7cE8slt8DxPgCx3UK6cWJy6BTV-qnX3DkKC6H/s64/YOKAI7.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI8 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoPT8kY88SoZarDw0FRFWJyI8lkhJXSzrqMbVRjJ8QX9EwvpYiL_ChyJH7ckD3-s2zPoCOfiUL05TCWjBqwWxNE4z0BP2tfBwHSiDdljInau98PXWtee8RTsx-tdEJOl1i1eX2BwZ-xWMEdp5MKPEOxZPUcQXNORbABMLKEkKgikO4lhVBPY1WAXQHHZEr/s64/YOKAI8.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI9 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB9FfY9UTOTH2QF6b_5JvsuQ53kcTDQb2ZXTzWmko9bsZbiU8UYmWwh3fXbVqfd4BzzuIy-U5Q6_3I_uWOfuQEuKQ7wc0iDO-vK8L38aeR_LSeYTYpeWTp6aY77eGNrGl9lSVQ1qXe29kScduWMAurOJkMMtJhL_izgVVvtuvtb5Fr12ShmBAXM6Slddf7/s64/YOKAI9.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var YOKAI10 = L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLu7S-UDOeh1aE0lf1kNaZNbMFA3cTM6u84otFliPp4MRlkFBUs3dAJWj_SiJt4r9T1kCgIHGOC89JI9sduwsvqt5UpW7iF-bur6DPwV5QX55kew-eSQQiGnHLI1sJ5F_TXPmp-h_p7TOoqnzJOzo5Q9JgbX0pqoeZ91PeEDgdJVCGQp_Nl1xXz7J2LBet/s64/YOKAI10.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var GHOSTPHOTOS =L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibIoqrdRU_CASOCts-NnXzXmbdMEHdi32MLId-Rbq9CQLmKlagjFKDiikGH0elMZKgEFfwg73iu_XuIQME4T8YH_8uQbvR75IMHAp9rJ5S_VpUNjlg7GscP-UOl07DMwVdbxUPEH4ttHrtrmtYcJvuWleYd70pDKq19nG0mSNm-SWuZSbj_fSiF_gloV_U/s64/GHOSTPHOTOS.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});	
+	var HYAKKIYAKO =L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-bcvz7ge7SShPtMpg7veCo9c2xk3_q8sHoemblfrYW79gnYYkoboJPmNdw_vomy6U0WPhnaxYVfi3fFOJ1pfL43gIN7F4k0JDVqFto5uJr-hvH8qT9R0eK6IXJbE8c-6r-K9RkW-JO0pyOVw9RiEqL2IMhLobfkpfh1QiwQJuX-NRfEiz3tL6fimHtGVv/s64/HYAKKIYAKO.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});	
+	var PRAYERBEADS =L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs0YgejlCSqRLBaw8m0Ri1sLFDgfRllzL06a0I3Zbs9HlQHXwu6X_0j_6wIEWXto2XhEEUu_Wd7CtR28KdeY_oe7UljXUSDu3JNdX2kfvtYQdPOrBVphIeEy9ZRkAgEzsogBdkFbB-KP-ZO3HxAYnRTnTZdtgPD9m0CTVdU1VNlpEp9JJA_9BBJn_3enaa/s64/PRAYERBEADS.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	
 	//如果Local Storage有資料
-	if (localStorage.XB3map31 !== undefined) {
-		//比較使用者的Local Storage與初始化陣列資料markers，用storageMarkers.opa .chk資料取代markers.opa .chk
-		//先將Local Storage內的JSON 字串化轉為陣列
-		var storageMarkers = JSON.parse(localStorage.XB3map31);
-		//開始比較與取代，markers內除了opa,chk為使用者資料，其餘皆初始資料
-		for (var i = 0; i < storageMarkers.length; i++) { 		
-			if (storageMarkers[i].chk !== markers[i].chk) {
-				markers[i].opa = storageMarkers[i].opa;	
-				markers[i].chk = storageMarkers[i].chk;	
-			}
-		}
+	if (localStorage.GhostWireData !== undefined) {
+		var storagetemp = JSON.parse(localStorage.GhostWireData);//讀取localStorage放到storagetemp中
+		//嘗試用forEach代替for迴圈
+		storagetemp.forEach((item) => {		
+			markers.forEach((elem) => {
+				//找出storagetemp與marker中同markid，並把該項目設定為opa = "0.2"chk = "1"
+				if(item == elem.markid){ 
+				elem.opa = "0.2";
+				elem.chk = "1";
+				}
+			});	
+		});		
+	}
+	//如果Local Storage沒資料，建立一個空的
+	if (localStorage.GhostWireData == undefined) {
+		var storageMarkers = [];
+		localStorage.GhostWireData = JSON.stringify(storageMarkers);
 	}
 
-//將初始化陣列資料markers，接著只取opa,chk放到markertemp
-
-	var markertemp =[];
-	for (var i = 0; i < markers.length; i++) {
-		var dogString = {"opa":markers[i].opa, "chk":markers[i].chk};
-		markertemp.push(dogString);
-	}
-	//將markertemp轉為JSON 字串
-	var dogString = JSON.stringify(markertemp);
-	//JSON 字串化後即可正確的存入Local Storage
-	localStorage.setItem('XB3map31', dogString);
-
-//讀取markers資料並放到地圖中
+	//讀取markers資料並放到地圖中
+	var layerControl;
+	var overlayMaps;
 	initUserLayerGroup();
-	map.on('click');
+	//map.on('click');
 	function initUserLayerGroup() {
-		if (localStorage.XB3map31 !== undefined) {
-			var markertemp = [];
-			var resttemp = [];
-			var areatemp = [];
+		if (localStorage.GhostWireData !== undefined) {
+			var RELICtemp = [];
+			var SHRINEtemp = [];
+			var JIZOtemp = [];
+			var KKSNOTEtemp = [];
+			var LANDMARKtemp = [];
+			var GRAFFITItemp = [];
+			var TANUKItemp = [];
+			var VOICELOGtemp = [];
+			var YOKAItemp = [];
+			var GHOSTPHOTOStemp = [];
+			var HYAKKIYAKOtemp = [];
+			var PRAYERBEADStemp = [];
 			for (var i = 0; i < markers.length; i++) {
-				var id = markers[i].mark_id;
 				var x = markers[i].coords.x;
 				var y = markers[i].coords.y;
 				var name = markers[i].name;
@@ -303,78 +489,128 @@ window.addEventListener("DOMContentLoaded", function () {
 				var chk = markers[i].chk;
 				var type = markers[i].type;
 				switch(type){
-    				case "LandMarker":
-						type = LandMarker;
-						break;
-					case "SecretArea":
-						type = SecretArea;
-						break;
-					case "RestPoint":
-						type = RestPoint;
-						break;
-					case "Area":
-						type = Area;
-						break;  
+    				case "RELIC":type = RELIC;break;
+					case "SHRINE":type = SHRINE;break;
+					case "JIZO":type = JIZO;break;
+					case "JIZO2":type = JIZO2;break;
+					case "JIZO3":type = JIZO3;break;
+					case "KKSNOTE":type = KKSNOTE;break;
+					case "LANDMARK":type = LANDMARK;break;
+					case "GRAFFITI":type = GRAFFITI;break;
+					case "TANUKI":type = TANUKI;break;
+					case "VOICELOG":type = VOICELOG;break;
+					case "YOKAI2":type = YOKAI2;break;
+					case "YOKAI3":type = YOKAI3;break;
+					case "YOKAI4":type = YOKAI4;break;
+					case "YOKAI5":type = YOKAI5;break;
+					case "YOKAI6":type = YOKAI6;break;
+					case "YOKAI7":type = YOKAI7;break;
+					case "YOKAI8":type = YOKAI8;break;
+					case "YOKAI9":type = YOKAI9;break;
+					case "YOKAI10":type = YOKAI10;break;
+					case "GHOSTPHOTOS":type = GHOSTPHOTOS;break;
+					case "HYAKKIYAKO":type = HYAKKIYAKO;break;
+					case "PRAYERBEADS":type = PRAYERBEADS;break;
 				}
 				if (chk === "1") {
 					var marker = L.marker([y, x],{
 						icon:type,
 						opacity: opa
-					}).bindPopup(name + "<p style='text-align:right'><a href='javascript:;' class='undo'>取消標記</a></p>");
+					}).bindPopup(name + "<p style='text-align:right'><a href='javascript:;' class='undo'>取消收集</a></p>");
 					//.js-panto增加class .checked
 					const btnPanto = document.querySelectorAll('.js-panto');
 					for (var j = 0; j < btnPanto.length; j++) {
-						var Pantox=btnPanto[j].dataset.to.split(',')[0];
-						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
-						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
+						var Panto = btnPanto[j].dataset.name;
+						if (Panto == markers[i].markid)
 					 {btnPanto[j].classList.add('checked');}
 					}
 				} else if (chk === "0") {
 					var marker = L.marker([y, x],{
 						icon:type,
 						opacity: opa
-					}).bindPopup(name + "<p style='text-align:right'><a href='javascript:;' class='delete'>標記</a></p>");
+					}).bindPopup(name + "<p style='text-align:right'><a href='javascript:;' class='delete'>點擊收集</a></p>");
 				}
 				marker.on("popupopen", onPopupOpen);
 				var type = markers[i].type;
 				switch(type){
-    				case "LandMarker":
-						markertemp.push(marker);
-						break;
-					case "SecretArea":
-						markertemp.push(marker);
-						break;
-					case "RestPoint":
-						resttemp.push(marker);
-						break;
-					case "Area":
-						areatemp.push(marker);
-						break;
+    				case "RELIC":RELICtemp.push(marker);break;
+    				case "SHRINE":SHRINEtemp.push(marker);break;
+					case "JIZO":JIZOtemp.push(marker);break;
+					case "JIZO2":JIZOtemp.push(marker);break;
+					case "JIZO3":JIZOtemp.push(marker);break;
+					case "KKSNOTE":KKSNOTEtemp.push(marker);break;
+					case "LANDMARK":LANDMARKtemp.push(marker);break;
+					case "GRAFFITI":GRAFFITItemp.push(marker);break;
+					case "TANUKI":TANUKItemp.push(marker);break;
+					case "VOICELOG":VOICELOGtemp.push(marker);break;
+					case "YOKAI2":YOKAItemp.push(marker);break;
+					case "YOKAI3":YOKAItemp.push(marker);break;
+					case "YOKAI4":YOKAItemp.push(marker);break;
+					case "YOKAI5":YOKAItemp.push(marker);break;
+					case "YOKAI6":YOKAItemp.push(marker);break;
+					case "YOKAI7":YOKAItemp.push(marker);break;
+					case "YOKAI8":YOKAItemp.push(marker);break;
+					case "YOKAI9":YOKAItemp.push(marker);break;
+					case "YOKAI10":YOKAItemp.push(marker);break;
+					case "GHOSTPHOTOS":GHOSTPHOTOStemp.push(marker);break;
+					case "HYAKKIYAKO":HYAKKIYAKOtemp.push(marker);break;
+					case "PRAYERBEADS":PRAYERBEADStemp.push(marker);break;
+					
 				}				
 			}				
 		}
-			//將點位放入layer
-			//map.removeLayer(groupMarker);
-			//map.removeLayer(groupRest);
-			groupMarker = L.layerGroup(markertemp).addTo(map);
-			groupRest = L.layerGroup(resttemp).addTo(map);
-			groupArea = L.layerGroup(areatemp).addTo(map);
-			map.addLayer(groupRest);
-			map.addLayer(groupMarker);
-			map.addLayer(groupArea);
-
+		//將點位放入layer
+		groupRELIC = L.layerGroup(RELICtemp);
+		groupSHRINE = L.layerGroup(SHRINEtemp).addTo(map);
+		groupJIZO = L.layerGroup(JIZOtemp);
+		groupKKSNOTE = L.layerGroup(KKSNOTEtemp);
+		groupLANDMARK = L.layerGroup(LANDMARKtemp);
+		groupGRAFFITI = L.layerGroup(GRAFFITItemp);
+		groupTANUKI = L.layerGroup(TANUKItemp);
+		groupVOICELOG = L.layerGroup(VOICELOGtemp);
+		groupYOKAI = L.layerGroup(YOKAItemp);
+		groupGHOSTPHOTOS = L.layerGroup(GHOSTPHOTOStemp);
+		groupHYAKKIYAKO = L.layerGroup(HYAKKIYAKOtemp);
+		groupPRAYERBEADS = L.layerGroup(PRAYERBEADStemp).addTo(map);
+		
+		//設定地圖Layer與layerControl
+		Surface.addTo(map);
+		const baseMaps = {};
+		
+		overlayMaps = {
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwF0wWPoJHsea4RhFY8dEqM2yLJstT11r448MdWZbLwtLTpWQ4FlfUAywx7uzXY6smTi2GVGKEMkflmzgEqFFGqMPCRrEWkIhOdCuf6P11kknioUJkucJjf-cYK-zSAqLVHRE82fIcde_pu7OUxEP7Jgt1ZkSbX9ikZ-zcSbacGBACwFmescbznrY397pY/s1600/SHRINE1.webp' class='myimg'>神社　　" : groupSHRINE,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwCDE1KCvhQr63x37p0EXpB3ib8NKb4kX7YGaBbFiaW8AxK5urfsO6pBfcrdAsv13gn_zay1c9p1U8fHjvcLyaeixxnqHwblrD1iroAKNZzTmAJXzSOPO5g-EKYC6BXjjBfE3K1akSlawMUxFu1C7nRVK1HffDXO1U_JVKga6_ZsswH8R4s8d12Cs7I97b/s1600/KKSNOTE1.webp' class='myimg'>KK的筆記": groupKKSNOTE,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpW_ceON21F0ACb5WOr1dd9PKcY-s-BboZPejAC6i5k7pEv7aSh9GwmdIpyVSDPdesR_6Mb9IxR37VzNG1vPFGJpPrxDSC8GjbKjE8xY8UmJhB0SF_ux1Yo-s-dEXlHL7gTWG2jpfqt0YDOZd-amXINIgePwcwDr5LMNdTziNoPYmWZ2Zi8Ap4x-nyB9s0/s1600/RELIC1.webp' class='myimg'>遺物　　": groupRELIC,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJWWAVGBWaJCufUePlQrhAjRJtnSmdw8_DKDPsicXEjEnc1OoBli4mJntK4fxD9w4n2D6XbkdRv67M-4jI9iPk0D0zVn94uO3Kqvoq3kBc0HSpsD7od27HZi7DBTK-7YM3vpZNHeoWuH9y86_n55lS3h6q_1bHXN7Q8fuw7P-pJH91uUNGM3sD-kCpAyoF/s1600/JIZO1.webp' class='myimg'>地藏像": groupJIZO,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbYDQs1PWegYirnuF6tM01p6AQ8TaKBwke6E44omRlPWNMSRhcvfMBAlzcUbEMAIAw6P2WEeaDDy-BKN3C8J0uRlngoCrrTRICAnBjzxxC5-sPwLxTMF7-dEEQCpi_Eel0nueWYSa90vSdO0bnRfC9ObuDrAiGT2gqG70i8ig8FddRAhKf9U5DRGNCpK4R/s1600/VOICELOG1.webp' class='myimg'>語音日誌": groupVOICELOG,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz4vJkvm62Vk5cBxeXn0sUvvJ6YCdw6CcBXWNVuwCVRRyDTHiCXXnz9h1c8TmbG9uonajWBC2XRmCptr4hLVPMIM130minAuKe-LeM5JF6poTgt--zSFY06xO_6JQ5jvU4_zIihuXXpOdM8UDkHgIH6kLutO2BD9itcQxOx0kG5rhqIWLmy4SPpAJW0BVJ/s1600/TANUKI1.webp' class='myimg'>捕狸": groupTANUKI,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLQ3WATjg4krtsbIZwCo-yYnxOY2DUBtNulEwX1ifoAGdBqQzZNhQ2TJ2LRIrZIlWtN1xl58wzqFueH80ZmO3k7xgCE06HdIaICs_MqPSnLf1JHqLirkl37tNRNnhup-HjDiBf-_0l8qz613VroZkN0OGbZd7H3UA8Nmttmtu0QVXSHD0tXC7VR6eFfHWO/s1600/LANDMARK1.webp' class='myimg'>地標　　": groupLANDMARK,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzpxSz5Y3qnP8G4mO3AW9JIKXVaf77mUAjPvbDIF1wvi0JO7OE_f8CFN2_O79PgztBTzcQ21yz67B_-l-tKLJ3UEwCmg5PE3QHQAWlGMExhPZ0xz9HQ_csrR6TgCuc2UAA4FaWzIHP58GqmFiPf4qTpLlgTsWdDFNplKFBYm-Dz7A4pZROEnD5t6jgeAa8/s1600/YOKAI1.webp' class='myimg'>妖怪狩獵": groupYOKAI,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb0lXbrM2Zc1B2PIFb4fnUh7Hxt4TwLkvSkApy2g0et6tS8GFWwNpxbe8ovkvZ9wJawZWMVMsWNiiw01x8ymMvF0ZUHRJsBtz3nFLK0J5ZNhxsJ_KFsbHKoolQ1YStXdFDIiKh4e_nsLpGMsFqrqzzgLNs9N3UFWpkSUNcDEEfBlfe7FTZymLAacg6S8cr/s1600/GRAFFITI1.webp' class='myimg'>塗鴉　　": groupGRAFFITI,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbYDQs1PWegYirnuF6tM01p6AQ8TaKBwke6E44omRlPWNMSRhcvfMBAlzcUbEMAIAw6P2WEeaDDy-BKN3C8J0uRlngoCrrTRICAnBjzxxC5-sPwLxTMF7-dEEQCpi_Eel0nueWYSa90vSdO0bnRfC9ObuDrAiGT2gqG70i8ig8FddRAhKf9U5DRGNCpK4R/s1600/VOICELOG1.webp' class='myimg'>語音日誌": groupVOICELOG,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioCmZ0X7Tfzd2IBYSVC80rzMeJybDM9DRbQhEfFqJiwAOLgZrFwlMOVw7C85vqQ9endCkoS6Ytz7Uv-HoAg7WH0ftZyF0yXskPVIinmpyTsiTGXQTIei7Uxfe_HJ50zK6Z7Kst16FfnnWS082UatD5kvQL6mqSmS4cudBs9IdFUwged25EAU9HNTQbr8CL/s1600/GHOSTPHOTOS1.webp' class='myimg'>靈異照片": groupGHOSTPHOTOS,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbYDQs1PWegYirnuF6tM01p6AQ8TaKBwke6E44omRlPWNMSRhcvfMBAlzcUbEMAIAw6P2WEeaDDy-BKN3C8J0uRlngoCrrTRICAnBjzxxC5-sPwLxTMF7-dEEQCpi_Eel0nueWYSa90vSdO0bnRfC9ObuDrAiGT2gqG70i8ig8FddRAhKf9U5DRGNCpK4R/s1600/VOICELOG1.webp' class='myimg'>語音日誌": groupVOICELOG,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDk0K0Gd9mRsOZHnR9xL6t7wSiBEAYRf7zZZ3MUAnzEn4HHU9qQWDZM4PCqjMDDEoYsX8be3yMpULSdo3Z6PyorTV587YBZNkiB1Pgon2Rzuv2FH-yl0AdmxakWkbL9mr0-71pPdarpm1tJZ8fa7597JuYmBgg8Hi2pIRiQGp6K6Fv3DRfkiSv2zGoo4vq/s1600/HYAKKIYAKO1.webp' class='myimg'>百鬼夜行": groupHYAKKIYAKO,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTUl7pda2n2krhy7csp6o_AtTNDvz9-78qu-O_LcV7plmQAjnsDvlfvPucZDlPu_rn8rFpSmKCnuNwCMjt7pPFQqajSO6HcXss4HEPnk6e1kWg3yZIYgRY1zuyfDZIDemXW5Jc_9x-LZfU5ECP1pH2xG1SWWA-roFNRWHbiy90hK3nyputT60PRaM_w7g6/s1600/PRAYERBEADS1.webp' class='myimg'>念珠": groupPRAYERBEADS,	
+			
+		};
+		layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
+		//20230412把分類放到sidebar的id=customcontroller內
+		var htmlObject = layerControl.getContainer();
+		var a = document.getElementById('customcontroller')
+		function setParent(el, newParent){
+			newParent.appendChild(el);
+		}
+		setParent(htmlObject, a);
+		
+		mysum();//執行數字統計
+		checklayer();
 	}
+	
 
-	//設定地圖Layer與layerControl
-	var overlayMaps = {
-		"地標或秘境": groupMarker,
-		"休息處": groupRest,
-		"地點" : groupArea,
-	};
-	var layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
-	imageUrl0.addTo(map);
-	L.control.zoom({position: 'topright'}).addTo(map);//{position: 'topright'}
-	map.addControl(new L.Control.Fullscreen({position: 'topright'}));	
+	L.control.zoom({position: 'topleft'}).addTo(map);//{position: 'topright'}
+	map.addControl(new L.Control.Fullscreen({position: 'topleft'}));	
+
 	
 //空的function(原本為使用者自行加點位，這裡全部刪除)
 //	function onMapClick(e) {}
@@ -384,87 +620,112 @@ window.addEventListener("DOMContentLoaded", function () {
 		var _this = this;
 		var clickedMarkerCoords = this.getLatLng();
 		$('.delete').click(function () {
-			storageMarkers = JSON.parse(localStorage.XB3map31);
+			storageMarkers = JSON.parse(localStorage.GhostWireData);
 			for (var i = 0; i < markers.length; i++) {
 				if (clickedMarkerCoords.lat == markers[i].coords.y
 					&& clickedMarkerCoords.lng == markers[i].coords.x)
 				 {
-					//將此(this)marker設定為透明度0.4，並修改Popup內容
-					_this.setOpacity(0.3).closePopup();
-					_this.setPopupContent(markers[i].name + "<p style='text-align:right'><a href='javascript:;' class='undo'>取消標記</a></p>");
-					//修改為localStorage資料但opa:0.4，chk:1
-					let newmarker = {
-						"opa": "0.3",
-						"chk": "1",
-					};
-					storageMarkers.splice(i, 1,newmarker);
-					localStorage.XB3map31 = JSON.stringify(storageMarkers);
+					//將此(this)marker設定為透明度0.2，並修改Popup內容
+					_this.setOpacity(0.2).closePopup();
+					_this.setPopupContent(markers[i].name + "<p style='text-align:right'><a href='javascript:;' class='undo'>取消收集</a></p>");
+					 
+					//把markid名稱寫入Local Storage
+					storageMarkers.push(markers[i].markid);
+					localStorage.GhostWireData = JSON.stringify(storageMarkers);
 					
 					//.js-panto增加class .checked
 					const btnPanto = document.querySelectorAll('.js-panto');
 					for (var j = 0; j < btnPanto.length; j++) {
-						var Pantox=btnPanto[j].dataset.to.split(',')[0];
-						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
-						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
+						var Panto = btnPanto[j].dataset.name;
+						if (Panto == markers[i].markid)
 					 		{btnPanto[j].classList.add('checked');}
 					}				 
 				 }
 			}
+			mysum();//執行數字統計
 		});
 		$('.undo').click(function () {
-			storageMarkers = JSON.parse(localStorage.XB3map31);
+			storageMarkers = JSON.parse(localStorage.GhostWireData);
 			for (var i = 0; i < markers.length; i++) {
 				if (clickedMarkerCoords.lat == markers[i].coords.y
 					&& clickedMarkerCoords.lng == markers[i].coords.x)
 				 {
 					//將此(this)marker設定為透明度1，並修改Popup內容
 					_this.setOpacity(1).closePopup();
-					_this.setPopupContent(markers[i].name + "<p style='text-align:right'><a href='javascript:;' class='delete'>標記</a></p>");
+					_this.setPopupContent(markers[i].name + "<p style='text-align:right'><a href='javascript:;' class='delete'>點擊收集</a></p>");
 
-					//修改為localStorage資料但opa:1，chk:0
-					let newmarker = {
-						"opa": "1",
-						"chk": "0",
-					};
-					storageMarkers.splice(i, 1,newmarker);
-					localStorage.XB3map31 = JSON.stringify(storageMarkers);
+					//修改localStorage資料，把markid拿掉 
+					storageMarkers = storageMarkers.filter((item) => {
+    					return item !=markers[i].markid;
+					});
+					localStorage.GhostWireData = JSON.stringify(storageMarkers);
 					 
 					//.js-panto移除class .checked
 					const btnPanto = document.querySelectorAll('.js-panto');
 					for (var j = 0; j < btnPanto.length; j++) {
-						var Pantox=btnPanto[j].dataset.to.split(',')[0];
-						var Pantoy=btnPanto[j].dataset.to.split(',')[1];
-						if (Pantox == markers[i].coords.x && Pantoy == markers[i].coords.y)
+						var Panto = btnPanto[j].dataset.name;
+						if (Panto == markers[i].markid)
 							{btnPanto[j].classList.remove('checked');}
 					} 
 				}
 			}
+			mysum();//執行數字統計
 		});
 	}
 	
+
+//設定提示線
+const marker1=L.marker([3175,2897], {icon: SHRINE}).bindPopup("<h1>水泥地下室入口</h1><p><a href='javascript:;' class='remove1'>移除我</a></p>");
+//顯示、關閉提示線條，有幾個提示就要放幾個
+	map.on('tooltipopen', function(e) {	
+
+	
+	});
+	map.on('tooltipclose', function(e) {
+
+	});
+//顯示、關閉提示線條END	
+	
+//測試利用超連結顯示線條
+	map.on("popupopen", GOTO);
+	function GOTO() {
+		$('.goto1').click(function () {
+			marker1.addTo(map).bindTooltip("水泥地下室入口",{direction:"top",
+		offset:[0,-20]}).openTooltip();
+			map.flyTo([3175,2897],1);
+		});		 
+		$('.remove1').click(function () {
+			marker1.remove();
+		});
+	}
+		
 	// 移動到指定座標（平滑 || 縮放 效果）
     const btnPanto = document.querySelectorAll('.js-panto');
+	let x;
+	let y;
     Array.prototype.forEach.call(btnPanto, pan => {
       pan.addEventListener('click', e => {
         e.preventDefault();
-		  let x = e.target.dataset.to.split(',')[1];
-		  let y = e.target.dataset.to.split(',')[0];
- //       let latLng = e.target.dataset.to.split(',');
+		  let Panto = e.target.dataset.name;
           let name = e.target.textContent;
+		  for (var i = 0; i < markers.length; i++) {
+			  if (Panto == markers[i].markid){
+				  y = markers[i].coords.x;
+				  x = markers[i].coords.y;
+			  }
+		  }
 		  x = Number(x); //轉數字
-		  map.flyTo([x+100,y],0);
+		  map.flyTo([x+45,y],5);
 
         const tooltip = L.tooltip({
 		className:"my-label",
-		direction:"center",
+		direction:"bottom",
 		offset:[0,25],
     	});
         tooltip.setLatLng([x,y]).setContent(`${name}`).openOn(map);
       })
-    })
-	
-       // create the sidebar instance and add it to the map
-        var sidebar = L.control.sidebar({ container: 'sidebar111' }).addTo(map);
+    })	
+
 
 	// 顯示座標	
 	L.Control.MousePosition = L.Control.extend({
@@ -521,55 +782,137 @@ window.addEventListener("DOMContentLoaded", function () {
 	L.control.mousePosition().addTo(map);
 	
 //重設點位	
-document.getElementById("demo").addEventListener("click", myFunction);
+document.getElementById("clearall").addEventListener("click", myFunction);
 function myFunction() {
 	let text = "是否要重設全部點位?\n注意無法回復";
 	if (confirm(text) == true) {
-		//移除localStorage資料
-		localStorage.removeItem("XB3map31");
 		//.js-panto移除class .checked
 		const btnPanto = document.querySelectorAll('.js-panto');
 		for (var j = 0; j < btnPanto.length; j++) {
 			btnPanto[j].classList.remove('checked');
 		}		
-		//移除map與Control的Layer，有幾個就需要移除幾個
-		map.removeLayer(groupMarker);
-		map.removeLayer(groupRest);
-		map.removeLayer(groupArea);
-		layerControl.removeLayer(groupMarker);
-		layerControl.removeLayer(groupRest);
-		layerControl.removeLayer(groupArea);
-		//把markers內的所有opa設為1，chk設為0
-		var markertemp =[];
-		for (var i = 0; i < markers.length; i++) {
-			markers[i].opa="1";
-			markers[i].chk="0";
-			var dogString = {"opa":markers[i].opa, "chk":markers[i].chk};
-			markertemp.push(dogString);
-		}
+		
+		map.eachLayer(function (layer) {
+			map.removeLayer(layer);
+		});
+		//移除Control
+		layerControl.remove(map);
+
+		//設定空陣列並加進localStorage(表示全清除)
+		var majortemp =[];
 		//加進localStorage
-		var dogString = JSON.stringify(markertemp);
-		localStorage.setItem('XB3map31', dogString);
-		//呼叫initUserLayerGroup(讀取markers資料並放到地圖中)
-		initUserLayerGroup(); 
-		layerControl.addOverlay(groupMarker, '地標或秘境');
-		layerControl.addOverlay(groupRest, '休息處');
-		layerControl.addOverlay(groupArea, '地點');
+		var dogString = JSON.stringify(majortemp);
+		localStorage.setItem('GhostWireData', dogString);
+		//把markers中所有項目opa = "1"chk = "0"
+		markers.forEach((elem) => {
+			elem.opa = "1";elem.chk = "0";
+		});	
+		//呼叫initUserLayerGroup(讀取markers與Layer資訊並放到地圖中)
+		initUserLayerGroup();
 	}
 }	
+
 	
-});
-
-</script> 
-<!-- <script>
-function myFunction() {
-	let text = "是否要重設全部點位??\n注意無法回復\n重設後請自行重新整理頁面";
-	if (confirm(text) == true) {
-	localStorage.removeItem("XB3map31");
-
-  }
+//20230412popupopen的Y方向位移
+map.on('popupopen', function(e) {
+    var px = map.project(e.target._popup._latlng); // find the pixel location on the map where the popup anchor is
+    px.y -= e.target._popup._container.clientHeight/2+55; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+    map.panTo(map.unproject(px),{animate: true}); // pan to new center
+});	
+	
+//20230412點擊空白處放置一個marker	
+const latlngmarker = L.marker([0, 0],{icon: Crosshair});
+function onMapClick(e) {
+  let lat = Math.round(e.latlng.lat); // 緯度
+  let lng = Math.round(e.latlng.lng); // 經度
+  latlngmarker
+    .setLatLng(e.latlng).addTo(map).bindTooltip(`${lng} : ${lat}`,{direction:"top",
+		offset:[0,-20],permanent:true}).openTooltip();
 }
-</script>  -->
+map.on('click', onMapClick);
+	
+//20230623開關所有overlayMaps(checkbox)
+document.getElementById("HideAll").addEventListener('click', function (event) {
+	event.preventDefault();
+  
+  for (var i in overlayMaps) {
+  	map.removeLayer(overlayMaps[i]);
+  }
+});
+document.getElementById("ShowAll").addEventListener('click', function (event) {
+	event.preventDefault();
+	
+  for (var i in overlayMaps) {
+  	map.addLayer(overlayMaps[i]);
+  }  
+
+});	
+
+//側邊欄的搜尋
+document.getElementById("myInput").addEventListener("keyup", FilterList);	
+function FilterList() {
+    var input, filter, li, a, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+	li = document.querySelectorAll('.js-panto');
+    for (i = 0; i < li.length; i++) {
+        txtValue = li[i].textContent || li[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+			li[i].nextElementSibling.style.display = "";
+        } else {
+            li[i].style.display = "none";
+			li[i].nextElementSibling.style.display = "none";
+        }
+    }
+}	
+//統計測試
+function mysum() {
+	var sumconfirm, sumtotal, sum, tempcat, tempcat1;
+	tempcat = document.querySelectorAll('.category');
+//		console.log(tempcat);
+    for (var i = 0; i < tempcat.length; i++) {
+		tempcat1 = tempcat[i].id;
+		sumconfirm = document.getElementById(tempcat1);
+		sumtotal = sumconfirm.querySelectorAll('.js-panto').length;
+		sum = sumconfirm.querySelectorAll('.checked').length;
+		sumconfirm.firstElementChild.firstElementChild.textContent = sum + "/" + sumtotal; 
+	}
+	
+}
+
+//勾選分類才顯示物品列表
+map.on('overlayadd', checklayer);	
+map.on('overlayremove', checklayer);
+function checklayer(n) {
+	var checklist,checkid,idconfirm;
+	checklist = document.querySelectorAll('.category');
+    for (var i = 0; i < checklist.length; i++) {
+		checkid = checklist[i].id;
+		idconfirm = document.getElementById(checkid);
+		switch(checkid){
+		case "groupSHRINE":n = groupSHRINE;break;
+    	case "groupRELIC":n = groupRELIC;break;
+		case "groupHYAKKIYAKO":n = groupHYAKKIYAKO;break;
+		case "groupLANDMARK":n = groupLANDMARK;break;
+		case "groupGHOSTPHOTOS":n = groupGHOSTPHOTOS;break;
+		case "groupVOICELOG":n = groupVOICELOG;break;
+		case "groupKKSNOTE":n = groupKKSNOTE;break;
+		case "groupPRAYERBEADS":n = groupPRAYERBEADS;break;
+		}
+		if(map.hasLayer(n)){
+			idconfirm.style.display = "block";
+		} else {
+			idconfirm.style.display = "none";
+		}
+	}
+}
+	
+
+	
+//END
+});
+</script> 
 
 <!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
@@ -579,50 +922,105 @@ function myFunction() {
 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
    crossorigin=""></script>
-<link href='https://sniperex168.github.io/myleaflet/leaflet-sidebar.css' rel='stylesheet' />
-<!-- <link href='E:\桌面\blogger\leaflet-sidebar.css' rel='stylesheet' />--> 
-<script src='https://sniperex168.github.io/myleaflet/leaflet-sidebar.js' crossorigin=''></script> 
+<link href='https://sniperex168.github.io/myleaflet/leaflet-sidepanel.css' rel='stylesheet' />
+<script src='https://sniperex168.github.io/myleaflet/leaflet-sidepanel.min.js' crossorigin=''></script> 
 <!-- fullscreen --> 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+<!-- GhostWireTOKYOdata --> 
+<script src='https://sniperex168.github.io/myleaflet/GhostWireTOKYOdata.js'></script>
+<script src='E:\桌面\blogger\GhostWire\GhostWireTOKYOdata.js'></script>
 <style>
 #map {
-	height:750px;
+	height:800px;
 	width:100%;
-	background: #292a2e;
+	background: #0f161c;
 	font-size: 14px;
 	margin: 0 auto;
 	z-index: 10;
 }
 @media screen and (max-width: 600px) {
-#map {	height:360px;width:100%;font-size: 12px;}
+#map {	height:400px;width:100%;font-size: 12px;}
 }
 .my-label {
-    font-size:14px;
-	background: #B87B7Caa;
+    font-size:16px;
+	background: #C73336cc;
 	color:#FFFFFF;
 	border:none;
 	box-shadow: none;
 }
+.leaflet-tooltip-bottom:before {
+    border-bottom-color:#C73336cc;
+}
+
 .checked{
     text-decoration: line-through;
-	color: gray!important;
+	color: #CCC!important;
 }
 .leaflet-popup-content{
-	min-width: 360px;max-width: 400px;
+	min-width: 640px;max-width: 640px;
 }
+.mypopupimg{
+	width:auto;
+	height:360px!important;
+	}
+.leaflet-control-layers{
+	background-color: transparent!important;
+	border:none!important;;
+	}
+
+.leaflet-control-layers-overlays {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	}
+.leaflet-control-layers label {
+	display:flex;
+	flex:0 0 45%;
+	}
+
 @media screen and (max-width: 600px) {
-.leaflet-popup-content {		min-width: 280px;max-width: 280px}
+.leaflet-popup-content {min-width: 284px;max-width: 284px}
+.mypopupimg{width:auto;height:160px!important;}
+}
+@media screen and (max-width: 400px) {
+.leaflet-control-layers label {flex:initial;}
 }
 .leaflet-container .leaflet-control-mouseposition {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(100, 100, 100, 0.8);
   box-shadow: 0 0 5px #bbb;
   padding: 0 5px;
   margin:0;
   color: #FFF;
-  font-size: 5px;
-
+  font-size: 8px;
 }
+.sidepanel-tab-content.active
+	{background-color: transparent!important}
+ul.sidepanel-tabs{
+	list-style-type: none!important;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    padding-left: 0!important;
+	padding-right: 0!important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+	}
+#customcontroller{
+	height: 80px;
+	}
+img.myimg {
+	vertical-align: bottom;
+	display: inline;
+	height: 24px !important;
+}
+/*@media screen and (max-width: 600px) {
+img.myimg {
+	height: 18px !important;
+}
+}*/
 </style>
 </body>
 </html>
