@@ -38,15 +38,16 @@
 				</ul>
 			</nav>
 			<div class="sidepanel-content-wrapper">
+				<div id="toptitle">
+					<p style="text-align: center;font-size: 20px;font-weight: bold;">鬼線：東京(Ghostwire: Tokyo)</p>
+					<p style="text-align: center;font-size: 16px;cursor: pointer;font-weight: bold;"><a id="HideAll">全部隱藏</a>　　<a id="ShowAll">全部顯示</a></p>		
+					<div id="customcontroller"> </div>
+					<p>請先勾選分類才會顯示列表，點擊列表名稱可移動到該位置</p>
+					<p><input type="text" id="myInput" placeholder="輸入名稱尋找" title="輸入名稱尋找"></p>
+				</div>				
 				<div class="sidepanel-content">
-					<div>
-						<p id="toptitle" style="text-align: center;font-size: 20px;font-weight: bold;">鬼線：東京(Ghostwire: Tokyo)</p>
-						<p style="text-align: center;font-size: 16px;cursor: pointer;font-weight: bold;"><a id="HideAll">全部隱藏</a>　　<a id="ShowAll">全部顯示</a></p></p>		
-						<p><div id="customcontroller"> </div></p>
-						<p>請先勾選分類才會顯示列表，點擊列表名稱可移動到該位置</p>
-						<input type="text" id="myInput" placeholder="輸入名稱尋找" title="輸入名稱尋找">
-					</div>
 					<div class="sidepanel-tab-content" data-tab-content="tab-1">
+					<div id="gotoTOP"></div>
 					<div class="category" id="groupSHRINE">
 						<h2>神社 <span class="sum">&nbsp;</span></h2>
 						<p>
@@ -243,6 +244,19 @@
 							<a class="js-panto" href="#" data-name="RELIC092">鵺根付</a><br>
 						</p>
 					</div>
+					<div class="category" id="groupJIZO">
+						<h2>地藏像 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="JIZO038">風之地藏像1</a><br>
+							<a class="js-panto" href="#" data-name="JIZO033">風之地藏像2</a><br>
+							<a class="js-panto" href="#" data-name="JIZO032">風之地藏像3</a><br>
+							<a class="js-panto" href="#" data-name="JIZO037">風之地藏像4</a><br>
+							<a class="js-panto" href="#" data-name="JIZO045">風之地藏像5</a><br>
+							<a class="js-panto" href="#" data-name="JIZO040">火之地藏像1</a><br>
+							<a class="js-panto" href="#" data-name="JIZO039">火之地藏像2</a><br>
+							<a class="js-panto" href="#" data-name="JIZO044">水之地藏像1</a><br>
+						</p>
+					</div>
 					<div class="category" id="groupVOICELOG">
 						<h2>語音日誌 <span class="sum">&nbsp;</span></h2>
 						<p>
@@ -263,6 +277,16 @@
 							<a class="js-panto" href="#" data-name="VOICELOG04">檔案 #299</a><br>
 							<a class="js-panto" href="#" data-name="VOICELOG03">檔案 #329</a><br>
 							<a class="js-panto" href="#" data-name="VOICELOG12">檔案 #999</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupTANUKI">
+						<h2>補狸 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="TANUKI021">黃色楓葉的狸</a><br>
+							<a class="js-panto" href="#" data-name="TANUKI012">白花的狸</a><br>
+							<a class="js-panto" href="#" data-name="TANUKI016">綠色風呂敷的狸</a><br>
+							<a class="js-panto" href="#" data-name="TANUKI020">黃色零錢包的狸</a><br>
+							<a class="js-panto" href="#" data-name="TANUKI017">全副武裝的狸</a><br>
 						</p>
 					</div>
 					<div class="category" id="groupLANDMARK">
@@ -299,6 +323,22 @@
 							<a class="js-panto" href="#" data-name="LANDMARK029">澀谷區條紋塔</a><br>
 							<a class="js-panto" href="#" data-name="LANDMARK031">銀平禁區</a><br>
 							<a class="js-panto" href="#" data-name="LANDMARK028">澀荒公園</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupYOKAI">
+						<h2>狩獵妖怪 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="YOKAI35">座敷童子1</a><br>
+							<a class="js-panto" href="#" data-name="YOKAI33">唐傘小僧1</a><br>
+							<a class="js-panto" href="#" data-name="YOKAI29">塗壁1</a><br>
+							<a class="js-panto" href="#" data-name="YOKAI32">河童1</a><br>
+							<a class="js-panto" href="#" data-name="YOKAI31">一反木綿1</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupGRAFFITI">
+						<h2>塗鴉 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="GRAFFITI038">SHIBUYA♡HACHI 22</a><br>
 						</p>
 					</div>
 					<div class="category" id="groupGHOSTPHOTOS">
@@ -340,6 +380,34 @@
 							<a class="js-panto" href="#" data-name="RELIC092">鵺根付</a><br>
 						</p>
 					</div>
+					<div class="category" id="groupPRAYERBEADS">
+						<h2>念珠 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="PRAYERBEADS30">風念珠1</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupMAGATAMA">
+						<h2>勾玉 <span class="sum">&nbsp;</span></h2>
+						<p>此處指向可向「貓又商店」購買的勾玉</p>
+						<p>
+							<a class="js-panto" href="#" data-name="MAGATAMA01">勾玉1</a><br>
+						</p>
+					</div>
+					<div class="category" id="groupSIDE">
+						<h2>支線任務 <span class="sum">&nbsp;</span></h2>
+						<p>
+							<a class="js-panto" href="#" data-name="SIDE01">深度清理</a><br>
+							<a class="js-panto" href="#" data-name="SIDE02">座敷童子</a><br>
+							<a class="js-panto" href="#" data-name="SIDE03">唐傘小僧</a><br>
+							<a class="js-panto" href="#" data-name="SIDE04">牆裡的聲音</a><br>
+							<a class="js-panto" href="#" data-name="SIDE05">補狸</a><br>
+							<a class="js-panto" href="#" data-name="SIDE06">人偶的臨終儀式</a><br>
+							<a class="js-panto" href="#" data-name="SIDE07">囤積者之家</a><br>
+							<a class="js-panto" href="#" data-name="SIDE08">河童</a><br>
+							<a class="js-panto" href="#" data-name="SIDE09">緋紅之月</a><br>
+							<a class="js-panto" href="#" data-name="SIDE10">一反木綿</a><br>
+						</p>
+					</div>
 					</div>
 					<div class="sidepanel-tab-content" data-tab-content="tab-X">
 						<h2>重設標記</h2>
@@ -348,7 +416,7 @@
 						<button id="clearall">重設全部標記</button>
 					</div>
 				<p>如發現問題請留言回報，感謝</p>
-				<p><a href="#toptitle">回頂端</a></p>
+				<p>  <a href="#" class="jq-goTop">回頂端</a></p>
 				</div>
 			</div>
 		</div>
@@ -406,7 +474,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		popupAnchor: [0, -15] // point from which the popup should open relative to the iconAnchor
 	});
 	var SHRINE = L.icon({
-		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbKW-ksfNSShYDjfHzm8LtJ9cOZ8UVNJdWXyrPcgtaI245Z-k-xJuwhLSgUZzkfh25UDDFRgL5XKhw9LqHlBRx3dcMPf6vh1ya2f422K_Sp93ywr4sY-w_64zu9h6i30EUP_xnce9XYV7S4ISCm7ck7vGsp-KZIqv4KYFK6BqeEytdl6TBKfMKMfyY54io/s64/SHRINE.webp',
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHMwZydP5wfE_qWcBnO15n2vOMWZRoJgCclvD0WhUHLewa6gtOCwL_xowY0EmAaHJVsmq7FOgVDbw4--QxRQQArFGH4Pt-5LkMBXM1jdBQpkGvTVtsJyBeNnaBvtnH7GyGLxd7cQxA-VYaa6g-B4YGew0MXSiaEXi0n5yNdomFqXgisprs_1QjmHF2InZp/s64/SHRINE.webp',
 		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
 	var JIZO = L.icon({
 		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKJ_H_7fxiUZO0bQppH1hSXKrFXPBu0XGXCv5-nwEeY9twdiU5wkxJrnGkty_OlOtihU0rXjNdo2n64fENWz27incrZxSyFguM21h3L73aNgFmaIsuHzMO-5wZKzbWyd4fzKd-m-FX75OwRm-c5v_nPltl8TzUrVA-_slrX1Dv-uoW77y3Sf9P6PFK1KF2/s1600/JIZO3.webp',
@@ -471,6 +539,15 @@ window.addEventListener("DOMContentLoaded", function () {
 	var PRAYERBEADS =L.icon({
 		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs0YgejlCSqRLBaw8m0Ri1sLFDgfRllzL06a0I3Zbs9HlQHXwu6X_0j_6wIEWXto2XhEEUu_Wd7CtR28KdeY_oe7UljXUSDu3JNdX2kfvtYQdPOrBVphIeEy9ZRkAgEzsogBdkFbB-KP-ZO3HxAYnRTnTZdtgPD9m0CTVdU1VNlpEp9JJA_9BBJn_3enaa/s64/PRAYERBEADS.webp',
 		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var SIDE =L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIT6pupZFWTlo0uapanSuEMjA2zgLQWitqLOyoeEB0UqnEgRQEjiWYJzt0daQ-_XE08jxPPz5tIfKiDMo3G6cm6GMY3P_I91Dwr2ZjqMERXbPqlDj4qkt0Cv3TryoWtkSVlt8eB5s1Tt4kVFKuUz_bc3Lt-9sneXnwzSSJZKxVT5A1t14-vuruboZFPGFn/s64/SIDE.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var MAGATAMA =L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPpKoqQp9dEMlw48Zp85K-w1i0JfBMde__5GVaLRR3dZ780GSLRR3mZO6hqXwTX5OGuw4Ya2PS3FNTMyfHScz9By3vXFiWWA0kl_BJV9rUtTL0cVXjcAmn0bgQRtN0HNSKx52U0tkpE2lRtZM5Q4YLZCiplFx0XxYE_NhDYVefMbMvg6iecNupr8sV88ha/s64/MAGATAMA.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
+	var Entrance =L.icon({
+		iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinD7BpfDBeIjwfSS7VVZ_HCIaug3OhOiwOg4JUJJ8rLvHvBFea37wpq0yov4nYz4E6yxu-i5yJ0Hc791grE_0gKHNxJyWuHt859hRgwkcJh3Xka8dd7ROwFFtVZwauLHyJ5yj8Mn4Sac1hzTc_wPxYtHWQ0duSJ_1RDa7b0zy9PW4yf9M1UrI7UZKCjc4C/s64/Entrance.webp',
+		shadowUrl: '',iconSize: [45, 45],iconAnchor: [22, 18],popupAnchor: [0, -15]});
 	
 	//如果Local Storage有資料
 	if (localStorage.GhostWireData !== undefined) {
@@ -511,6 +588,8 @@ window.addEventListener("DOMContentLoaded", function () {
 			var GHOSTPHOTOStemp = [];
 			var HYAKKIYAKOtemp = [];
 			var PRAYERBEADStemp = [];
+			var SIDEtemp = [];
+			var MAGATAMAtemp = [];
 			for (var i = 0; i < markers.length; i++) {
 				var x = markers[i].coords.x;
 				var y = markers[i].coords.y;
@@ -541,6 +620,8 @@ window.addEventListener("DOMContentLoaded", function () {
 					case "GHOSTPHOTOS":type = GHOSTPHOTOS;break;
 					case "HYAKKIYAKO":type = HYAKKIYAKO;break;
 					case "PRAYERBEADS":type = PRAYERBEADS;break;
+					case "SIDE":type = SIDE;break;
+					case "MAGATAMA":type = MAGATAMA;break;
 				}
 				if (chk === "1") {
 					var marker = L.marker([y, x],{
@@ -585,6 +666,8 @@ window.addEventListener("DOMContentLoaded", function () {
 					case "GHOSTPHOTOS":GHOSTPHOTOStemp.push(marker);break;
 					case "HYAKKIYAKO":HYAKKIYAKOtemp.push(marker);break;
 					case "PRAYERBEADS":PRAYERBEADStemp.push(marker);break;
+					case "SIDE":SIDEtemp.push(marker);break;
+					case "MAGATAMA":MAGATAMAtemp.push(marker);break;
 					
 				}				
 			}				
@@ -602,6 +685,8 @@ window.addEventListener("DOMContentLoaded", function () {
 		groupGHOSTPHOTOS = L.layerGroup(GHOSTPHOTOStemp);
 		groupHYAKKIYAKO = L.layerGroup(HYAKKIYAKOtemp);
 		groupPRAYERBEADS = L.layerGroup(PRAYERBEADStemp);
+		groupSIDE = L.layerGroup(SIDEtemp).addTo(map);
+		groupMAGATAMA = L.layerGroup(MAGATAMAtemp).addTo(map);
 		
 		//設定地圖Layer與layerControl
 		Surface.addTo(map);
@@ -621,8 +706,9 @@ window.addEventListener("DOMContentLoaded", function () {
 		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioCmZ0X7Tfzd2IBYSVC80rzMeJybDM9DRbQhEfFqJiwAOLgZrFwlMOVw7C85vqQ9endCkoS6Ytz7Uv-HoAg7WH0ftZyF0yXskPVIinmpyTsiTGXQTIei7Uxfe_HJ50zK6Z7Kst16FfnnWS082UatD5kvQL6mqSmS4cudBs9IdFUwged25EAU9HNTQbr8CL/s1600/GHOSTPHOTOS1.webp' class='myimg'>靈異照片": groupGHOSTPHOTOS,
 		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbYDQs1PWegYirnuF6tM01p6AQ8TaKBwke6E44omRlPWNMSRhcvfMBAlzcUbEMAIAw6P2WEeaDDy-BKN3C8J0uRlngoCrrTRICAnBjzxxC5-sPwLxTMF7-dEEQCpi_Eel0nueWYSa90vSdO0bnRfC9ObuDrAiGT2gqG70i8ig8FddRAhKf9U5DRGNCpK4R/s1600/VOICELOG1.webp' class='myimg'>語音日誌": groupVOICELOG,
 		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDk0K0Gd9mRsOZHnR9xL6t7wSiBEAYRf7zZZ3MUAnzEn4HHU9qQWDZM4PCqjMDDEoYsX8be3yMpULSdo3Z6PyorTV587YBZNkiB1Pgon2Rzuv2FH-yl0AdmxakWkbL9mr0-71pPdarpm1tJZ8fa7597JuYmBgg8Hi2pIRiQGp6K6Fv3DRfkiSv2zGoo4vq/s1600/HYAKKIYAKO1.webp' class='myimg'>百鬼夜行": groupHYAKKIYAKO,
-		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTUl7pda2n2krhy7csp6o_AtTNDvz9-78qu-O_LcV7plmQAjnsDvlfvPucZDlPu_rn8rFpSmKCnuNwCMjt7pPFQqajSO6HcXss4HEPnk6e1kWg3yZIYgRY1zuyfDZIDemXW5Jc_9x-LZfU5ECP1pH2xG1SWWA-roFNRWHbiy90hK3nyputT60PRaM_w7g6/s1600/PRAYERBEADS1.webp' class='myimg'>念珠": groupPRAYERBEADS,	
-			
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTUl7pda2n2krhy7csp6o_AtTNDvz9-78qu-O_LcV7plmQAjnsDvlfvPucZDlPu_rn8rFpSmKCnuNwCMjt7pPFQqajSO6HcXss4HEPnk6e1kWg3yZIYgRY1zuyfDZIDemXW5Jc_9x-LZfU5ECP1pH2xG1SWWA-roFNRWHbiy90hK3nyputT60PRaM_w7g6/s1600/PRAYERBEADS1.webp' class='myimg'>念珠": groupPRAYERBEADS,
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfouBTwk0P7zkybyx2eZfjsVGUmP78BYWO_0p__WvI9r8iuxduKLWyL2pSjG92NkfwxKLhG841HId83cvh4U0e5XI1NQ0kUU7KITXxamJORnIe29YvZWeMByIb4lvXuyaht6dpP65tfvN_7GKAg9c9rSkR6HOElVCajkHNZwItwpDQSPVT_fb0u0FDu49E/s1600/MAGATAMA1.webp' class='myimg'>勾玉": groupMAGATAMA,	
+		"<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbQfUL5Fso6PzvUgZD25JfVOELr-UHPFLQYPPqiaebp9ZwkDH6hdhn8M-SDh1oE6uhr655tMnZ2BPizuMBKNoBDon8yB7Tg0Q0u02LqExuAQerubwWzNmNORZFZu69BPBHqgIr27xW2eM5UZLY6J2X7Vuy2RmGeYlUPSNnhrwWlOoaQVcf0wTA9M0ZFXwS/s1600/SIDE1.webp' class='myimg'>支線任務": groupSIDE,		
 		};
 		layerControl = L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
 		//20230412把分類放到sidebar的id=customcontroller內
@@ -704,8 +790,9 @@ window.addEventListener("DOMContentLoaded", function () {
 	}
 	
 
-//設定提示線
-const marker1=L.marker([3175,2897], {icon: SHRINE}).bindPopup("<h1>水泥地下室入口</h1><p><a href='javascript:;' class='remove1'>移除我</a></p>");
+//設定提示點或線
+const marker1=L.marker([3175,2897], {icon: Entrance}).bindPopup("<h1>水泥地下室入口</h1><p><a href='javascript:;' class='remove1'>移除我</a></p>");
+const marker2=L.marker([2386,3497], {icon: Entrance}).bindPopup("<h1>加賀里瞭望台</h1><p>即第貳章主線「死亡迷宮」的「前往加賀里瞭望台」時首次取得風念珠的位置</p><p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKX2wKPe0G4tlu4rcxjZcUx3qNcuuEcBpZZsO0YBh8sUnu_HpopUV22N1ilHIsShob4YrpoT4ybA4CyHOsLoxNk2YD2bRrAYGx-g2SkmPEu4yV1jBbn7o_T0mt7q70N100oD8fQBsBU_3bWboArwnwKxF_ZqEaXN3qTpi-f0C23RpE8QOfjOptF7lYwU_d/s640/PRAYERBEADS30.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKX2wKPe0G4tlu4rcxjZcUx3qNcuuEcBpZZsO0YBh8sUnu_HpopUV22N1ilHIsShob4YrpoT4ybA4CyHOsLoxNk2YD2bRrAYGx-g2SkmPEu4yV1jBbn7o_T0mt7q70N100oD8fQBsBU_3bWboArwnwKxF_ZqEaXN3qTpi-f0C23RpE8QOfjOptF7lYwU_d/s0/PRAYERBEADS30.webp' class='mypopupimg'/></a></p><p><a href='javascript:;' class='remove2'>移除我</a></p>");
 //顯示、關閉提示線條，有幾個提示就要放幾個
 	map.on('tooltipopen', function(e) {	
 
@@ -722,10 +809,19 @@ const marker1=L.marker([3175,2897], {icon: SHRINE}).bindPopup("<h1>水泥地下�
 		$('.goto1').click(function () {
 			marker1.addTo(map).bindTooltip("水泥地下室入口",{direction:"top",
 		offset:[0,-20]}).openTooltip();
-			map.flyTo([3175,2897],1);
+			map.flyTo([3175,2897],5);
 		});		 
 		$('.remove1').click(function () {
 			marker1.remove();
+		});
+		$('.goto2').click(function () {
+			marker2.addTo(map).bindTooltip("加賀里瞭望台",{direction:"top",
+		offset:[0,-20]}).openTooltip();
+			map.closePopup();
+			map.flyTo([2386,3497],5);
+		});		 
+		$('.remove2').click(function () {
+			marker2.remove();
 		});
 	}
 		
@@ -929,6 +1025,12 @@ function checklayer(n) {
 		case "groupVOICELOG":n = groupVOICELOG;break;
 		case "groupKKSNOTE":n = groupKKSNOTE;break;
 		case "groupPRAYERBEADS":n = groupPRAYERBEADS;break;
+		case "groupSIDE":n = groupSIDE;break;
+		case "groupJIZO":n = groupJIZO;break;
+		case "groupTANUKI":n = groupTANUKI;break;
+		case "groupYOKAI":n = groupYOKAI;break;
+		case "groupMAGATAMA":n = groupMAGATAMA;break;
+		case "groupGRAFFITI":n = groupGRAFFITI;break;
 		}
 		if(map.hasLayer(n)){
 			idconfirm.style.display = "block";
@@ -937,8 +1039,25 @@ function checklayer(n) {
 		}
 	}
 }
-	
+//選單gotop
+$(".jq-goTop").click(function (e) {
+  e.preventDefault();
+  $(".sidepanel-content-wrapper").animate(
+    {
+      scrollTop: 0
+    },
+    1000
+  );
+});
+//選單抓#toptitle的高度
+var toptitlehight = document.getElementById("toptitle");
+var sidepanelcontent =	document.querySelectorAll(".sidepanel-tab-content");
+	console.log(sidepanelcontent);
+	sidepanelcontent[0].style.marginTop = toptitlehight.scrollHeight + "px";
+	sidepanelcontent[1].style.marginTop = toptitlehight.scrollHeight + "px";
 
+	
+	
 	
 //END
 });
@@ -970,7 +1089,7 @@ function checklayer(n) {
 	z-index: 10;
 }
 @media screen and (max-width: 600px) {
-#map {	height:400px;width:100%;font-size: 12px;}
+#map {	height:600px;width:100%;font-size: 12px;}
 }
 .my-label {
     font-size:16px;
@@ -1024,6 +1143,9 @@ function checklayer(n) {
   color: #FFF;
   font-size: 8px;
 }
+.sidepanel-tab-content
+	{marginTop: 0}
+
 .sidepanel-tab-content.active
 	{background-color: transparent!important}
 ul.sidepanel-tabs{
@@ -1046,11 +1168,13 @@ img.myimg {
 	display: inline;
 	height: 24px !important;
 }
-/*@media screen and (max-width: 600px) {
-img.myimg {
-	height: 18px !important;
+#toptitle {
+	position: fixed;
+    z-index: 1;
+    background-color: white;
+    margin:0 6px;
 }
-}*/
+
 </style>
 </body>
 </html>
