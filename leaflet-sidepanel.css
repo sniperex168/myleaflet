@@ -13,7 +13,7 @@
 }
 @media screen and (max-width: 450px) {
   .sidepanel {
-    width: calc(100% - 56px);
+    width: calc(100% - 30px);
   }
 }
 
