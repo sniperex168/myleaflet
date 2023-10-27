@@ -68,6 +68,7 @@
 .sidepanel-content-wrapper .sidepanel-content {
   position: absolute;
   padding: 0.5rem 0.5rem;
+  padding-bottom: 100px;
 }
 .sidepanel-content-wrapper .sidepanel-content .sidepanel-tab-content {
   color: inherit;
