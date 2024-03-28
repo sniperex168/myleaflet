@@ -2148,6 +2148,9 @@ var tipsTemp = [
 var MATERIA = L.icon({
 	iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPnaURCDBEgb_sHQPzWZJRpENs25PBTsnUfZuyfyt6vnROc-xoZ1a7Fhs0vVjRyudPpvKRlFOhoq6PJRnt2YTbqoDSNr4G7p6YLw_ywtJoSA-d7qMt_pA5qoMlMc3RHJNmGCpBC2fmqWY6s6v1Q9uNbAeY-KtLVA23Gw3GFdvsYD9PucyE7eBcIm5gJWk/s1600/MATERIA.png',
 	shadowUrl: '',iconSize: [35, 35],iconAnchor: [18, 35],popupAnchor: [0, -40],tooltipAnchor: [15, -15]});
+var Accessory = L.icon({
+	iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9aFu1BOTVXlu1LWfH9xMhi1Y6khtXX4Z57hoineUY7nbU2VuLca2TTNjR6HsghI96RfpNc7lCF1WBaFJr5IGLKQcgOj3fKH5EyTHLl2HjZvCxL8zz3ZzNLPsVXanaSVHgcsYA46N09UhsM8LFlUzHc6D1KkkiLW1hNWE50piPyYkeFU09jpkyQmijt_A/s1600/Accessories.png',
+	shadowUrl: '',iconSize: [35, 35],iconAnchor: [18, 35],popupAnchor: [0, -40],tooltipAnchor: [15, -15]});
 var WeaponC = L.icon({
 	iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqe6lDceQ82evpFgY7uXVz0ojF9IKOHWbOgROmRsgfLubdg63DDJHdtb4U980OAcfrU32HzsSvJSemCccayNNXqHGSohjzvnOiNX7owb_RA1NT87J_-ycSRFNZP-VArguLXwFGU-TpKR8paoljHJjJpQ-cgA0c4StiqmzrGzwn_pl3_spPNU5TD94M-qo/s1600/WeaponC.png',
 	shadowUrl: '',iconSize: [50, 50],iconAnchor: [18, 35],popupAnchor: [5, -35],tooltipAnchor: [25, -10]});
@@ -2221,6 +2224,19 @@ var EquipmentTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [385,1880]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>陸行鳥羽毛</h1>\
+	<p>格林牧場的陸行鳥房後方，柵欄旁的寶箱內</p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnXzeqhyzdrEOGtFrhG2KwRUb0xP3zaxcEkBmNx8aJSEaDA6oyMwlO9FrZ1rEVbydq87drnKerytFiHemY3DNw8ESowdbcvTzJcc00NZYaw72EYrQN4xFThF2_iUQZf6zje58CYKG-J9S2yB-cRf6frBszVixDUu2Wrw7AOFUcusDfJRNDHqT_UR9C0R4/s0/Accessory004.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnXzeqhyzdrEOGtFrhG2KwRUb0xP3zaxcEkBmNx8aJSEaDA6oyMwlO9FrZ1rEVbydq87drnKerytFiHemY3DNw8ESowdbcvTzJcc00NZYaw72EYrQN4xFThF2_iUQZf6zje58CYKG-J9S2yB-cRf6frBszVixDUu2Wrw7AOFUcusDfJRNDHqT_UR9C0R4/s640/Accessory004.webp' class='mypopupimg'/></a></p>"},
+	"levels": "1",
+	"myid": "Accessory004",
+	"icon":"Accessory",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3010,2067]
     }
 },
 ];
