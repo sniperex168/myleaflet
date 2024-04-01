@@ -702,6 +702,11 @@ var ProtorelicTemp = [
     "properties": {"party": "<h1>調查報告１：海岸的守望哨</h1>\
 	<p>建議等級：Lv.17。</p><p>完成<a class='goto' href='javascript:;' data-name='Tower001' data-z='5'>啟動報告１：格林牧場的通訊塔</a>才會發現</p>\
 	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p>獎勵</p>\
+	<ul>\
+		<li>格拉斯蘭地區分析點：10點</li>\
+		<li>隊伍經驗值：5EXP</li>\
+	</ul>\
 	<p>完成調查報告後，此項名稱變為「調查報告１：竊盜團的尋寶」</p>\
 	"},
 	"levels": "1",
@@ -716,6 +721,11 @@ var ProtorelicTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>調查報告２：魔晄輸送管的管理大樓</h1><p>建議等級：Lv.18。</p><p>完成<a class='goto' href='javascript:;' data-name='Protorelic001' data-z='5'>調查報告１：竊盜團的尋寶</a>才會發現</p>\
 	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p>獎勵</p>\
+	<ul>\
+		<li>格拉斯蘭地區分析點：10點</li>\
+		<li>隊伍經驗值：5EXP</li>\
+	</ul>\
 	<p>完成調查報告後，此項名稱變為「調查報告２：竊盜團的烤肉」</p>\
 	"},
 	"levels": "1",
@@ -730,6 +740,11 @@ var ProtorelicTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>調查報告３：共和國時代的廢工廠</h1><p>建議等級：Lv.18。</p><p>完成<a class='goto' href='javascript:;' data-name='Protorelic002' data-z='5'>調查報告２：竊盜團的烤肉</a>才會發現</p>\
 	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p>獎勵</p>\
+	<ul>\
+		<li>格拉斯蘭地區分析點：10點</li>\
+		<li>隊伍經驗值：5EXP</li>\
+	</ul>\
 	<p>完成調查報告後，此項名稱變為「調查報告３：竊盜團的擾亂作戰」</p>\
 	"},
 	"levels": "1",
@@ -745,6 +760,11 @@ var ProtorelicTemp = [
     "properties": {"party": "<h1>調查報告４：竊盜團的基地</h1><p>建議等級：Lv.19。</p><p>完成<a class='goto' href='javascript:;' data-name='Protorelic003' data-z='5'>調查報告３：竊盜團的擾亂作戰</a>才會發現</p>\
 	<p>PS. 完成「調查報告３」後才有鑰匙解鎖這個地區的上鎖門</p>\
 	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p>獎勵</p>\
+	<ul>\
+		<li>格拉斯蘭地區分析點：10點</li>\
+		<li>隊伍經驗值：5EXP</li>\
+	</ul>\
 	<p>完成調查報告後，此項名稱變為「調查報告４：貝格公司的誕生」</p>\
 	"},
 	"levels": "1",
@@ -2236,7 +2256,7 @@ var EquipmentTemp = [
 	"icon":"Accessory",
     "geometry": {
         "type": "Point",
-		"coordinates": [3010,2072]
+		"coordinates": [3007,2072]
     }
 },
 ];
