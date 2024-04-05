@@ -16,7 +16,7 @@ var TowerTemp = [
 		<li>莫古利報告：大草原的莫古利</li>\
 		<li>探索報告１：岩蔭下的生命點</li>\
 		<li>討伐報告１：暴食的毒老鼠</li>\
-		<li>調查報告１：竊盜團的尋寶</li>\
+		<li>調查報告１：海岸的守望哨</li>\
 	</ul>\
 	<p>獎勵</p>\
 	<ul>\
@@ -308,6 +308,7 @@ var SummonCrystalTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>召喚獸報告１：泰坦祠堂α</h1><p>建議等級：無。</p>\
+	<p>分析召喚獸水晶後，可獲得獎勵</p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>強化召喚獸魔晶石：泰坦(等級+1)</li>\
@@ -326,6 +327,7 @@ var SummonCrystalTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>召喚獸報告２：泰坦祠堂β</h1><p>建議等級：無。</p>\
+	<p>分析召喚獸水晶後，可獲得獎勵</p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>強化召喚獸魔晶石：泰坦(等級+1)</li>\
@@ -344,6 +346,7 @@ var SummonCrystalTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>召喚獸報告３：泰坦祠堂γ</h1><p>建議等級：無。</p>\
+	<p>分析召喚獸水晶後，可獲得獎勵</p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>強化召喚獸魔晶石：泰坦(等級+1)</li>\
@@ -2164,15 +2167,15 @@ var tipsTemp = [
 
 ];
 
-//拍照點
+//拍攝點
 var photos = L.icon({
 	iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5bs6SK90TVpMRttAnt4ujQyp3KW5QaJUVF-hnbKEkHNIhcSfGV7Jy_MnRzgCIf9AFKzUwbKw3NnT_4f1FVl9jR-YUYUsH_-BcXDZHe2AaUkn_a8VQrl0-mJwdL0IkvJK6ir2S1vCKqXrzEqRdIjenZs3OYIsO3T_kg3j2lEH-Xw6OI1BTQJmmRr538qo/s1600/photos.png',
 	shadowUrl: '',iconSize: [40, 40],iconAnchor: [18, 35],popupAnchor: [0, -35],tooltipAnchor: [20, -15]});
 var  photosTemp = [ 
 {
     "type": "Feature",
-    "properties": {"party": "<h1>格拉斯蘭　拍照點</h1>\
-	<p>拍照點後只要進入拍照模式即可，無論有無拍照都算攝影完成。</p>\
+    "properties": {"party": "<h1>格拉斯蘭　拍攝點</h1>\
+	<p>抵達拍攝點後只要進入拍照模式即可，無論有無拍照都算攝影完成。</p>\
 	<p>回報給「攝影師佛卡斯」可提昇在相片俱樂部的會員等級並獲得拍照模式的濾鏡或外框。</p>"},
 	"levels": "1",
 	"myid": "photos001",
