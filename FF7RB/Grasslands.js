@@ -704,7 +704,7 @@ var ProtorelicTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>調查報告１：海岸的守望哨</h1>\
 	<p>建議等級：Lv.17。</p><p>完成<a class='goto' href='javascript:;' data-name='Tower001' data-z='5'>啟動報告１：格林牧場的通訊塔</a>才會發現</p>\
-	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p><a href='/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>格拉斯蘭地區分析點：10點</li>\
@@ -723,7 +723,7 @@ var ProtorelicTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>調查報告２：魔晄輸送管的管理大樓</h1><p>建議等級：Lv.18。</p><p>完成<a class='goto' href='javascript:;' data-name='Protorelic001' data-z='5'>調查報告１：竊盜團的尋寶</a>才會發現</p>\
-	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p><a href='/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>格拉斯蘭地區分析點：10點</li>\
@@ -742,7 +742,7 @@ var ProtorelicTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>調查報告３：共和國時代的廢工廠</h1><p>建議等級：Lv.18。</p><p>完成<a class='goto' href='javascript:;' data-name='Protorelic002' data-z='5'>調查報告２：竊盜團的烤肉</a>才會發現</p>\
-	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p><a href='/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>格拉斯蘭地區分析點：10點</li>\
@@ -762,7 +762,7 @@ var ProtorelicTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>調查報告４：竊盜團的基地</h1><p>建議等級：Lv.19。</p><p>完成<a class='goto' href='javascript:;' data-name='Protorelic003' data-z='5'>調查報告３：竊盜團的擾亂作戰</a>才會發現</p>\
 	<p>PS. 完成「調查報告３」後才有鑰匙解鎖這個地區的上鎖門</p>\
-	<p>格拉斯蘭地區的古代物質相關委託</p>\
+	<p><a href='/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>格拉斯蘭地區分析點：10點</li>\
@@ -1956,7 +1956,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>第二章BOSS，限定於主線出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy209' value=1 class='confirmed'/><span>米德加爾特巨蛇</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以弱點屬性的攻擊擊中或以強力攻擊使其退縮，將牠趕出巢穴可使其陷入HEAT狀態。</p>\
-	<p>攻略連結：待補充</p>\
+	<p>攻略連結：請參考第二章的章節攻略</p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>隊伍經驗值：50EXP</li>\
@@ -1977,7 +1977,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第二章「支線委託：襲擊家畜的魔獸」限定出現</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy032' value=1 class='confirmed'/><span>白色之牙</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：隨著時間流逝累積能量就會變強。造成傷害或防禦攻擊會使能量減少，使其失去累積的能量會陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第二章「支線委託：襲擊家畜的魔獸」</p>\
+	<p>攻略連結：請參考第二章<a href='https://sniperex168.blogspot.com/2024/03/FF7RE2-QUEST2-4.html' target='_blank'>「支線委託：襲擊家畜的魔獸」</a></p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemy002",
@@ -1993,7 +1993,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第二章「支線委託：卡姆的生命線」限定出現</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy113' value=1 class='confirmed'/><span>毒帽妖</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第二章「支線委託：卡姆的生命線」</p>\
+	<p>攻略連結：請參考第二章<a href='https://sniperex168.blogspot.com/2024/03/FF7RE2-QUEST2-3.html' target='_blank'>「支線委託：卡姆的生命線」</a></p>\
 "},
 	"levels": "1",
 	"myid": "SSEnemy003",
@@ -2175,7 +2175,8 @@ var  photosTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>格拉斯蘭　拍攝點</h1>\
-	<p>抵達拍攝點後只要進入拍照模式即可，無論有無拍照都算攝影完成。</p>\
+	<p>先與卡姆的「攝影師佛卡斯」對話後獲得拍攝點位置。</p>\
+	<p>抵達拍攝點只要進入拍照模式即可，無論有無拍照都算攝影完成。</p>\
 	<p>回報給「攝影師佛卡斯」可提昇在相片俱樂部的會員等級並獲得拍照模式的濾鏡或外框。</p>"},
 	"levels": "1",
 	"myid": "photos001",
