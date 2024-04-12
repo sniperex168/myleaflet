@@ -182,7 +182,7 @@ var MoogleTemp = [
 	<ul>\
 		<li>格拉斯蘭地區分析點：10點</li>\
 		<li>隊伍經驗值：5EXP</li>\
-	</ul><p>完成小遊戲「莫古利追逐賽」可讓莫古利商店開始營業，可使用「莫古利獎牌」兌換道具。</p>"},
+	</ul><p>完成小遊戲「<a href='/2024/04/FF7RE2-MiniGame-MoogleMischief.html' target='_blank'>莫古利追逐賽</a>」可讓莫古利商店開始營業，可使用「莫古利獎牌」兌換道具。</p>"},
 	"levels": "1",
 	"myid": "Moogle001",
 	"icon":"Moogle",
@@ -1476,7 +1476,7 @@ var CacheLocation1Temp = [
 //敵人
 var EnemyLocation = L.icon({
 	iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVNX-8zpEfvARSKKmcvqtEF6jzRAgSasclrtpWpEbsTEz8A6mmA9cOzpV_oJ0n2ZrILKJS1nr_EKGP8FjsC3gVTiiXMsAOYo92nZdYoWv2T0hgTpkf4fjKDKT5EFySwFQ-UWvY-AvJJx5h0HmIMtJ8JmZl8JFZWTGiYmu2KySksbDRt6vZzwl_xNf-xf4/s1600/Enemy.png',
-	shadowUrl: '',iconSize: [30, 30],iconAnchor: [16, 16],popupAnchor: [0, -12],tooltipAnchor: [10, 0]});
+	shadowUrl: '',iconSize: [30, 30],iconAnchor: [16, 16],popupAnchor: [-2, -22],tooltipAnchor: [10, 0]});
 var EnemyLocationTemp = [ 
 {
     "type": "Feature",
