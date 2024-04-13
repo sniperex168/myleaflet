@@ -1956,7 +1956,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>第二章BOSS，限定於主線出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy209' value=1 class='confirmed'/><span>米德加爾特巨蛇</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以弱點屬性的攻擊擊中或以強力攻擊使其退縮，將牠趕出巢穴可使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第二章的章節攻略</p>\
+	<p>攻略連結：請參考<a href='https://sniperex168.blogspot.com/2024/03/FF7RE2-CHAPTER02.html' target='_blank'>第二章的章節攻略</a>。</p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>隊伍經驗值：50EXP</li>\
@@ -1977,7 +1977,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第二章「支線委託：襲擊家畜的魔獸」限定出現</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy032' value=1 class='confirmed'/><span>白色之牙</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：隨著時間流逝累積能量就會變強。造成傷害或防禦攻擊會使能量減少，使其失去累積的能量會陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第二章<a href='https://sniperex168.blogspot.com/2024/03/FF7RE2-QUEST2-4.html' target='_blank'>「支線委託：襲擊家畜的魔獸」</a></p>\
+	<p>攻略連結：請參考第二章「<a href='https://sniperex168.blogspot.com/2024/03/FF7RE2-QUEST2-4.html' target='_blank'>支線委託：襲擊家畜的魔獸</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemy002",
@@ -1993,7 +1993,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第二章「支線委託：卡姆的生命線」限定出現</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy113' value=1 class='confirmed'/><span>毒帽妖</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第二章<a href='https://sniperex168.blogspot.com/2024/03/FF7RE2-QUEST2-3.html' target='_blank'>「支線委託：卡姆的生命線」</a></p>\
+	<p>攻略連結：請參考第二章「<a href='https://sniperex168.blogspot.com/2024/03/FF7RE2-QUEST2-3.html' target='_blank'>支線委託：卡姆的生命線</a>」</p>\
 "},
 	"levels": "1",
 	"myid": "SSEnemy003",
