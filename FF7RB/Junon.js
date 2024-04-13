@@ -1789,7 +1789,7 @@ var LocationTemp = [
 	
 //提示
 var tipsTemp = [ 
-{
+/*{
     "type": "Feature",
     "properties": {"party": "<h1>由此處走樓梯走上建築物</h1>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTDHP5DGptbjsoou6hn9CdUc_QaCZJVpyQ_71Tno83ZMW0LSCNqJaoFCYwRltg9L-mF4fPtFtgwcrdRlpjaWDA3Ib98iG_zl8wrBObX9eGq7_gYCMQCkMtDwE8aH4nzlvwIhr1sAt1YbNZb1ialr5aI5Pc6EI6Lf5_5ofqwQKe5zb99M4akFs3mBh2yYQ/s0/tips001.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTDHP5DGptbjsoou6hn9CdUc_QaCZJVpyQ_71Tno83ZMW0LSCNqJaoFCYwRltg9L-mF4fPtFtgwcrdRlpjaWDA3Ib98iG_zl8wrBObX9eGq7_gYCMQCkMtDwE8aH4nzlvwIhr1sAt1YbNZb1ialr5aI5Pc6EI6Lf5_5ofqwQKe5zb99M4akFs3mBh2yYQ/s640/tips001.webp' class='mypopupimg'/></a></p>\
@@ -1801,7 +1801,7 @@ var tipsTemp = [
         "type": "Point",
 		"coordinates": [4432, 2215]
     }
-},
+},*/
 
 ];
 //路線
