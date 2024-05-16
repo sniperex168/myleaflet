@@ -1783,6 +1783,502 @@ var EnemyLocationTemp = [
 		"coordinates": [2891, 1234]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC012",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [830, 2409]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：奇美拉×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC013",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [663, 2272]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×2、奇美拉×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC014",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [994, 2104]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC015",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1078, 2148]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：仙入掌怪×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC016",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [938, 2266]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：奇美拉×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC017",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1054, 2317]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC018",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1036, 2465]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：仙入掌怪×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC019",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1155, 2590]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×1、史賓賽飛魚×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC020",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1435, 2663]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×1、奇美拉×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC021",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1797, 2753]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×1、奇美拉×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC022",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1876, 2459]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC023",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1766, 2467]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×1、史賓賽飛魚×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC024",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1762, 2339]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC025",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1597, 2260]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×1、仙入掌怪×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC026",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1325, 2223]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：陸蠕蟲×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy120' value=1 class='confirmed'/><span>陸蠕蟲</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC027",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1536, 2453]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC028",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1800, 1896]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×1、奇美拉×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC029",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1761, 2181]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：仙入掌怪×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC030",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2033, 1874]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC031",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2481, 1907]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC032",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2582, 2130]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：仙入掌怪×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC033",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2069, 2124]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×1、仙入掌怪×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC034",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1960, 2041]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×1、史賓賽飛魚×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC035",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2022, 2735]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC036",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2180, 2704]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×1、史賓賽飛魚×1、仙入掌怪×1</h1>\
+	<p>是否已洞察：<br><label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC037",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2067, 2428]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×1、仙入掌怪×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC038",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2374, 2227]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：奇美拉×1、仙入掌怪×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC039",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2452, 2360]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC040",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2427, 2500]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：仙入掌怪×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC041",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2904, 2295]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：史賓賽飛魚×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC042",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2789, 2246]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：奇美拉×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC043",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2591, 2269]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：奇美拉×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy125' value=1 class='confirmed'/><span>奇美拉</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyC044",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2633, 3049]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：仙入掌怪×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC045",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2564, 2795]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC046",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2523, 3019]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：陸蠕蟲×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy120' value=1 class='confirmed'/><span>陸蠕蟲</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC047",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3043, 3194]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：振翅翼蜥×1、史賓賽飛魚×1、仙入掌怪×1</h1>\
+	<p>是否已洞察：<br><label><input type='checkbox' data-cat='enemy' name='enemy038' value=1 class='confirmed'/><span>振翅翼蜥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy123' value=1 class='confirmed'/><span>史賓賽飛魚</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy174' value=1 class='confirmed'/><span>仙入掌怪</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC048",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2950, 3424]
+    }
+},
 ];
 
 //強敵BOSS
