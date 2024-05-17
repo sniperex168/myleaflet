@@ -749,7 +749,7 @@ var ProtorelicTemp = [
 },
 {
     "type": "Feature",
-    "properties": {"party": "<h1>調查報告２：基德Ｇ的考驗</h1>\
+    "properties": {"party": "<h1>調查報告２：貳號小型魔晄爐</h1>\
 	<p>建議等級：Lv.31。</p>\
 	<p>完成<a class='goto' href='javascript:;' data-name='ProtorelicC01' data-z='5'>調查報告１：祕寶的守護者</a>才會發現</p>\
 	<p>科雷爾地區的古代物質相關委託</p>\
@@ -901,7 +901,7 @@ var ChocoboStopsTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>陸行鳥站牌</h1>\<p>獎勵：黃金羽毛×1</p>"},
 	"levels": "1",
-	"myid": "ChocoboStopsC07",
+	"myid": "ChocoboStopsC08",
 	"icon":"ChocoboStops",
     "geometry": {
         "type": "Point",
@@ -2321,7 +2321,54 @@ var SSEnemyTemp = [
 		"coordinates": [2808, 955]
     }
 },
-
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：巨型炸彈×1</h1><p>建議等級：Lv.30。</p>\
+	<p style='color: #FF0000'>於第九章「支線委託：迷路的啾」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy058' value=1 class='confirmed'/><span>巨型炸彈</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：發動「加熱」時，以冰屬性對其造成一定傷害可使其陷入HEAT狀態。ＨＰ過少時會自爆並牽連周遭。</p>\
+	<p>攻略連結：請參考第九章「支線委託：迷路的啾」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyC03",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1732, 2911]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：橘色仙入掌怪×4</h1><p>建議等級：Lv.30。</p>\
+	<p style='color: #FF0000'>於第九章「調查報告１：壹號小型魔晄爐」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy175' value=1 class='confirmed'/><span>橘色仙入掌怪</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：以物理ＡＴＢ指令擊中，可使其陷入HEAT狀態。牠的移動速度飛快難以命中，但當牠陷入HEAT狀態和發動招式時，就能夠擊中牠。</p>\
+	<p>攻略連結：請參考第九章「調查報告１：壹號小型魔晄爐」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyC04",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2190, 2090]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：黃金仙人掌怪×4</h1><p>建議等級：Lv.31。</p>\
+	<p style='color: #FF0000'>於第九章「調查報告２：貳號小型魔晄爐」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy173' value=1 class='confirmed'/><span>黃金仙人掌怪</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：以屬性魔法攻擊擊中，可使其陷入HEAT狀態。牠的移動速度飛快難以命中，但當牠陷入HEAT狀態和發動招式時，就能夠擊中牠。</p>\
+	<p>攻略連結：請參考第九章「調查報告２：貳號小型魔晄爐」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyC05",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2789, 2182]
+    }
+},
 ];
 	
 	
