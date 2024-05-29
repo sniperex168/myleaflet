@@ -614,7 +614,7 @@ var CombatAssignmentTemp = [
 },
 {
     "type": "Feature",
-    "properties": {"party": "<h1>討伐報告５：挑食的美式戰士</h1><p>建議等級：Lv.19。</p>\
+    "properties": {"party": "<h1>討伐報告５：挑食的美食戰士</h1><p>建議等級：Lv.19。</p>\
 	<p>敵人：有翼列伏利恐鳥×2。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy054' value=1 class='confirmed'/><span>有翼列伏利恐鳥</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性的攻擊使其陷入HEAT狀態。當牠手持岩石時，正面攻擊會被反彈，但若在投擲岩石前以強力的能力攻擊擊中，就會放開岩石並陷入HEAT狀態。</p>\
@@ -1938,6 +1938,20 @@ var EnemyLocationTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [2056, 968]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：卡姆之牙×1、生化鼠×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy030' value=1 class='confirmed'/><span>卡姆之牙</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy036' value=1 class='confirmed'/><span>生化鼠</span></label></p>\
+	"},
+	"levels": "1",
+	"myid": "EnemyA035",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2291, 1900]
     }
 },
 ];
