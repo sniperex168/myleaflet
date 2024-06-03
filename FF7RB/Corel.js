@@ -728,8 +728,8 @@ var ProtorelicTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>調查報告１：壹號小型魔晄爐</h1>\
 	<p>建議等級：Lv.30。(第九章才會發現)</p>\
-	<p>完成<a class='goto' href='javascript:;' data-name='TowerC03' data-z='5'>啟動報告３：沙漠的通訊塔</a>後可發現</p>\
-	<p>科雷爾地區的古代物質相關委託</p>\
+	<p>完成科雷爾沙漠的任意「通訊塔」(啟動報告３～６)後可發現。</p>\
+	<p><a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>科雷爾地區分析點：10點</li>\
@@ -752,7 +752,7 @@ var ProtorelicTemp = [
     "properties": {"party": "<h1>調查報告２：貳號小型魔晄爐</h1>\
 	<p>建議等級：Lv.31。</p>\
 	<p>完成<a class='goto' href='javascript:;' data-name='ProtorelicC01' data-z='5'>調查報告１：祕寶的守護者</a>才會發現</p>\
-	<p>科雷爾地區的古代物質相關委託</p>\
+	<p><a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>科雷爾地區分析點：10點</li>\
@@ -773,7 +773,7 @@ var ProtorelicTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>調查報告３：混亂的爭奪戰</h1><p>建議等級：Lv.45。</p><p>進行到第十二章後半段，且完成<a class='goto' href='javascript:;' data-name='ProtorelicC02' data-z='5'>調查報告２：基德Ｇ的考驗</a>才會發現</p>\
-	<p>科雷爾地區的古代物質相關委託</p>\
+	<p><a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>科雷爾地區分析點：10點</li>\
@@ -795,7 +795,7 @@ var ProtorelicTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>調查報告４：傳說中的劍豪</h1><p>建議等級：Lv.46。</p>\
 	<p>完成<a class='goto' href='javascript:;' data-name='ProtorelicC03' data-z='5'>調查報告３：混亂的爭奪戰</a>才會發現</p>\
-	<p>科雷爾地區的古代物質相關委託</p>\
+	<p><a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>科雷爾地區分析點：10點</li>\
