@@ -1113,6 +1113,29 @@ var BuriedItemTemp = [
 		"coordinates": [2467, 2652]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：休息點</h1><p>「PLAY ART：休息點」為收藏品</p>\
+    <p>此為「PLAY ART：休息點」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「紅寶石×1」。</p>"},
+	"levels": "1",
+	"myid": "BuriedItem022",
+	"icon":"BuriedItem",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2688, 2175]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>掘洞兔埋藏：乙太洋蔥</h1>"},
+	"levels": "1",
+	"myid": "BuriedItem023",
+	"icon":"BuriedItem",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3633, 2666]
+    }
+},
 ];	
 
 //藏寶點
@@ -1954,6 +1977,59 @@ var EnemyLocationTemp = [
 		"coordinates": [2291, 1900]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：掘地鼠×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy073' value=1 class='confirmed'/><span>掘地鼠</span></label></p>\
+	"},
+	"levels": "1",
+	"myid": "EnemyA036",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2205, 2050]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：半獸人×2、掘地鼠×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy091' value=1 class='confirmed'/><span>半獸人</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy073' value=1 class='confirmed'/><span>掘地鼠</span></label></p>\
+	"},
+	"levels": "1",
+	"myid": "EnemyA037",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2341, 2299]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：卡姆之牙×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy030' value=1 class='confirmed'/><span>卡姆之牙</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyA038",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2430, 2347]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：列伏利恐鳥×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy053' value=1 class='confirmed'/><span>列伏利恐鳥</span></label></p>\
+	"},
+	"levels": "1",
+	"myid": "EnemyA039",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2277, 2691]
+    }
+},	
 ];
 
 //強敵BOSS
