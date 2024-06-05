@@ -649,8 +649,7 @@ var SecretCombatTemp = [
     "properties": {"party": "<h1>隱藏報告：腐臭的暴君</h1><p>建議等級：Lv.38。</p><p>需完成4項「探索報告」(生命點)才會發現</p>\
 	<p>敵人：大毛爾波爾×1。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy059' value=1 class='confirmed'/><span>大毛爾波爾</span></label></p>\
-	<p style='color: #0000FF'>攻略情報：若用聯手能力擊中，可一口氣使其陷入HEAT狀態。</p>\
-	<p>PS. 建議在精神吸取者使用招式「精神衝擊」時用聯手能力打斷。</p>\
+	<p style='color: #0000FF'>攻略情報：破壞其口部位可累積力竭量表，並阻止「臭氣」。若一直未破壞其口部，則「臭氣」會越來越強。口部會在一段時間後復活。</p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>貢加加地區分析點：10點</li>\
