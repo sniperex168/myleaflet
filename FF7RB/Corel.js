@@ -2279,6 +2279,19 @@ var EnemyLocationTemp = [
 		"coordinates": [2950, 3424]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：針吻鳥×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy108' value=1 class='confirmed'/><span>針吻鳥</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyC049",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3270, 1069]
+    }
+},
 ];
 
 //強敵BOSS

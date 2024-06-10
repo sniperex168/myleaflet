@@ -1509,8 +1509,8 @@ var EnemyLocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>敵人：賽姆澤雷特巨梟×2、戰機鳥×1</h1>\
-	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy094' value=1 class='confirmed'/><span>賽姆澤雷特巨梟</span></label>　\
-	<label><input type='checkbox' data-cat='enemy' name='enemy065' value=1 class='confirmed'/><span>戰機鳥</span></label>　\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy065' value=1 class='confirmed'/><span>戰機鳥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy094' value=1 class='confirmed'/><span>賽姆澤雷特巨梟</span></label>　\
 	"},
 	"levels": "1",
 	"myid": "EnemyB014",
@@ -1532,6 +1532,89 @@ var EnemyLocationTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [3942, 1559]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：尖喙獸×2、旋索草×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy096' value=1 class='confirmed'/><span>尖喙獸</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy098' value=1 class='confirmed'/><span>旋索草</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyB016",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2642, 2380]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：龍旋鳥×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy062' value=1 class='confirmed'/><span>龍旋鳥</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyB017",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [4090, 1858]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：尖喙獸×2、旋索草×2</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy096' value=1 class='confirmed'/><span>尖喙獸</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy098' value=1 class='confirmed'/><span>旋索草</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyB018",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3774, 2064]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：戰機鳥×2、尖喙獸×1、旋索草×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy065' value=1 class='confirmed'/><span>戰機鳥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy096' value=1 class='confirmed'/><span>尖喙獸</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy098' value=1 class='confirmed'/><span>旋索草</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyB019",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3983, 2035]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：戰機鳥×2、賽姆澤雷特巨梟×1</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy065' value=1 class='confirmed'/><span>戰機鳥</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy094' value=1 class='confirmed'/><span>賽姆澤雷特巨梟</span></label>　\
+	"},
+	"levels": "1",
+	"myid": "EnemyB020",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3980, 2655]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>敵人：尖喙獸×3</h1>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy096' value=1 class='confirmed'/><span>尖喙獸</span></label>\
+	"},
+	"levels": "1",
+	"myid": "EnemyB021",
+	"icon":"EnemyLocation",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3984, 2732]
     }
 },
 ];
