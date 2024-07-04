@@ -1175,7 +1175,7 @@ var CacheLocation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>星魔石×1</h1><p>「抗拒的絕壁」寶箱1</p>\
-	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Q6zinFwd1Dh23mdCtD5WDL9tSuvrrpGBVVROGJYOV0Y3mNgrug6uGL280Bix3zD8yJZeHa9VVWzZ489iH3y135RbMAgzocewFRrCHPvZJOwwAc_bijVyvKs-KAb2jVotjAiqffkb6aoaTjob9DCgeRd1Iz7hErFs5BBLuLWeGGXGe-ymPP7D921rCTQ/s0/CacheLocationE01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Q6zinFwd1Dh23mdCtD5WDL9tSuvrrpGBVVROGJYOV0Y3mNgrug6uGL280Bix3zD8yJZeHa9VVWzZ489iH3y135RbMAgzocewFRrCHPvZJOwwAc_bijVyvKs-KAb2jVotjAiqffkb6aoaTjob9DCgeRd1Iz7hErFs5BBLuLWeGGXGe-ymPP7D921rCTQ/s640/CacheLocationE01-2.webp' class='mypopupimg'/></a></p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJMWSHYg8ZxSSJUut8wNx1FtBZy-nYc-uDx1n1AAOntW7AxnBdS6CR21OeT33TLOUsZPLWzjH3S6yQl95ny3v1rca0AWTZ-rF3bXBVY7gZpfXd06yLLvobYaGBPZ7hMwAnowhlA25nLAL7EBtTA49gHqxUgjA8zrh6NzOWbEa7hQGEJ5l0iCR3fdzEwEw/s0/CacheLocationF04-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJMWSHYg8ZxSSJUut8wNx1FtBZy-nYc-uDx1n1AAOntW7AxnBdS6CR21OeT33TLOUsZPLWzjH3S6yQl95ny3v1rca0AWTZ-rF3bXBVY7gZpfXd06yLLvobYaGBPZ7hMwAnowhlA25nLAL7EBtTA49gHqxUgjA8zrh6NzOWbEa7hQGEJ5l0iCR3fdzEwEw/s640/CacheLocationF04-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
 	"levels": "1",
@@ -1189,7 +1189,7 @@ var CacheLocation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>十億治療劑×1</h1><p>「抗拒的絕壁」寶箱2</p>\
-	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Q6zinFwd1Dh23mdCtD5WDL9tSuvrrpGBVVROGJYOV0Y3mNgrug6uGL280Bix3zD8yJZeHa9VVWzZ489iH3y135RbMAgzocewFRrCHPvZJOwwAc_bijVyvKs-KAb2jVotjAiqffkb6aoaTjob9DCgeRd1Iz7hErFs5BBLuLWeGGXGe-ymPP7D921rCTQ/s0/CacheLocationE01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Q6zinFwd1Dh23mdCtD5WDL9tSuvrrpGBVVROGJYOV0Y3mNgrug6uGL280Bix3zD8yJZeHa9VVWzZ489iH3y135RbMAgzocewFRrCHPvZJOwwAc_bijVyvKs-KAb2jVotjAiqffkb6aoaTjob9DCgeRd1Iz7hErFs5BBLuLWeGGXGe-ymPP7D921rCTQ/s640/CacheLocationE01-2.webp' class='mypopupimg'/></a></p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXe_XIpVe9hMt4fez063p5sPzmgg7rZc16Wa5gInR9gP6G-OoCtQ4AiQwZQC326CQSgXBHXS6KBmJQChhz6QBCNqO6EX42z36bu7I4hB-MVELaxBSi9WalsGMhhm0O9GPDqusUQKkVen2mz98Fod4nLiYisHQjH_KFs-3tS6M2aCb1utIvwGGYLLyJGxo/s0/CacheLocationF04-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXe_XIpVe9hMt4fez063p5sPzmgg7rZc16Wa5gInR9gP6G-OoCtQ4AiQwZQC326CQSgXBHXS6KBmJQChhz6QBCNqO6EX42z36bu7I4hB-MVELaxBSi9WalsGMhhm0O9GPDqusUQKkVen2mz98Fod4nLiYisHQjH_KFs-3tS6M2aCb1utIvwGGYLLyJGxo/s640/CacheLocationF04-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
 	"levels": "1",
@@ -1203,7 +1203,7 @@ var CacheLocation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>秘銀礦石×1</h1><p>「抗拒的絕壁」寶箱3</p>\
-	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Q6zinFwd1Dh23mdCtD5WDL9tSuvrrpGBVVROGJYOV0Y3mNgrug6uGL280Bix3zD8yJZeHa9VVWzZ489iH3y135RbMAgzocewFRrCHPvZJOwwAc_bijVyvKs-KAb2jVotjAiqffkb6aoaTjob9DCgeRd1Iz7hErFs5BBLuLWeGGXGe-ymPP7D921rCTQ/s0/CacheLocationE01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Q6zinFwd1Dh23mdCtD5WDL9tSuvrrpGBVVROGJYOV0Y3mNgrug6uGL280Bix3zD8yJZeHa9VVWzZ489iH3y135RbMAgzocewFRrCHPvZJOwwAc_bijVyvKs-KAb2jVotjAiqffkb6aoaTjob9DCgeRd1Iz7hErFs5BBLuLWeGGXGe-ymPP7D921rCTQ/s640/CacheLocationE01-2.webp' class='mypopupimg'/></a></p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5CiuZ2WxJ_Bve3G8oTAX0ojoIeifUzgEL89-n0ZpzDfRnUiFwX5SY06fV32pj_ewSmdt1n5bf0rkg7howhyLsD9YFA5UvNH0jY489XBX4fP_qPnczX3_Qv5qhCwuUOhdsWw92sQkBPC12ks1uKr9op6-_7of8QjvlMgx-EoVFn8jwmVT3Y7LK-SisC8/s0/CacheLocationF04-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5CiuZ2WxJ_Bve3G8oTAX0ojoIeifUzgEL89-n0ZpzDfRnUiFwX5SY06fV32pj_ewSmdt1n5bf0rkg7howhyLsD9YFA5UvNH0jY489XBX4fP_qPnczX3_Qv5qhCwuUOhdsWw92sQkBPC12ks1uKr9op6-_7of8QjvlMgx-EoVFn8jwmVT3Y7LK-SisC8/s640/CacheLocationF04-3.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
 	"levels": "1",
