@@ -2093,6 +2093,95 @@ var SSEnemyTemp = [
 		"coordinates": [1082, 1525]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：普裘、巴德、蹦札</h1><p>建議等級：Lv.17。</p>\
+	<p style='color: #FF0000'>於第二章「調查報告１：海岸的守望哨」限定出現。</p>\
+	<p>是否已洞察：<br>\
+	<label><input type='checkbox' data-cat='enemy' name='enemy027' value=1 class='confirmed'/><span>普裘</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy028' value=1 class='confirmed'/><span>巴德</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy029' value=1 class='confirmed'/><span>蹦札</span></label></p>\
+	<p style='color: #0000FF'>蹦札攻略情報：在「迴旋金臂鉤」、「突擊」等強力攻擊的期間會陷入HEAT狀態。</p>\
+	<p>攻略連結：請參考<a href='https://sniperex168.blogspot.com/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemy004",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3660, 1325]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：普裘、針吻鳥</h1><p>建議等級：Lv.18。</p>\
+	<p style='color: #FF0000'>於第二章「調查報告２：魔晄輸送管的管理大樓」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy027' value=1 class='confirmed'/><span>普裘</span></label></p>\
+	<p>(針吻鳥為其他區域的一般敵人)</p>\
+	<p style='color: #0000FF'>攻略情報：略。</p>\
+	<p>攻略連結：請參考<a href='https://sniperex168.blogspot.com/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemy005",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1937, 1774]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：強盜×4</h1><p>建議等級：Lv.18。</p>\
+	<p style='color: #FF0000'>於第二章「調查報告３：共和國時代的廢工廠」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy024' value=1 class='confirmed'/><span>強盜</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。</p>\
+	<p>攻略連結：請參考<a href='https://sniperex168.blogspot.com/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemy006",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [843, 1383]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：貝格、普裘、巴德、蹦札、獵敵者特裝型</h1><p>建議等級：Lv.19。</p>\
+	<p style='color: #FF0000'>於第二章「調查報告４：竊盜團的基地」限定出現。</p>\
+	<p>是否已洞察：<br>\
+	<label><input type='checkbox' data-cat='enemy' name='enemy026' value=1 class='confirmed'/><span>貝格</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy027' value=1 class='confirmed'/><span>普裘</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy028' value=1 class='confirmed'/><span>巴德</span></label><br>\
+	<label><input type='checkbox' data-cat='enemy' name='enemy029' value=1 class='confirmed'/><span>蹦札</span></label>　\
+	<label><input type='checkbox' data-cat='enemy' name='enemy018' value=1 class='confirmed'/><span>獵敵者特裝型</span></label></p>\
+	<p style='color: #0000FF'>獵敵者特裝型攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。破壞其手臂部位後，在修復完畢之前可抑止手臂發動攻擊。</p>\
+	<p>攻略連結：請參考<a href='https://sniperex168.blogspot.com/2024/04/FF7RE2-Grasslands-Protorelics.html' target='_blank'>格拉斯蘭地區的古代物質相關委託</a></p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemy007",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2159, 813]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：強盜×2、惡魔乘具×2</h1><p>建議等級：Lv.43。</p>\
+	<p style='color: #FF0000'>於第十二章「支線委託：你是我的光芒」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy025' value=1 class='confirmed'/><span>惡魔乘具</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。</p>\
+	<p>攻略連結：請參考第十二章「支線委託：你是我的光芒」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemy008",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1020, 1230]
+    }
+},
 ];
 	
 	
