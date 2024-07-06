@@ -2382,6 +2382,22 @@ var SSEnemyTemp = [
 		"coordinates": [2789, 2182]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：海魔魚×2</h1><p>建議等級：Lv.44。</p>\
+	<p style='color: #FF0000'>於第十二章「支線委託：來自海洋的惡魔」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy110' value=1 class='confirmed'/><span>海魔魚</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。以雷屬性攻擊造成一定傷害後，攻擊頻率會降低。</p>\
+	<p>攻略連結：請參考第十二章「支線委託：來自海洋的惡魔」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyC06",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3421, 1271]
+    }
+},
 ];
 	
 	
@@ -2468,7 +2484,7 @@ var LocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>禁止游泳區域</h1>\
-	<p>第十二章支線委託能才解鎖</p>"},
+	<p>第十二章執行「支線委託：來自海洋的惡魔」中能才解鎖</p>"},
 	"levels": "1",
 	"myid": "LocationC07",
 	"icon":"Location",
