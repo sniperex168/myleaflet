@@ -1682,7 +1682,7 @@ var SSEnemyTemp = [
 },
 {
     "type": "Feature",
-    "properties": {"party": "<h1>支線委託敵人：神秘龍×1</h1><p>建議等級：Lv.23。</p>\
+    "properties": {"party": "<h1>支線委託敵人：神秘龍</h1><p>建議等級：Lv.23。</p>\
 	<p style='color: #FF0000'>於第四章「支線委託：蒼穹之夢」限定出現</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy087' value=1 class='confirmed'/><span>神秘龍</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：造成一定傷害可使其陷入HEAT狀態，但HEAT期間的高度將會固定。</p>\
@@ -1694,6 +1694,38 @@ var SSEnemyTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [3940, 1657]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：地獄騎士ＶＲ２</h1><p>建議等級：Lv.45。</p>\
+	<p style='color: #FF0000'>第十二章「支線委託：水面下的異狀」限定出現</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy190' value=1 class='confirmed'/><span>地獄騎士ＶＲ２</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：透過弱點屬性攻擊造成一定傷害可使其陷入HEAT狀態。</p>\
+	<p>攻略連結：請參考第十二章「支線委託：水面下的異狀」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyB05",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2935, 2850]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：地獄騎士ＶＲ２</h1><p>建議等級：Lv.45。</p>\
+	<p style='color: #FF0000'>第十二章「支線委託：水面下的異狀」限定出現</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy190' value=1 class='confirmed'/><span>地獄騎士ＶＲ２</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：透過弱點屬性攻擊造成一定傷害可使其陷入HEAT狀態。</p>\
+	<p>攻略連結：請參考第十二章「支線委託：水面下的異狀」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyB06",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [4098, 2767]
     }
 },
 ];
@@ -1865,6 +1897,30 @@ var LocationTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [4125, 3252]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>穿孔岬</h1>\
+	<p>接受第十二章「支線委託：水面下的異狀」抵達後解鎖</p>"},
+	"levels": "1",
+	"myid": "LocationB14",
+	"icon":"Location",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2958, 2798]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>崩塌的堡壘</h1>\
+	<p>於第十二章「支線委託：水面下的異狀」劇情中解鎖</p>"},
+	"levels": "1",
+	"myid": "LocationB15",
+	"icon":"Location",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [4075, 2780]
     }
 },
 ];	
