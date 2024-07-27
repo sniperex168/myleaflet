@@ -1899,7 +1899,7 @@ var tipsTemp = [
 ];
 //路線
 var PolygonTemp = [
-{
+/*{
     "type": "Feature",
     "properties": {
 		"party": "<h1>抵達星舟之崖提示路徑</h1>"},
@@ -1915,7 +1915,7 @@ var PolygonTemp = [
 			[1581, 1050],
         ]
     }
-},
+},*/
 ];
 
 
