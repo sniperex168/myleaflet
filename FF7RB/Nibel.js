@@ -491,7 +491,7 @@ var SecretCombatTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>隱藏報告：孤傲的巨鳥</h1><p>建議等級：Lv.43。</p><p>需完成4項「探索報告」(生命點)才會發現</p>\
 	<p>敵人：帝王祖鳥×1。</p>\
-	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy064' value=1 class='confirmed'/><span>賈巴沃克</span></label></p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy064' value=1 class='confirmed'/><span>帝王祖鳥</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：「最後之歌」若發動完畢，將會受到一擊幾乎全滅的強大傷害。在「最後之歌」發動時破壞其左右羽翼，就可打斷招式發動並使其陷入HEAT狀態。</p>\
 	<p>獎勵</p>\
 	<ul>\
