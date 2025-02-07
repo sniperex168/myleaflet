@@ -919,6 +919,18 @@ var BuriedItemTemp = [
 		"coordinates": [3335, 2101]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>掘洞兔埋藏：綠寶石</h1>\
+	"},
+	"levels": "1",
+	"myid": "BuriedItemB17",
+	"icon":"BuriedItem",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [2220, 1840]
+    }
+},
 ];	
 
 //藏寶點
