@@ -328,7 +328,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組１１</h1><p>「挖掘報告：離島的防衛基地舊址」挖掘點1</p>\
-	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiITEtTZeOqoyvW-2Lf6Bj98pk42fS2OYxI_h6Ighvui5Zt8To5pshhmVwZCzAbAbxXjHJ8loG1Q12M8_Hu4Jx86lUQQmLlQdnTDVg0ZL5aByiCgaiX1fZZoMD97CkFnioxso6I13vKIQBpfJ8YMT0LAt2NAE1tFurP8a-EbfkqRyrFByrG02WjXDl4KyU/s0/ExcavationE01-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiITEtTZeOqoyvW-2Lf6Bj98pk42fS2OYxI_h6Ighvui5Zt8To5pshhmVwZCzAbAbxXjHJ8loG1Q12M8_Hu4Jx86lUQQmLlQdnTDVg0ZL5aByiCgaiX1fZZoMD97CkFnioxso6I13vKIQBpfJ8YMT0LAt2NAE1tFurP8a-EbfkqRyrFByrG02WjXDl4KyU/s640/ExcavationE01-1.webp' class='mypopupimg'/></a></p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMkpuEs90J-vAZFxhd1Zhx7d3mkTzxWPmQaXH4lHmsVzcK94YP2vhuJQsnmJgTZ-PQLgDw_P0SHtw32-rz7cYqYz0GL1GIprwLDUhxijtqq_e0PUP-TQPXxjHbOJcNhYeauyswLljN0NdSMythbVk8zhA0uYxyuKch67qsJZyaC0Ha880DO_jt8eOlY8E/s0/ExcavationF01-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMkpuEs90J-vAZFxhd1Zhx7d3mkTzxWPmQaXH4lHmsVzcK94YP2vhuJQsnmJgTZ-PQLgDw_P0SHtw32-rz7cYqYz0GL1GIprwLDUhxijtqq_e0PUP-TQPXxjHbOJcNhYeauyswLljN0NdSMythbVk8zhA0uYxyuKch67qsJZyaC0Ha880DO_jt8eOlY8E/s640/ExcavationF01-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
 	"levels": "1",
@@ -342,7 +342,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組１２</h1><p>「挖掘報告：離島的防衛基地舊址」挖掘點2</p>\
-	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMEztRJyOZFdjpG8OrhlqZnPw4EWIUMbioBx-B6CT_2dY9Z9FYE_HpsrtbpdmFs2kABIdrsQH9lwlAU7Hce3QQxpHTu6De0q2uVH2OJGPEdwgGof8CbU_Yx8dWtdwHfoJG13MU7E3OnTtkIHGC_1_tK5hlGdRx2OLqrJ9R547C-KPEjsIKxVy0YQH92Tk/s0/ExcavationE01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMEztRJyOZFdjpG8OrhlqZnPw4EWIUMbioBx-B6CT_2dY9Z9FYE_HpsrtbpdmFs2kABIdrsQH9lwlAU7Hce3QQxpHTu6De0q2uVH2OJGPEdwgGof8CbU_Yx8dWtdwHfoJG13MU7E3OnTtkIHGC_1_tK5hlGdRx2OLqrJ9R547C-KPEjsIKxVy0YQH92Tk/s640/ExcavationE01-2.webp' class='mypopupimg'/></a></p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgvcFmfVLbS17MyyJbZQ9sWfGDBpB0Pod_a-UBW8Ie2ui1jkD7DBhdGrncMo3GSfz7bCmaVT2kh4XNgQZ8ZaX6wtK1W32DFBkeI7zg9Fl64cgHaRvv80lEC5oPEUl4b6QVpSKJGZx3WGAHz8yg1MmQth5KOOyKh1j3vChz3SSPWfuQqsQ9Z1IuBfLwy5E/s0/ExcavationF01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgvcFmfVLbS17MyyJbZQ9sWfGDBpB0Pod_a-UBW8Ie2ui1jkD7DBhdGrncMo3GSfz7bCmaVT2kh4XNgQZ8ZaX6wtK1W32DFBkeI7zg9Fl64cgHaRvv80lEC5oPEUl4b6QVpSKJGZx3WGAHz8yg1MmQth5KOOyKh1j3vChz3SSPWfuQqsQ9Z1IuBfLwy5E/s640/ExcavationF01-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
 	"levels": "1",
@@ -356,7 +356,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：鬥爭胸章</h1><p>「挖掘報告：離島的防衛基地舊址」挖掘點3</p>\
-	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0isO-WBC6aFaN7-Fm2vfu20CTlu7KF8r13QWfmmb3KpAETBw8BIIGfETOucWnZf-Uw9vuvEjJ2I_WceiFPFDrWqDITvX0vdJoqEJfOHOmAzb6LkIyEOy2oYzpNKZUY6z31w2jio41q6clpWGU9J46BqnlcZmqigMRacb3Tgkx0e6wSYSdNbVxrUAv-r4/s0/ExcavationE01-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0isO-WBC6aFaN7-Fm2vfu20CTlu7KF8r13QWfmmb3KpAETBw8BIIGfETOucWnZf-Uw9vuvEjJ2I_WceiFPFDrWqDITvX0vdJoqEJfOHOmAzb6LkIyEOy2oYzpNKZUY6z31w2jio41q6clpWGU9J46BqnlcZmqigMRacb3Tgkx0e6wSYSdNbVxrUAv-r4/s640/ExcavationE01-3.webp' class='mypopupimg'/></a></p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEwBsjL8aiNaQsTTofWIKvjG6YsbK2rIaxk0uKyjNlCT4AqgwhUMt44UcwZ1WygCguokjEj0KNkpLRauf7PXIAvTTlZ4AAET6njLQh5ziRZyZoDqrUnQqOVtJLWOiXKExqcRUxcb0TcHSmF8nJHYOjIbS5z6ZsUNBYa03H_y4Hnq_cuR0zIf82xZurkrc/s0/ExcavationF01-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEwBsjL8aiNaQsTTofWIKvjG6YsbK2rIaxk0uKyjNlCT4AqgwhUMt44UcwZ1WygCguokjEj0KNkpLRauf7PXIAvTTlZ4AAET6njLQh5ziRZyZoDqrUnQqOVtJLWOiXKExqcRUxcb0TcHSmF8nJHYOjIbS5z6ZsUNBYa03H_y4Hnq_cuR0zIf82xZurkrc/s640/ExcavationF01-3.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
 	"levels": "1",
