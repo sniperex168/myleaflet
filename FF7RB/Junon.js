@@ -931,6 +931,18 @@ var BuriedItemTemp = [
 		"coordinates": [2220, 1840]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>掘洞兔埋藏：秘銀礦石×2</h1>\
+	"},
+	"levels": "1",
+	"myid": "BuriedItemB18",
+	"icon":"BuriedItem",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3258, 2434]
+    }
+},
 ];	
 
 //藏寶點
