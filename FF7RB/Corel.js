@@ -793,7 +793,7 @@ var ProtorelicTemp = [
 },
 {
     "type": "Feature",
-    "properties": {"party": "<h1>調查報告４：傳說中的劍豪</h1><p>建議等級：Lv.46。</p>\
+    "properties": {"party": "<h1>調查報告４：肆號小型魔晄爐</h1><p>建議等級：Lv.46。</p>\
 	<p>完成<a class='goto' href='javascript:;' data-name='ProtorelicC03' data-z='5'>調查報告３：混亂的爭奪戰</a>才會發現</p>\
 	<p><a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
@@ -2758,7 +2758,7 @@ var LocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>仙人掌岩．肆</h1>\
-	<p>接受「<a class='goto' href='javascript:;' data-name='ProtorelicC04' data-z='5'>調查報告４：傳說中的劍豪</a>」，抵達後解鎖(第十二章)。</p>"},
+	<p>接受「<a class='goto' href='javascript:;' data-name='ProtorelicC04' data-z='5'>調查報告４：肆號小型魔晄爐</a>」，抵達後解鎖(第十二章)。</p>"},
 	"levels": "1",
 	"myid": "LocationC28",
 	"icon":"Location",
