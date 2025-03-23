@@ -772,7 +772,7 @@ var ProtorelicTemp = [
 },
 {
     "type": "Feature",
-    "properties": {"party": "<h1>調查報告３：混亂的爭奪戰</h1><p>建議等級：Lv.45。</p><p>進行到第十二章後半段，且完成<a class='goto' href='javascript:;' data-name='ProtorelicC02' data-z='5'>調查報告２：基德Ｇ的考驗</a>才會發現</p>\
+    "properties": {"party": "<h1>調查報告３：參號小型魔晄爐</h1><p>建議等級：Lv.45。</p><p>進行到第十二章尾聲，且完成<a class='goto' href='javascript:;' data-name='ProtorelicC02' data-z='5'>調查報告２：基德Ｇ的考驗</a>才會發現</p>\
 	<p><a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
@@ -941,7 +941,7 @@ var BuriedItemTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：平衡車</h1>\
 	<p>「PLAY ART：平衡車」為收藏品</p>\
-	<p>此為「PLAY ART：平衡車」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「秘銀礦石×1」。</p>\
+	<p>此為「PLAY ART：平衡車」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「魔獸脊骨×5」。</p>\
 	"},
 	"levels": "1",
 	"myid": "BuriedItemC03",
@@ -2398,6 +2398,22 @@ var SSEnemyTemp = [
 		"coordinates": [3421, 1271]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：仙人掌巨怪×1</h1><p>建議等級：Lv.45。</p>\
+	<p style='color: #FF0000'>於第十二章「調查報告３：參號小型魔晄爐」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy177' value=1 class='confirmed'/><span>仙人掌巨怪</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：「針雨」發動時會進入HEAT狀態，每次發動此技能便會提昇「千根針」的威力。</p>\
+	<p>攻略連結：請參考第十二章「調查報告３：參號小型魔晄爐」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyC07",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [838, 2654]
+    }
+},
 ];
 	
 	
@@ -2728,7 +2744,9 @@ var LocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>仙人掌岩．參</h1>\
-	<p>接受「<a class='goto' href='javascript:;' data-name='ProtorelicC03' data-z='5'>調查報告３：混亂的爭奪戰</a>」，抵達後解鎖(第十二章)。</p>"},
+	<p>接受「<a class='goto' href='javascript:;' data-name='ProtorelicC03' data-z='5'>調查報告３：混亂的爭奪戰</a>」，抵達後解鎖(第十二章)。</p>\
+	<p><a class='addpoint goto' href='javascript:;' data-name='tips96a' data-z='6'>抵達仙人掌岩．參的路線</a></p>\
+	"},
 	"levels": "1",
 	"myid": "LocationC27",
 	"icon":"Location",
@@ -2811,6 +2829,21 @@ var tipsTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [2674, 2212]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>走大洞旁的小路</h1>\
+	<p>走大洞旁的小路會發現一條往下的路，沿著路走下去就可以抵達仙人掌岩。</p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhXclN1IrAE7Bu_eVkGKIeNSvy9b3SH8AaNsRM8oJy0yXuR7MWO8kdwUWgDHOSZrxVGCyU-SV7g9xAHT3pZJ63OHfu5pRsGA_mUKDbXTA1O-m8N4KNydlbDDV9jXfCnQ3XQaf2xXGhq5y-tjbBOd9_b3aEEemKfqCcI715tGyZXf9zyxWVqzhHmYCyXfA/s0/Corel-Protorelics3-4.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhXclN1IrAE7Bu_eVkGKIeNSvy9b3SH8AaNsRM8oJy0yXuR7MWO8kdwUWgDHOSZrxVGCyU-SV7g9xAHT3pZJ63OHfu5pRsGA_mUKDbXTA1O-m8N4KNydlbDDV9jXfCnQ3XQaf2xXGhq5y-tjbBOd9_b3aEEemKfqCcI715tGyZXf9zyxWVqzhHmYCyXfA/s640/Corel-Protorelics3-4.webp' class='mypopupimg'/></a></p>\
+	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
+	"},
+	"levels": "1",
+	"myid": "tips96a",
+	"icon":"tips",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [842, 2600]
     }
 },
 {
