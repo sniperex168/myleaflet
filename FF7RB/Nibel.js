@@ -1971,6 +1971,19 @@ var EquipmentTemp = [
 		"coordinates": [1025, 1912]
     }
 },
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>魔晶石躍昇★</h1>\
+	<p>在陸行鳥宮殿２Ｆ地板(PS.旁邊寶箱是萬靈藥×1)</p>\
+	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAYl-gjwtULvGGJg0zmV7aQ_GMA5siyOlPk9E7Ak6_ZH0k7EbBxOm7YxYiAhou7zWrbv89JG-4_OFniuWcZIeJ-HBDikhyphenhypheni19Obh1pI0wJAjakt5vfF7aIHFV7-zvC-lm8men6P9Oa9OUU9PxgJsh4HLxBh8A1piSjfzbXAzEdRtyEH77c_6DyUQyujp0/s0/MATERIA054.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAYl-gjwtULvGGJg0zmV7aQ_GMA5siyOlPk9E7Ak6_ZH0k7EbBxOm7YxYiAhou7zWrbv89JG-4_OFniuWcZIeJ-HBDikhyphenhypheni19Obh1pI0wJAjakt5vfF7aIHFV7-zvC-lm8men6P9Oa9OUU9PxgJsh4HLxBh8A1piSjfzbXAzEdRtyEH77c_6DyUQyujp0/s640/MATERIA054.webp' class='mypopupimg'/></a></p>"},
+	"levels": "1",
+	"myid": "MATERIA054",
+	"icon":"MATERIA",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1759, 2600]
+    }
+},
 ];
 
 
