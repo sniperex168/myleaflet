@@ -2172,7 +2172,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十二章「支線委託：你是我的光芒」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy025' value=1 class='confirmed'/><span>惡魔乘具</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第十二章「支線委託：你是我的光芒」</p>\
+	<p>攻略連結：請參考第十二章「<a href='/2024/07/FF7RE2-QUEST2-6.html' target='_blank'>支線委託：你是我的光芒</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemy008",
