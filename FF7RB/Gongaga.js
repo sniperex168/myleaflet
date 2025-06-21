@@ -2155,7 +2155,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「支線委託：寄託在武器上的願望」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy067' value=1 class='confirmed'/><span>閃光匕首</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊或於「電漿充能」發動時對牠造成一定傷害使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第九章「支線委託：寄託在武器上的願望」</p>\
+	<p>攻略連結：請參考第九章「<a href='/2024/06/FF7RE2-QUEST9-1.html' target='_blank'>支線委託：寄託在武器上的願望</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyD01",
@@ -2171,7 +2171,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「支線委託：令人仰慕的師父」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy079' value=1 class='confirmed'/><span>巨齒象怪</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊來吸引目標。經過一段時間後會「休息」，休息時造成一定傷害可使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第九章「支線委託：令人仰慕的師父」</p>\
+	<p>攻略連結：請參考第九章「<a href='/2024/06/FF7RE2-QUEST9-2.html' target='_blank'>支線委託：令人仰慕的師父</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyD02",
@@ -2184,10 +2184,10 @@ var SSEnemyTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>支線委託敵人：列伏利恫鳥×1</h1><p>建議等級：Lv.34。</p>\
-	<p style='color: #FF0000'>於第九章「支線委託：令人仰慕的師父」限定出現。</p>\
+	<p style='color: #FF0000'>於第九章「支線委託：我的寶貝小雞」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy055' value=1 class='confirmed'/><span>列伏利恫鳥</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：經過一段時間後就會陷入HEAT狀態，同時處於帶電狀態。在帶電狀態下能夠使用昏眩攻擊或反擊。只要使其力竭就能解除帶電狀態。</p>\
-	<p>攻略連結：請參考第九章「支線委託：令人仰慕的師父」</p>\
+	<p>攻略連結：請參考第九章「<a href='/2024/06/FF7RE2-QUEST9-3.html' target='_blank'>支線委託：我的寶貝小雞</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyD03",
@@ -2203,7 +2203,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「支線委託：提味秘方」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy107' value=1 class='confirmed'/><span>魔魂美杜莎</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。若使其陷入沉默，在魔法發動失敗時會陷入HEAT狀態。在搖晃不停的狀態下，即使連續攻擊也無法擊中，冷靜下來攻擊吧。</p>\
-	<p>攻略連結：請參考第九章「支線委託：提味秘方」</p>\
+	<p>攻略連結：請參考第九章「<a href='/2024/06/FF7RE2-QUEST9-4.html' target='_blank'>支線委託：提味秘方</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyD04",
@@ -2219,7 +2219,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「支線委託：提味秘方」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy107' value=1 class='confirmed'/><span>魔魂美杜莎</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。若使其陷入沉默，在魔法發動失敗時會陷入HEAT狀態。在搖晃不停的狀態下，即使連續攻擊也無法擊中，冷靜下來攻擊吧。</p>\
-	<p>攻略連結：請參考第九章「支線委託：提味秘方」</p>\
+	<p>攻略連結：請參考第九章「<a href='/2024/06/FF7RE2-QUEST9-4.html' target='_blank'>支線委託：提味秘方</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyD05",
@@ -2235,7 +2235,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「支線委託：提味秘方」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy107' value=1 class='confirmed'/><span>魔魂美杜莎</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。若使其陷入沉默，在魔法發動失敗時會陷入HEAT狀態。在搖晃不停的狀態下，即使連續攻擊也無法擊中，冷靜下來攻擊吧。</p>\
-	<p>攻略連結：請參考第九章「支線委託：提味秘方」</p>\
+	<p>攻略連結：請參考第九章「<a href='/2024/06/FF7RE2-QUEST9-4.html' target='_blank'>支線委託：提味秘方</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyD06",
@@ -2243,6 +2243,22 @@ var SSEnemyTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [1192, 2972]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：巨蛙×1</h1><p>建議等級：Lv.44。</p>\
+	<p style='color: #FF0000'>於第十二章「支線委託：迷途於森林的怪物」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy139' value=1 class='confirmed'/><span>巨蛙</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：對牠的「舌頭」造成一定傷害，可使其陷入HEAT狀態。不管是反擊牠的舌頭攻擊或是讓牠疲勞，都能讓牠吐著舌頭攤坐在地，進而露出破綻。</p>\
+	<p>攻略連結：請參考第十二章「<a href='/2024/07/FF7RE2-QUEST9-6.html' target='_blank'>支線委託：迷途於森林的怪物</a>」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyD07",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1608, 3040]
     }
 },
 ];
