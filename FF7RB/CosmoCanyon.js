@@ -2138,7 +2138,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十章「支線委託：循環於星球的生命活動」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy142' value=1 class='confirmed'/><span>混成惡魔</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以弱點屬性的魔法攻擊，可使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第十章「支線委託：循環於星球的生命活動」</p>\
+	<p>攻略連結：請參考第十章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-QUEST10-3.html' target='_blank'>支線委託：循環於星球的生命活動</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyE01",
@@ -2154,7 +2154,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十章「支線委託：徘徊的亡靈」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy144' value=1 class='confirmed'/><span>憎恨號角</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：發動特定招式後會進入HEAT狀態。會規律性的進入「盾牌」或「反射」狀態。雖然累積力竭量表後，牠就會藉由「預備姿勢」開始恢復，但以強力的能力攻擊擊中３次即可阻止。</p>\
-	<p>攻略連結：請參考第十章「支線委託：徘徊的亡靈」</p>\
+	<p>攻略連結：請參考第十章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-QUEST10-4.html' target='_blank'>支線委託：徘徊的亡靈</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyE02",
@@ -2170,7 +2170,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十章「支線委託：災厄預兆」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy151' value=1 class='confirmed'/><span>阿拉克蘭</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以冰屬性攻擊造成一定傷害，可使其陷入HEAT狀態，HEAT狀態下不耐物理攻擊，而耐魔法攻擊。若在以火屬性攻擊追擊，就能讓牠露出破綻。 </p>\
-	<p>攻略連結：請參考第十章「支線委託：災厄預兆」</p>\
+	<p>攻略連結：請參考第十章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-QUEST10-2.html' target='_blank'>支線委託：災厄預兆</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyE03",
@@ -2186,7 +2186,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十章「支線委託：災厄預兆」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy151' value=1 class='confirmed'/><span>阿拉克蘭</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以冰屬性攻擊造成一定傷害，可使其陷入HEAT狀態，HEAT狀態下不耐物理攻擊，而耐魔法攻擊。若在以火屬性攻擊追擊，就能讓牠露出破綻。 </p>\
-	<p>攻略連結：請參考第十章「支線委託：災厄預兆」</p>\
+	<p>攻略連結：請參考第十章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-QUEST10-2.html' target='_blank'>支線委託：災厄預兆</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyE04",
@@ -2202,7 +2202,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十章「支線委託：災厄預兆」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy151' value=1 class='confirmed'/><span>阿拉克蘭</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以冰屬性攻擊造成一定傷害，可使其陷入HEAT狀態，HEAT狀態下不耐物理攻擊，而耐魔法攻擊。若在以火屬性攻擊追擊，就能讓牠露出破綻。 </p>\
-	<p>攻略連結：請參考第十章「支線委託：災厄預兆」</p>\
+	<p>攻略連結：請參考第十章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-QUEST10-2.html' target='_blank'>支線委託：災厄預兆</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyE05",
@@ -2210,6 +2210,22 @@ var SSEnemyTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [845, 2160]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：巨型蠕蟲×1</h1><p>建議等級：Lv.45。</p>\
+	<p style='color: #FF0000'>於第十二章「支線委託：潛伏於地底的怪物」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy122' value=1 class='confirmed'/><span>巨型蠕蟲</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：牠吸入岩石後，腹部變成瞄準攻擊的部位，破壞該部位可使其陷入HEAT。</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2024/07/FF7RE2-QUEST10-5.html' target='_blank'>支線委託：潛伏於地底的怪物</a>」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyE06",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1680, 1605]
     }
 },
 ];
