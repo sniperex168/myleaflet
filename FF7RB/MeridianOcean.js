@@ -302,23 +302,71 @@ var EnemyQUEST = L.icon({
 	iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9kOaJhIXYLrq3Sh9VkjHv3L1f8xxwULcQxK1bdaVJ9l0wVDzqIhJiUULz1Ao4OVCnoxAwMt8PeeB_Gy73ijZLpjK12I4iqNZvYSTF51K5AHStyfEiIYvlue2Bt6SVzeFFAtaDDphCpXU21JfEa-VDrKP9dh28U9pTEu29nw3TV0RZGOULNGgbKcNSEJw/s1600/Enemy-QUEST.png',
 	shadowUrl: '',iconSize: [40, 40],iconAnchor: [18, 35],popupAnchor: [0, -35],tooltipAnchor: [20, -15]});
 var SSEnemyTemp = [ 
-/*{
+{
     "type": "Feature",
-    "properties": {"party": "<h1>支線委託敵人：殺手蜂×4</h1><p>建議等級：Lv.41。</p>\
-	<p style='color: #FF0000'>於第十一章「支線委託：白毛天使」限定出現。</p>\
-	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy160' value=1 class='confirmed'/><span>殺手蜂</span></label></p>\
-	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第十一章「<a href='https://sniperex168.blogspot.com/2024/07/FF7RE2-QUEST11-2.html' target='_blank'>支線委託：白毛天使</a>」</p>\
+    "properties": {"party": "<h1>支線委託敵人：暴亂食人魔×1</h1><p>建議等級：Auto。</p>\
+	<p style='color: #FF0000'>海盜王的藏身洞窟 α的守護者(接受「EXTRA任務-海盜王秘寶」後出現)。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy093' value=1 class='confirmed'/><span>暴亂食人魔</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：透過弱點屬性攻擊造成一定傷害可使其陷入HEAT狀態。戰鬥時間拖長，憤怒熱度就會隨之提昇，每次發出吼叫就會變強。發出第３次吼叫(超級暴怒)就會成為最強狀態。</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyG01",
 	"icon":"EnemyQUEST",
     "geometry": {
         "type": "Point",
-		"coordinates": [3249, 1354]
+		"coordinates": [1175, 3415]
     }
-},*/
-
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：海盜惡魔×1</h1><p>建議等級：Auto。</p>\
+	<p style='color: #FF0000'>海盜王的藏身洞窟 β的守護者(接受「EXTRA任務-海盜王秘寶」後出現)。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy157' value=1 class='confirmed'/><span>海盜惡魔</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：若是切換至使用反擊招式的「反擊態勢」，就會陷入HEAT狀態。反擊態勢維持一段時間，便會在施放「大重力」(全體攻擊)後解除。若在反擊態勢下使其力竭，就能在阻止其發動「大重力」的情況下解除。</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyG02",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3348, 2795]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：瑟雅科亞特爾×1</h1><p>建議等級：Auto。</p>\
+	<p style='color: #FF0000'>海盜王的藏身洞窟 γ的守護者(接受「EXTRA任務-海盜王秘寶」後出現)。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy081' value=1 class='confirmed'/><span>瑟雅科亞特爾</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：戰鬥時牠會切換「一般模式」和持續放電的「帶電模式」。帶電模式很危險，當牠受到攻擊時會施放帶有昏眩效果的雷電，但同時也能使其陷入HEAT狀態。以弱點的風屬性對牠施加強力攻擊可引發帶電模式，藉此使其陷入HEAT狀態。</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyG03",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1622, 2255]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：海龍×1</h1><p>建議等級：Auto。</p>\
+	<p style='color: #FF0000'>海盜王的藏身洞窟 δ的守護者(接受「EXTRA任務-海盜王秘寶」後出現)。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy070' value=1 class='confirmed'/><span>海龍</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：若以「火之鼓舞」讓火焰纏繞，反擊的火焰攻擊等強大火之力就會覺醒。使其陷入中毒狀態即可解除「火之鼓舞」，並陷入HEAT狀態。僅能以弱點的雷屬性攻擊累積力竭量表。</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyG04",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [1967, 1785]
+    }
+},	
+	
 ];
 	
 	
@@ -429,7 +477,7 @@ var LocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>海盜王的藏身洞窟 α</h1>\
-	<p>接受「EXTRA海盜王秘寶」後，抵達後解鎖</p>"},
+	<p>接受「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」後，抵達後解鎖</p>"},
 	"levels": "1",
 	"myid": "LocationG09",
 	"icon":"Location",
@@ -441,7 +489,7 @@ var LocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>海盜王的藏身洞窟 β</h1>\
-	<p>接受「EXTRA海盜王秘寶」後，抵達後解鎖</p>"},
+	<p>接受「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」後，抵達後解鎖</p>"},
 	"levels": "1",
 	"myid": "LocationG10",
 	"icon":"Location",
@@ -453,7 +501,7 @@ var LocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>海盜王的藏身洞窟 γ</h1>\
-	<p>接受「EXTRA海盜王秘寶」後，抵達後解鎖</p>"},
+	<p>接受「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」後，抵達後解鎖</p>"},
 	"levels": "1",
 	"myid": "LocationG11",
 	"icon":"Location",
@@ -465,7 +513,7 @@ var LocationTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>海盜王的藏身洞窟 δ</h1>\
-	<p>接受「EXTRA海盜王秘寶」後，抵達後解鎖</p>"},
+	<p>接受「<a href='https://sniperex168.blogspot.com/2025/02/EXTRA-PirateKingsTreasure.html' target='_blank'>EXTRA任務-海盜王秘寶</a>」後，抵達後解鎖</p>"},
 	"levels": "1",
 	"myid": "LocationG12",
 	"icon":"Location",
@@ -496,6 +544,18 @@ var LocationTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [1089, 3033]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>登陸專用</h1>\
+	<p>此為登陸專用點，無法從此處搭乘小野馬(非傳送點)</p>"},
+	"levels": "1",
+	"myid": "LocationG15",
+	"icon":"Location",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3384, 2710]
     }
 },
 /*	
