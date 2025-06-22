@@ -2308,7 +2308,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第七章「支線委託：在海岸約會」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy047' value=1 class='confirmed'/><span>槌鉗陸蟹</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：受到一定傷害後會進入防禦狀態，正面攻擊將會失效，可以用火屬性攻擊來解除該狀態。若一直不解除該狀態，牠將使用冰來強化自己。</p>\
-	<p>攻略連結：請參考第七章「支線委託：在海岸約會」</p>\
+	<p>攻略連結：請參考第七章「<a href='https://sniperex168.blogspot.com/2024/05/FF7RE2-QUEST7-2.html' target='_blank'>支線委託：在海岸約會</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyC01",
@@ -2324,7 +2324,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第七章「支線委託：在海灘練肌肉」限定出現(四場戰鬥皆有)</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy041' value=1 class='confirmed'/><span>棘刺藍魚指揮官</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第七章「支線委託：在海灘練肌肉」</p>\
+	<p>攻略連結：請參考第七章「<a href='https://sniperex168.blogspot.com/2024/05/FF7RE2-QUEST7-3.html' target='_blank'>支線委託：在海灘練肌肉</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyC02",
@@ -2340,7 +2340,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「支線委託：迷路的啾」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy058' value=1 class='confirmed'/><span>巨型炸彈</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：發動「加熱」時，以冰屬性對其造成一定傷害可使其陷入HEAT狀態。ＨＰ過少時會自爆並牽連周遭。</p>\
-	<p>攻略連結：請參考第九章「支線委託：迷路的啾」</p>\
+	<p>攻略連結：請參考第九章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-QUEST7-5.html' target='_blank'>支線委託：迷路的啾</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyC03",
@@ -2356,7 +2356,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「調查報告１：壹號小型魔晄爐」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy175' value=1 class='confirmed'/><span>橘色仙入掌怪</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以物理ＡＴＢ指令擊中，可使其陷入HEAT狀態。牠的移動速度飛快難以命中，但當牠陷入HEAT狀態和發動招式時，就能夠擊中牠。</p>\
-	<p>攻略連結：請參考第九章「調查報告１：壹號小型魔晄爐」</p>\
+	<p>攻略連結：請參考第九章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區　古代物質</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyC04",
@@ -2372,7 +2372,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第九章「調查報告２：貳號小型魔晄爐」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy173' value=1 class='confirmed'/><span>黃金仙人掌怪</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：以屬性魔法攻擊擊中，可使其陷入HEAT狀態。牠的移動速度飛快難以命中，但當牠陷入HEAT狀態和發動招式時，就能夠擊中牠。</p>\
-	<p>攻略連結：請參考第九章「調查報告２：貳號小型魔晄爐」</p>\
+	<p>攻略連結：請參考第九章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區　古代物質</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyC05",
@@ -2388,7 +2388,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十二章「支線委託：來自海洋的惡魔」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy110' value=1 class='confirmed'/><span>海魔魚</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：可透過弱點屬性攻擊使其陷入HEAT狀態。以雷屬性攻擊造成一定傷害後，攻擊頻率會降低。</p>\
-	<p>攻略連結：請參考第十二章「支線委託：來自海洋的惡魔」</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2024/07/FF7RE2-QUEST7-6.html' target='_blank'>支線委託：來自海洋的惡魔</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyC06",
@@ -2404,7 +2404,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>於第十二章「調查報告３：參號小型魔晄爐」限定出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy177' value=1 class='confirmed'/><span>仙人掌巨怪</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：「針雨」發動時會進入HEAT狀態，每次發動此技能便會提昇「千根針」的威力。</p>\
-	<p>攻略連結：請參考第十二章「調查報告３：參號小型魔晄爐」</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區　古代物質</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyC07",
@@ -2412,6 +2412,22 @@ var SSEnemyTemp = [
     "geometry": {
         "type": "Point",
 		"coordinates": [838, 2654]
+    }
+},
+{
+    "type": "Feature",
+    "properties": {"party": "<h1>支線委託敵人：仙入掌巨怪×1</h1><p>建議等級：Lv.45。</p>\
+	<p style='color: #FF0000'>於第十二章「調查報告４：肆號小型魔晄爐」限定出現。</p>\
+	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy178' value=1 class='confirmed'/><span>仙入掌巨怪</span></label></p>\
+	<p style='color: #0000FF'>攻略情報：「針雨」發動時會進入HEAT狀態，每次發動此技能便會提昇「千根針」的威力。</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2024/06/FF7RE2-Corel-Protorelics.html' target='_blank'>科雷爾地區　古代物質</a>」</p>\
+	"},
+	"levels": "1",
+	"myid": "SSEnemyC08",
+	"icon":"EnemyQUEST",
+    "geometry": {
+        "type": "Point",
+		"coordinates": [3195, 3207]
     }
 },
 ];

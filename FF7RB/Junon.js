@@ -1657,7 +1657,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>第四章下珠諾BOSS，限定於主線出現。</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy211' value=1 class='confirmed'/><span>擺尾龍魚</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：在牠潛於水中時對其頭部造成一定傷害，牠就會往空中移動並陷入HEAT狀態。「水球」造成的束縛在破壞「水球」後即可解除。</p>\
-	<p>攻略連結：待補充</p>\
+	<p>攻略連結：請參考<a href='https://sniperex168.blogspot.com/2024/04/FF7RE2-CHAPTER04.html' target='_blank'>章節攻略第四章</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>隊伍經驗值：50EXP</li>\
@@ -1726,7 +1726,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>第十二章「支線委託：水面下的異狀」限定出現</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy190' value=1 class='confirmed'/><span>地獄騎士ＶＲ２</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：透過弱點屬性攻擊造成一定傷害可使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第十二章「支線委託：水面下的異狀」</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2024/07/FF7RE2-QUEST4-7.html' target='_blank'>支線委託：水面下的異狀</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyB05",
@@ -1742,7 +1742,7 @@ var SSEnemyTemp = [
 	<p style='color: #FF0000'>第十二章「支線委託：水面下的異狀」限定出現</p>\
 	<p>是否已洞察：<label><input type='checkbox' data-cat='enemy' name='enemy190' value=1 class='confirmed'/><span>地獄騎士ＶＲ２</span></label></p>\
 	<p style='color: #0000FF'>攻略情報：透過弱點屬性攻擊造成一定傷害可使其陷入HEAT狀態。</p>\
-	<p>攻略連結：請參考第十二章「支線委託：水面下的異狀」</p>\
+	<p>攻略連結：請參考第十二章「<a href='https://sniperex168.blogspot.com/2024/07/FF7RE2-QUEST4-7.html' target='_blank'>支線委託：水面下的異狀</a>」</p>\
 	"},
 	"levels": "1",
 	"myid": "SSEnemyB06",
