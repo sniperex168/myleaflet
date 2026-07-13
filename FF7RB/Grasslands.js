@@ -938,6 +938,7 @@ var BuriedItemTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：休息點</h1><p>「PLAY ART：休息點」為收藏品</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='Collection60' value=1 class='confirmed'/><span>PLAY ART：休息點</span></label></p>\
     <p>此為「PLAY ART：休息點」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「草地鈦×5」。</p>"},
 	"levels": "1",
 	"myid": "BuriedItem006",
@@ -972,6 +973,7 @@ var BuriedItemTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：休息點</h1><p>「PLAY ART：休息點」為收藏品</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='Collection60' value=1 class='confirmed'/><span>PLAY ART：休息點</span></label></p>\
     <p>此為「PLAY ART：休息點」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「草地鈦×5」。</p>"},
 	"levels": "1",
 	"myid": "BuriedItem009",
@@ -1116,6 +1118,7 @@ var BuriedItemTemp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：休息點</h1><p>「PLAY ART：休息點」為收藏品</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='Collection60' value=1 class='confirmed'/><span>PLAY ART：休息點</span></label></p>\
     <p>此為「PLAY ART：休息點」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「紅寶石×1」。</p>"},
 	"levels": "1",
 	"myid": "BuriedItem022",

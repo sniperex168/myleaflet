@@ -862,6 +862,7 @@ var BuriedItemTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：越野車</h1>\
 	<p>「PLAY ART：越野車」為收藏品</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='Collection63' value=1 class='confirmed'/><span>PLAY ART：越野車</span></label></p>\
 	<p>此為「PLAY ART：越野車」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「苔紋瑪瑙×5」。</p>\
 	"},
 	"levels": "1",
@@ -876,6 +877,7 @@ var BuriedItemTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：越野車</h1>\
 	<p>「PLAY ART：越野車」為收藏品</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='Collection63' value=1 class='confirmed'/><span>PLAY ART：越野車</span></label></p>\
 	<p>此為「PLAY ART：越野車」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「苔紋瑪瑙×5」。</p>\
 	"},
 	"levels": "1",
@@ -890,6 +892,7 @@ var BuriedItemTemp = [
     "type": "Feature",
     "properties": {"party": "<h1>掘洞兔埋藏：PLAY ART：越野車</h1>\
 	<p>「PLAY ART：越野車」為收藏品</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='Collection63' value=1 class='confirmed'/><span>PLAY ART：越野車</span></label></p>\
 	<p>此為「PLAY ART：越野車」可取得位置的其中之一。如已擁有這個收藏品，這裡會變「魔獸脊骨×5」。</p>\
 	"},
 	"levels": "1",
