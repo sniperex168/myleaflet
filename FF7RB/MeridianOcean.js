@@ -90,7 +90,7 @@ var ProtorelicTemp = [
 	<p>建議等級：Lv.70。</p>\
 	<p>收集完6個古代物質後(最早12章)，且抵達此地後出現。</p>\
 	<p>需完成調查報告２～４後才能繼續完成調查報告１。</p>\
-	<p>中央海洋的古代物質相關委託</p>\
+	<p><a href='https://sniperex168.blogspot.com/2026/07/FF7RE2-Ocean-Protorelics.html' target='_blank'>中央海洋的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>中央海洋分析點：10點</li>\
@@ -110,7 +110,7 @@ var ProtorelicTemp = [
     "properties": {"party": "<h1>調查報告２：朧月神社</h1>\
 	<p>建議等級：Lv.65。</p>\
 	<p>調查過「調查報告１：吉爾伽美什庭園」後出現。</p>\
-	<p>中央海洋的古代物質相關委託</p>\
+	<p><a href='https://sniperex168.blogspot.com/2026/07/FF7RE2-Ocean-Protorelics.html' target='_blank'>中央海洋的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>中央海洋分析點：10點</li>\
@@ -130,7 +130,7 @@ var ProtorelicTemp = [
     "properties": {"party": "<h1>調查報告３：月虹神社</h1>\
 	<p>建議等級：Lv.65。</p>\
 	<p>調查過「調查報告１：吉爾伽美什庭園」後出現。</p>\
-	<p>中央海洋的古代物質相關委託</p>\
+	<p><a href='https://sniperex168.blogspot.com/2026/07/FF7RE2-Ocean-Protorelics.html' target='_blank'>中央海洋的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>中央海洋分析點：10點</li>\
@@ -150,7 +150,7 @@ var ProtorelicTemp = [
     "properties": {"party": "<h1>調查報告４：滿月神社</h1>\
 	<p>建議等級：Lv.65。</p>\
 	<p>調查過「調查報告１：吉爾伽美什庭園」後出現。</p>\
-	<p>中央海洋的古代物質相關委託</p>\
+	<p><a href='https://sniperex168.blogspot.com/2026/07/FF7RE2-Ocean-Protorelics.html' target='_blank'>中央海洋的古代物質相關委託</a></p>\
 	<p>獎勵</p>\
 	<ul>\
 		<li>中央海洋分析點：10點</li>\
