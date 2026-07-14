@@ -349,6 +349,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組３</h1><p>「挖掘報告：穿孔岬的遺跡」挖掘點1</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationB01-1' value=1 class='confirmed'/><span>製作晶片：防具改造套組３</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMAHbhKGoITenZIgjYmFB5VbxMRBztDeLzZFaKoMO2rtkl3yxqB6Tpv6cV6Z90u3G1znWtIXjczRkEr4QNZZuqFPXRYMdyuyla5XLBtBHtiyMiqn6Xo1vSqPf5pGxs0ZnQsiNoJJgzxM-5j_m_M8GlbVqbSpzX72aw2xErtAJ6RPNooK4c1e_HJwsDCBw/s0/ExcavationB01-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMAHbhKGoITenZIgjYmFB5VbxMRBztDeLzZFaKoMO2rtkl3yxqB6Tpv6cV6Z90u3G1znWtIXjczRkEr4QNZZuqFPXRYMdyuyla5XLBtBHtiyMiqn6Xo1vSqPf5pGxs0ZnQsiNoJJgzxM-5j_m_M8GlbVqbSpzX72aw2xErtAJ6RPNooK4c1e_HJwsDCBw/s640/ExcavationB01-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -363,6 +364,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組４</h1><p>「挖掘報告：穿孔岬的遺跡」挖掘點2</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationB01-2' value=1 class='confirmed'/><span>製作晶片：防具改造套組４</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdZXpwedEfYt-B1yDE0G0zCVoMuDR-2it3B438m_L1s6MnsQHMI9WySCv0ITVT38-63LbsOzVG-mrUVSLcdzCVkDKTJBtGyRauEwfEVi59DZCYZN2Lrw_YDnMXMGLNI0YyiO5Z8wcoKJAPV-UVpV3UkisEmmOzr_pEVwJVjvlePjXpIqkOTCjWb2LqrQs/s0/ExcavationB01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdZXpwedEfYt-B1yDE0G0zCVoMuDR-2it3B438m_L1s6MnsQHMI9WySCv0ITVT38-63LbsOzVG-mrUVSLcdzCVkDKTJBtGyRauEwfEVi59DZCYZN2Lrw_YDnMXMGLNI0YyiO5Z8wcoKJAPV-UVpV3UkisEmmOzr_pEVwJVjvlePjXpIqkOTCjWb2LqrQs/s640/ExcavationB01-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -377,6 +379,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：精神幸運符</h1><p>「挖掘報告：穿孔岬的遺跡」挖掘點3</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationB01-3' value=1 class='confirmed'/><span>製作晶片：精神幸運符</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYDOZJdDXFcSiGnytiA4MvQ2jGKPxg4jJOrIolkDAwEAvWFfZ1oR_g-z2fkEcrA-dZYxge1E3nAicTxLn0YcOBFYFD2Zs97H99XqmNHDehppty7W5vyGZHTlMwoUC-gvAYZF4i6Ab22FANGXrBkhPQEfSmhOIGBv463KmjhH70zvV_Ev_ATD-FjZSNmJ0/s0/ExcavationB01-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYDOZJdDXFcSiGnytiA4MvQ2jGKPxg4jJOrIolkDAwEAvWFfZ1oR_g-z2fkEcrA-dZYxge1E3nAicTxLn0YcOBFYFD2Zs97H99XqmNHDehppty7W5vyGZHTlMwoUC-gvAYZF4i6Ab22FANGXrBkhPQEfSmhOIGBv463KmjhH70zvV_Ev_ATD-FjZSNmJ0/s640/ExcavationB01-3.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
