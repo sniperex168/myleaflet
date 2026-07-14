@@ -404,6 +404,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組７</h1><p>「挖掘報告１：魔晄沉眠的溪谷」挖掘點1</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationD01-1' value=1 class='confirmed'/><span>製作晶片：防具改造套組７</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBWAPLBMSosHmS75DnuVbt7b232UVaNT5FiqxEvuYPLTISyjWgg-rVQOr7QmY4VrdU6iQd0FW7KwSbMRM6UO-MDpmvr7i8rSTt2LqKjF4ZNz3sUUx-m5O928GRUySfVRnCTfslFfp6KGjF1frsVSWXaAgD9EYRSdLJ6nhntTmX4P1UZ6NG_s_F2qxW7AA/s0/ExcavationD01-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBWAPLBMSosHmS75DnuVbt7b232UVaNT5FiqxEvuYPLTISyjWgg-rVQOr7QmY4VrdU6iQd0FW7KwSbMRM6UO-MDpmvr7i8rSTt2LqKjF4ZNz3sUUx-m5O928GRUySfVRnCTfslFfp6KGjF1frsVSWXaAgD9EYRSdLJ6nhntTmX4P1UZ6NG_s_F2qxW7AA/s640/ExcavationD01-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -418,6 +419,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：配件巨匠</h1><p>「挖掘報告１：魔晄沉眠的溪谷」挖掘點2</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationD01-2' value=1 class='confirmed'/><span>製作晶片：配件巨匠</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivCX4r3Ccq-KpPklV-bSLxHWpYKsr2JXlyPYa3ftkiM3XOb4Krcr0a2trbP6xmN6pryaaoU_Rg_qyMV0xvSoxIIFfLFLLoPjqAosQlq4odXySmVCcJIaTwly-yDhV5hd1AK2xU9N-JJF6s2i_ESAvozW_pFGFB8KlFJ08XbFuNKbllDqq6ilaUrMkRMO0/s0/ExcavationD01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivCX4r3Ccq-KpPklV-bSLxHWpYKsr2JXlyPYa3ftkiM3XOb4Krcr0a2trbP6xmN6pryaaoU_Rg_qyMV0xvSoxIIFfLFLLoPjqAosQlq4odXySmVCcJIaTwly-yDhV5hd1AK2xU9N-JJF6s2i_ESAvozW_pFGFB8KlFJ08XbFuNKbllDqq6ilaUrMkRMO0/s640/ExcavationD01-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -432,6 +434,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組８</h1><p>「挖掘報告２：密林的遺跡群」挖掘點1</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationD02-1' value=1 class='confirmed'/><span>製作晶片：防具改造套組８</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2dbkCMETizTTtg_w9pv0t54TE3bjr04lBK0xBBWKN2LXuVZ119a6b1vaFzRuSeGw31s2nUUZZb1sLk3NuWNmfbRb2wFgyMpWDdtf3ZFrOUJV5YNkn0KxeviVKIhLiz9krTqfsnzTakTrvNFHYTla-ZjbdF6h2eVz9CWIy8KuoKHhf3iaVupyUTsVIQg0/s0/ExcavationD02-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2dbkCMETizTTtg_w9pv0t54TE3bjr04lBK0xBBWKN2LXuVZ119a6b1vaFzRuSeGw31s2nUUZZb1sLk3NuWNmfbRb2wFgyMpWDdtf3ZFrOUJV5YNkn0KxeviVKIhLiz9krTqfsnzTakTrvNFHYTla-ZjbdF6h2eVz9CWIy8KuoKHhf3iaVupyUTsVIQg0/s640/ExcavationD02-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -446,6 +449,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：毛爾波爾幻光球</h1><p>「挖掘報告２：密林的遺跡群」挖掘點2</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationD02-2' value=1 class='confirmed'/><span>製作晶片：毛爾波爾幻光球</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMPil15kRiej3vXqrmolTGvmRFXIujtcV4NVBgz9G7Bj66h-aGlBpafw52IV_qz5fxjmmIjKzkx8qCDlrWrQ13Arp0326V1TKPD4Seino-wE11w05JbRmfByMnjppu4qVRkpNweus-zAxrWqA4ZD3PnzPzjAX8WrNuKO4t9_Ua3oA8Dc78VXMB4VBdM4k/s0/ExcavationD02-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMPil15kRiej3vXqrmolTGvmRFXIujtcV4NVBgz9G7Bj66h-aGlBpafw52IV_qz5fxjmmIjKzkx8qCDlrWrQ13Arp0326V1TKPD4Seino-wE11w05JbRmfByMnjppu4qVRkpNweus-zAxrWqA4ZD3PnzPzjAX8WrNuKO4t9_Ua3oA8Dc78VXMB4VBdM4k/s640/ExcavationD02-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -460,6 +464,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：異常狀態抗性配件</h1><p>「挖掘報告２：密林的遺跡群」挖掘點3</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationD02-3' value=1 class='confirmed'/><span>製作晶片：異常狀態抗性配件</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMbiW5Zi9Z9KbtrL5a6akAE3_BFiQdsb71JkpIwGf9KOn6u2ftGknp5PXVaAiijGFsYHIFK1u2Fe-z4AE1MeQDlImdfOUn1eC0g2L5dybU3cQbs817qz-4GbIYedwaoxAD-yqVZgJmBQ-0eRaIHRlDxApS5cgwLZCQvs72gwM9aIRY3bNJ5hPsGZ3kv2U/s0/ExcavationD02-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMbiW5Zi9Z9KbtrL5a6akAE3_BFiQdsb71JkpIwGf9KOn6u2ftGknp5PXVaAiijGFsYHIFK1u2Fe-z4AE1MeQDlImdfOUn1eC0g2L5dybU3cQbs817qz-4GbIYedwaoxAD-yqVZgJmBQ-0eRaIHRlDxApS5cgwLZCQvs72gwM9aIRY3bNJ5hPsGZ3kv2U/s640/ExcavationD02-3.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
