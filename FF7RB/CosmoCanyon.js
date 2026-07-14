@@ -432,6 +432,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組９</h1><p>「挖掘報告１：風化的廢船」挖掘點1</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationE01-1' value=1 class='confirmed'/><span>製作晶片：防具改造套組９</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiITEtTZeOqoyvW-2Lf6Bj98pk42fS2OYxI_h6Ighvui5Zt8To5pshhmVwZCzAbAbxXjHJ8loG1Q12M8_Hu4Jx86lUQQmLlQdnTDVg0ZL5aByiCgaiX1fZZoMD97CkFnioxso6I13vKIQBpfJ8YMT0LAt2NAE1tFurP8a-EbfkqRyrFByrG02WjXDl4KyU/s0/ExcavationE01-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiITEtTZeOqoyvW-2Lf6Bj98pk42fS2OYxI_h6Ighvui5Zt8To5pshhmVwZCzAbAbxXjHJ8loG1Q12M8_Hu4Jx86lUQQmLlQdnTDVg0ZL5aByiCgaiX1fZZoMD97CkFnioxso6I13vKIQBpfJ8YMT0LAt2NAE1tFurP8a-EbfkqRyrFByrG02WjXDl4KyU/s640/ExcavationE01-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -446,6 +447,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：道具專家</h1><p>「挖掘報告１：風化的廢船」挖掘點2</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationE01-2' value=1 class='confirmed'/><span>製作晶片：道具專家</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMEztRJyOZFdjpG8OrhlqZnPw4EWIUMbioBx-B6CT_2dY9Z9FYE_HpsrtbpdmFs2kABIdrsQH9lwlAU7Hce3QQxpHTu6De0q2uVH2OJGPEdwgGof8CbU_Yx8dWtdwHfoJG13MU7E3OnTtkIHGC_1_tK5hlGdRx2OLqrJ9R547C-KPEjsIKxVy0YQH92Tk/s0/ExcavationE01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMEztRJyOZFdjpG8OrhlqZnPw4EWIUMbioBx-B6CT_2dY9Z9FYE_HpsrtbpdmFs2kABIdrsQH9lwlAU7Hce3QQxpHTu6De0q2uVH2OJGPEdwgGof8CbU_Yx8dWtdwHfoJG13MU7E3OnTtkIHGC_1_tK5hlGdRx2OLqrJ9R547C-KPEjsIKxVy0YQH92Tk/s640/ExcavationE01-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -460,6 +462,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：療癒頸鍊</h1><p>「挖掘報告１：風化的廢船」挖掘點3</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationE01-3' value=1 class='confirmed'/><span>製作晶片：療癒頸鍊</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0isO-WBC6aFaN7-Fm2vfu20CTlu7KF8r13QWfmmb3KpAETBw8BIIGfETOucWnZf-Uw9vuvEjJ2I_WceiFPFDrWqDITvX0vdJoqEJfOHOmAzb6LkIyEOy2oYzpNKZUY6z31w2jio41q6clpWGU9J46BqnlcZmqigMRacb3Tgkx0e6wSYSdNbVxrUAv-r4/s0/ExcavationE01-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0isO-WBC6aFaN7-Fm2vfu20CTlu7KF8r13QWfmmb3KpAETBw8BIIGfETOucWnZf-Uw9vuvEjJ2I_WceiFPFDrWqDITvX0vdJoqEJfOHOmAzb6LkIyEOy2oYzpNKZUY6z31w2jio41q6clpWGU9J46BqnlcZmqigMRacb3Tgkx0e6wSYSdNbVxrUAv-r4/s640/ExcavationE01-3.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -474,6 +477,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組１０</h1><p>「挖掘報告２：星殞山脈的遺跡」挖掘點1</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationE02-1' value=1 class='confirmed'/><span>製作晶片：防具改造套組１０</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMXTRAhrW82hZRnmr1M0Ju9bc2HQTQ9fJsXJ2TPjtlozpfLWXtaus8uO6DRhehDfd9VJJj8BEMRuvj8gEs0v_PQM7zeYfyDBYB70rc8Ga95Q_nN2K-LBu0TIqvEW6InEXGFHTpWUYY3RifTzMZNFZVRAADhtwyooX2oZQJUHOOhwDi8-DI13HsAg1I63E/s0/ExcavationE02-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMXTRAhrW82hZRnmr1M0Ju9bc2HQTQ9fJsXJ2TPjtlozpfLWXtaus8uO6DRhehDfd9VJJj8BEMRuvj8gEs0v_PQM7zeYfyDBYB70rc8Ga95Q_nN2K-LBu0TIqvEW6InEXGFHTpWUYY3RifTzMZNFZVRAADhtwyooX2oZQJUHOOhwDi8-DI13HsAg1I63E/s640/ExcavationE02-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -488,6 +492,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：邪龍戒指</h1><p>「挖掘報告２：星殞山脈的遺跡」挖掘點2</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationE02-2' value=1 class='confirmed'/><span>製作晶片：邪龍戒指</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1pUQeGf4SOX3baxWpd3uaPF2Li4dIGB2Mja3iSZQEb3eIHakk2EDWFwyM4PcQiu8k7er-28dG1GIxalkwqegprsXantAraKiemJ-LbVRx1khSFYnni5CjDg3C6SZHMQBs0TcwGfC4Goja_1J5EOaZzjpQQZ-RmOwqm9uBbWWo6D2Dqtqxd83MA8ry48g/s0/ExcavationE02-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1pUQeGf4SOX3baxWpd3uaPF2Li4dIGB2Mja3iSZQEb3eIHakk2EDWFwyM4PcQiu8k7er-28dG1GIxalkwqegprsXantAraKiemJ-LbVRx1khSFYnni5CjDg3C6SZHMQBs0TcwGfC4Goja_1J5EOaZzjpQQZ-RmOwqm9uBbWWo6D2Dqtqxd83MA8ry48g/s640/ExcavationE02-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -502,6 +507,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：祈安珠</h1><p>「挖掘報告２：星殞山脈的遺跡」挖掘點3</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationE02-3' value=1 class='confirmed'/><span>製作晶片：祈安珠</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwD56imBR0D9upSGR415S08iiGw0PrjAYUIFGirL529Im_36aJbVGPVgbh8UyJvs5i91WE563x-_v_71utXzIA-XmMLgTH1Ua9xyRK1nFwJZKtyalUh7F2_pohl61jbkM-eECQ7K9-2C0ObmnA94c3foTXYIVNmi5msORAeJZNgzPY5mGXIXV3I4Ak8bk/s0/ExcavationE02-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwD56imBR0D9upSGR415S08iiGw0PrjAYUIFGirL529Im_36aJbVGPVgbh8UyJvs5i91WE563x-_v_71utXzIA-XmMLgTH1Ua9xyRK1nFwJZKtyalUh7F2_pohl61jbkM-eECQ7K9-2C0ObmnA94c3foTXYIVNmi5msORAeJZNgzPY5mGXIXV3I4Ak8bk/s640/ExcavationE02-3.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},

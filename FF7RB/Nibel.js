@@ -328,6 +328,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組１１</h1><p>「挖掘報告：離島的防衛基地舊址」挖掘點1</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationF01-1' value=1 class='confirmed'/><span>製作晶片：防具改造套組１１</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMkpuEs90J-vAZFxhd1Zhx7d3mkTzxWPmQaXH4lHmsVzcK94YP2vhuJQsnmJgTZ-PQLgDw_P0SHtw32-rz7cYqYz0GL1GIprwLDUhxijtqq_e0PUP-TQPXxjHbOJcNhYeauyswLljN0NdSMythbVk8zhA0uYxyuKch67qsJZyaC0Ha880DO_jt8eOlY8E/s0/ExcavationF01-1.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMkpuEs90J-vAZFxhd1Zhx7d3mkTzxWPmQaXH4lHmsVzcK94YP2vhuJQsnmJgTZ-PQLgDw_P0SHtw32-rz7cYqYz0GL1GIprwLDUhxijtqq_e0PUP-TQPXxjHbOJcNhYeauyswLljN0NdSMythbVk8zhA0uYxyuKch67qsJZyaC0Ha880DO_jt8eOlY8E/s640/ExcavationF01-1.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -342,6 +343,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：防具改造套組１２</h1><p>「挖掘報告：離島的防衛基地舊址」挖掘點2</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationF01-2' value=1 class='confirmed'/><span>製作晶片：防具改造套組１２</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgvcFmfVLbS17MyyJbZQ9sWfGDBpB0Pod_a-UBW8Ie2ui1jkD7DBhdGrncMo3GSfz7bCmaVT2kh4XNgQZ8ZaX6wtK1W32DFBkeI7zg9Fl64cgHaRvv80lEC5oPEUl4b6QVpSKJGZx3WGAHz8yg1MmQth5KOOyKh1j3vChz3SSPWfuQqsQ9Z1IuBfLwy5E/s0/ExcavationF01-2.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgvcFmfVLbS17MyyJbZQ9sWfGDBpB0Pod_a-UBW8Ie2ui1jkD7DBhdGrncMo3GSfz7bCmaVT2kh4XNgQZ8ZaX6wtK1W32DFBkeI7zg9Fl64cgHaRvv80lEC5oPEUl4b6QVpSKJGZx3WGAHz8yg1MmQth5KOOyKh1j3vChz3SSPWfuQqsQ9Z1IuBfLwy5E/s640/ExcavationF01-2.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
@@ -356,6 +358,7 @@ var Excavation1Temp = [
 {
     "type": "Feature",
     "properties": {"party": "<h1>製作晶片：鬥爭胸章</h1><p>「挖掘報告：離島的防衛基地舊址」挖掘點3</p>\
+	<p>已取得請打勾：<label><input type='checkbox' data-cat='enemy' name='ExcavationF01-3' value=1 class='confirmed'/><span>製作晶片：鬥爭胸章</span></label></p>\
 	<p><a href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEwBsjL8aiNaQsTTofWIKvjG6YsbK2rIaxk0uKyjNlCT4AqgwhUMt44UcwZ1WygCguokjEj0KNkpLRauf7PXIAvTTlZ4AAET6njLQh5ziRZyZoDqrUnQqOVtJLWOiXKExqcRUxcb0TcHSmF8nJHYOjIbS5z6ZsUNBYa03H_y4Hnq_cuR0zIf82xZurkrc/s0/ExcavationF01-3.webp' target='_blank'><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEwBsjL8aiNaQsTTofWIKvjG6YsbK2rIaxk0uKyjNlCT4AqgwhUMt44UcwZ1WygCguokjEj0KNkpLRauf7PXIAvTTlZ4AAET6njLQh5ziRZyZoDqrUnQqOVtJLWOiXKExqcRUxcb0TcHSmF8nJHYOjIbS5z6ZsUNBYa03H_y4Hnq_cuR0zIf82xZurkrc/s640/ExcavationF01-3.webp' class='mypopupimg'/></a></p>\
 	<p class='leaflet-collect'><a class='remove' href='javascript:;'>隱藏點位</a></p>\
 	"},
